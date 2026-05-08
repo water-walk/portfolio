@@ -31,8 +31,8 @@ languages:
 #設定
 params:
   env: production
-  description: "ASLEBEN Portfolio Site"
-  author: "Your Name"
+  description: "Hasuda's portfolio"
+  author: "Mizuho Hasuda"
 
   # 見た目
   defaultTheme: light      # 背景
