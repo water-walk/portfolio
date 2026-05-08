@@ -7,7 +7,7 @@ minify:
   disableXML: true
   minifyOutput: true
 
-#言語設定
+# 言語設定
 languages:
   en:
     languageName: "JP"
@@ -27,8 +27,7 @@ languages:
           url: "#contact"
           weight: 40
 
-
-#設定
+# 設定
 params:
   env: production
   description: "Hasuda's portfolio"
@@ -41,52 +40,46 @@ params:
   ShowBreadCrumbs: false
   ShowCodeCopyButtons: true
 
-  #トップ画面
+  # トップ画面
   profileMode:
     enabled: true
-    title: "Hasuda's portfolio"      # 中央に大きく出るロゴ・名前
+    title: "Hasuda's portfolio"
     subtitle: "Creative Technologist / Engineer"
-    # imageUrl: "images/logo.png" # ロゴ画像を入れる場合はここを解除
     imageWidth: 200
     imageHeight: 200
     buttons:
       - name: "View Works"
         url: "#work"
 
-  #SNSアイコン
+  # SNSアイコン
   socialIcons:
     - name: github
       url: "https://github.com/water-walk"
 
-  
+  # ここからのインデントが重要です
   content: |
     <div id="about" style="margin-top: 150px; text-align: center; max-width: 700px; margin-left: auto; margin-right: auto; font-family: 'Helvetica Neue', Arial, sans-serif;">
       <h2 style="margin-bottom: 50px; font-weight: 300; letter-spacing: 4px;">ABOUT</h2>
-
-    <div style="text-align: left; padding: 0 20px;">
+      <div style="text-align: left; padding: 0 20px;">
         <style>
           .about-row { display: flex; margin-bottom: 20px; border-bottom: 1px solid #f0f0f0; padding-bottom: 10px; }
           .about-label { width: 120px; font-weight: bold; color: #888; font-size: 0.9rem; letter-spacing: 1px; }
           .about-content { flex: 1; color: #333; line-height: 1.6; }
         </style>
-
         <div class="about-row">
           <div class="about-label">NAME</div>
           <div class="about-content">蓮田 瑞穂 / Mizuho Hasuda</div>
         </div>
-
         <div class="about-row">
           <div class="about-label">BIO</div>
           <div class="about-content">
             ここに自己紹介文を入力します。Kishinoさんのように、現在の所属や活動拠点、専門領域などを1〜2文で簡潔に書くと雰囲気が近づきます。
           </div>
         </div>
-
         <div class="about-row">
           <div class="about-label">SKILLS</div>
           <div class="about-content">C++, Python, Unity, OpenFrameworks, Digital Fabrication</div>
         </div>
-
         <div class="about-row">
           <div class="about-label">LINKS</div>
           <div class="about-content">
