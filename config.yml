@@ -44,7 +44,7 @@ params:
   #トップ画面
   profileMode:
     enabled: true
-    title: "ASLEBEN"      # 中央に大きく出るロゴ・名前
+    title: "Hasuda's portfolio"      # 中央に大きく出るロゴ・名前
     subtitle: "Creative Technologist / Engineer"
     # imageUrl: "images/logo.png" # ロゴ画像を入れる場合はここを解除
     imageWidth: 200
