@@ -1,13 +1,13 @@
 ---
-# この三本線で囲まれた部分は設定です（このままにしてください）
 layout: "single"
 ---
 
 <!-- 1. メインビジュアル（Nattsu.jpgを表示） -->
-<div style="width: 100vw; margin-left: calc(-50vw + 50%); margin-top: -60px; margin-bottom: 80px; overflow: hidden;">
+<div style="width: 100vw; margin-left: calc(-50vw + 50%); margin-top: 30px; margin-bottom: 80px; padding-top: 20px; overflow: hidden;">
   <img src="./Nattsu.jpg" alt="Nattsu" style="width: 100%; height: auto; display: block; max-height: 70vh; object-fit: cover;">
 </div>
 
+<!-- 全体の幅を整えるコンテナ（ここから下はそのまま） -->
 <!-- 全体の幅を整えるコンテナ -->
 <div style="max-width: 900px; margin: 0 auto; padding: 0 20px; font-family: 'Helvetica Neue', Arial, sans-serif;">
   
