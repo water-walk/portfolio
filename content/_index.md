@@ -93,7 +93,7 @@ layout: "single"
   <div id="contact" style="margin-bottom: 100px; text-align: left;">
     <h2 style="font-size: 1.8rem; font-weight: 300; letter-spacing: 2px; margin-bottom: 30px; border-bottom: 1px solid #111; padding-bottom: 5px; color: #111; border-top: none;">CONTACT</h2>
     <p style="font-size: 0.95rem; color: #444;">
-      Email: <a href="mizuho.nattsu.0809@gmail.com" style="color: #000; text-decoration: underline;"></a>
+      Email: <a style="color: #000; text-decoration: underline;">mizuho.nattsu.0809@gmail.com</a>
     </p>
   </div>
 </div>
