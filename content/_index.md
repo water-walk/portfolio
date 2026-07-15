@@ -3,48 +3,56 @@ layout: "single"
 ---
 
 <style>
-  /* 1. サイト全体の白い余白制限を解除して、一番上まで突き抜けるようにします */
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .container {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
   .main {
     margin-top: 0 !important;
     padding-top: 0 !important;
     max-width: 100% !important;
   }
   
-  /* 2. 記事のタイトルや日付が出るエリアを完全に消し去ります */
   .post-header, .post-content, .post-meta {
     margin: 0 !important;
     padding: 0 !important;
   }
 
-  /* 3. ヘッダーメニューの位置を画像の上に重ねて、背景をすりガラス風に透過します */
   header.header {
     position: absolute !important;
     top: 0 !important;
     left: 0 !important;
     width: 100% !important;
-    background: rgba(255, 255, 255, 0.4) !important; /* 40%の薄い白でしっかり透けさせます */
-    backdrop-filter: blur(12px) !important; /* すりガラス効果を高めました */
+    background: rgba(255, 255, 255, 0.4) !important; 
+    backdrop-filter: blur(12px) !important; 
     -webkit-backdrop-filter: blur(12px) !important;
-    z-index: 999 !important; /* 一番手前に引き出します */
+    z-index: 999 !important; 
     border: none !important;
+    padding: 0 20px !important; 
   }
 
-  /* 4. メニューの文字色を見やすく黒にします */
   .menu a, .logo a {
     color: #111 !important;
     font-weight: 500 !important;
   }
 </style>
 
-<!-- 1. メインビジュアル（一番上からドカンと表示） -->
-<div style="width: 100vw; margin: 0; padding: 0; overflow: hidden; position: relative; z-index: 1;">
+<!-- メインビジュアル -->
+<div style="width: 100%; margin: 0; padding: 0; overflow: hidden; position: relative; z-index: 1;">
   <img src="./Nattsu.jpg" alt="Nattsu" style="width: 100%; height: auto; display: block; max-height: 85vh; object-fit: cover;">
 </div>
 
-<!-- 全体の幅を整えるコンテナ（WORKやPROFILEなどの中身） -->
+<div style="max-width: 900px; margin: 80px auto 0; padding: 0 20px; font-family: 'Helvetica Neue', Arial, sans-serif;">
+
 <div style="max-width: 900px; margin: 80px auto 0; padding: 0 20px; font-family: 'Helvetica Neue', Arial, sans-serif;">
   
-  <!-- 2. WORK (制作実績) -->
+  <!-- WORK (制作実績) -->
   <div id="work" style="margin-bottom: 120px; text-align: left;">
     <h2 style="font-size: 1.8rem; font-weight: 300; letter-spacing: 2px; margin-bottom: 10px; border-bottom: 1px solid #111; padding-bottom: 5px; color: #111; border-top: none;">WORK</h2>
     <p style="font-size: 0.9rem; color: #666; margin-bottom: 30px;">制作実績</p>
@@ -68,7 +76,7 @@ layout: "single"
     </div>
   </div>
 
-  <!-- 3. PROFILE -->
+  <!-- PROFILE -->
   <div id="profile" style="margin-bottom: 120px; text-align: left;">
     <h2 style="font-size: 1.8rem; font-weight: 300; letter-spacing: 2px; margin-bottom: 30px; border-bottom: 1px solid #111; padding-bottom: 5px; color: #111; border-top: none;">PROFILE</h2>
     
@@ -81,13 +89,13 @@ layout: "single"
     </div>
   </div>
 
-  <!-- 4. PUBLICATION -->
+  <!--PUBLICATION -->
   <div id="publication" style="margin-bottom: 120px; text-align: left;">
     <h2 style="font-size: 1.8rem; font-weight: 300; letter-spacing: 2px; margin-bottom: 30px; border-bottom: 1px solid #111; padding-bottom: 5px; color: #111; border-top: none;">PUBLICATION</h2>
     <p style="font-size: 0.95rem; color: #444;">学会発表や展示などの実績をここに記載します。</p>
   </div>
 
-  <!-- 5. CONTACT -->
+  <!-- CONTACT -->
   <div id="contact" style="margin-bottom: 100px; text-align: left;">
     <h2 style="font-size: 1.8rem; font-weight: 300; letter-spacing: 2px; margin-bottom: 30px; border-bottom: 1px solid #111; padding-bottom: 5px; color: #111; border-top: none;">CONTACT</h2>
     <p style="font-size: 0.95rem; color: #444;">
