@@ -41,6 +41,35 @@ layout: "single"
     color: #111 !important;
     font-weight: 500 !important;
   }
+
+  .section-title-container {
+    position: relative;
+    margin-bottom: 40px;
+    height: 90px; 
+  }
+
+  .bg-en-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: rgba(173, 216, 230, 0.45); 
+    line-height: 1;
+    letter-spacing: 4px;
+    user-select: none;
+  }
+
+  .fg-ja-title {
+    position: absolute;
+    bottom: 5px;
+    left: 10px; 
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #111;
+    line-height: 1;
+    z-index: 2;
+  }
 </style>
 
 <!-- メインビジュアル -->
@@ -49,13 +78,13 @@ layout: "single"
 </div>
 
 <div style="max-width: 900px; margin: 80px auto 0; padding: 0 20px; font-family: 'Helvetica Neue', Arial, sans-serif;">
-
-<div style="max-width: 900px; margin: 80px auto 0; padding: 0 20px; font-family: 'Helvetica Neue', Arial, sans-serif;">
   
   <!-- WORK (制作実績) -->
   <div id="work" style="margin-bottom: 120px; text-align: left;">
-    <h2 style="font-size: 1.8rem; font-weight: 300; letter-spacing: 2px; margin-bottom: 10px; border-bottom: 1px solid #111; padding-bottom: 5px; color: #111; border-top: none;">WORK</h2>
-    <p style="font-size: 0.9rem; color: #666; margin-bottom: 30px;">制作実績</p>
+    <div class="section-title-container">
+      <div class="bg-en-title">WORK</div>
+      <div class="fg-ja-title">制作実績</div>
+    </div>
     
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px;">
       <div style="border: 1px solid #ddd; padding: 15px; border-radius: 4px; background: #fff;">
@@ -78,12 +107,16 @@ layout: "single"
 
   <!-- PROFILE -->
   <div id="profile" style="margin-bottom: 120px; text-align: left;">
-    <h2 style="font-size: 1.8rem; font-weight: 300; letter-spacing: 2px; margin-bottom: 30px; border-bottom: 1px solid #111; padding-bottom: 5px; color: #111; border-top: none;">PROFILE</h2>
+
+    <div class="section-title-container">
+      <div class="bg-en-title">PROFILE</div>
+      <div class="fg-ja-title">自己紹介</div>
+    </div>
     
     <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
       <div style="width: 150px; height: 150px; background: #eee; border-radius: 4px; flex-shrink: 0;"></div>
       <div style="flex: 1; min-width: 280px; line-height: 1.8;">
-        <p style="font-size: 1.1rem; font-weight: bold; margin-bottom: 10px; color: #111;">蓮田 瑞歩 / Mizuho Hasuda</p>
+        <p style="font-size: 1.1rem; font-weight: bold; margin-bottom: 10px; color: #111;">蓮田 瑞穂 / Mizuho Hasuda</p>
         <p style="color: #444; font-size: 0.95rem;">ここにプロフィールテキストを入力します。</p>
       </div>
     </div>
@@ -91,9 +124,13 @@ layout: "single"
 
   <!-- CONTACT -->
   <div id="contact" style="margin-bottom: 100px; text-align: left;">
-    <h2 style="font-size: 1.8rem; font-weight: 300; letter-spacing: 2px; margin-bottom: 30px; border-bottom: 1px solid #111; padding-bottom: 5px; color: #111; border-top: none;">CONTACT</h2>
+    <div class="section-title-container">
+      <div class="bg-en-title">CONTACT</div>
+      <div class="fg-ja-title">お問い合わせ</div>
+    </div>
+    
     <p style="font-size: 0.95rem; color: #444;">
-      Email: <a style="color: #000; text-decoration: underline;">mizuho.nattsu.0809@gmail.com</a>
+      Email: <a style="color: #000; text-decoration: underline;" href="mailto:mizuho.nattsu.0809@gmail.com">mizuho.nattsu.0809@gmail.com</a>
     </p>
   </div>
 </div>
