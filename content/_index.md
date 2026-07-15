@@ -83,24 +83,17 @@ layout: "single"
     <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
       <div style="width: 150px; height: 150px; background: #eee; border-radius: 4px; flex-shrink: 0;"></div>
       <div style="flex: 1; min-width: 280px; line-height: 1.8;">
-        <p style="font-size: 1.1rem; font-weight: bold; margin-bottom: 10px; color: #111;">蓮田 瑞穂 / Mizuho Hasuda</p>
+        <p style="font-size: 1.1rem; font-weight: bold; margin-bottom: 10px; color: #111;">蓮田 瑞歩 / Mizuho Hasuda</p>
         <p style="color: #444; font-size: 0.95rem;">ここにプロフィールテキストを入力します。</p>
       </div>
     </div>
-  </div>
-
-  <!--PUBLICATION -->
-  <div id="publication" style="margin-bottom: 120px; text-align: left;">
-    <h2 style="font-size: 1.8rem; font-weight: 300; letter-spacing: 2px; margin-bottom: 30px; border-bottom: 1px solid #111; padding-bottom: 5px; color: #111; border-top: none;">PUBLICATION</h2>
-    <p style="font-size: 0.95rem; color: #444;">学会発表や展示などの実績をここに記載します。</p>
   </div>
 
   <!-- CONTACT -->
   <div id="contact" style="margin-bottom: 100px; text-align: left;">
     <h2 style="font-size: 1.8rem; font-weight: 300; letter-spacing: 2px; margin-bottom: 30px; border-bottom: 1px solid #111; padding-bottom: 5px; color: #111; border-top: none;">CONTACT</h2>
     <p style="font-size: 0.95rem; color: #444;">
-      お問い合わせは以下までお願いいたします。<br>
-      Email: <a href="mailto:your-email@example.com" style="color: #000; text-decoration: underline;">your-email@example.com</a>
+      Email: <a href="mizuho.nattsu.0809@gmail.com" style="color: #000; text-decoration: underline;">mizuho.nattsu.0809@gmail.com</a>
     </p>
   </div>
 </div>
