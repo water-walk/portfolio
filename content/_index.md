@@ -2,11 +2,26 @@
 layout: "single"
 ---
 
-<!-- 1. メインビジュアル（Nattsu.jpgを表示） -->
-<div style="width: 100vw; margin-left: calc(-50vw + 50%); margin-top: 30px; margin-bottom: 80px; padding-top: 20px; overflow: hidden;">
-  <img src="./Nattsu.jpg" alt="Nattsu" style="width: 100%; height: auto; display: block; max-height: 70vh; object-fit: cover;">
+<style>
+  /* サイトの一番上のヘッダーメニュー自体を少し半透明（透過）にして、浮かせます */
+  .header {
+    background: rgba(255, 255, 255, 0.75) !important;
+    backdrop-filter: blur(8px); /* 後ろの画像が少しボケて透けるオシャレエフェクト */
+    position: relative;
+    z-index: 10;
+  }
+  /* 余計な境界線を消して、画像と一体化させます */
+  .nav {
+    background: transparent !important;
+  }
+</style>
+
+<!-- 1. メインビジュアル（位置を上に引き上げてメニューの下に入り込ませます） -->
+<div style="width: 100vw; margin-left: calc(-50vw + 50%); margin-top: -120px; margin-bottom: 80px; overflow: hidden; position: relative; z-index: 1;">
+  <img src="./Nattsu.jpg" alt="Nattsu" style="width: 100%; height: auto; display: block; max-height: 85vh; object-fit: cover;">
 </div>
 
+<!-- 全体の幅を整えるコンテナ（ここから下はそのまま） -->
 <!-- 全体の幅を整えるコンテナ（ここから下はそのまま） -->
 <!-- 全体の幅を整えるコンテナ -->
 <div style="max-width: 900px; margin: 0 auto; padding: 0 20px; font-family: 'Helvetica Neue', Arial, sans-serif;">
