@@ -19,9 +19,9 @@ params:
   ShowBreadCrumbs: false
   ShowCodeCopyButtons: true
 
-  # 通常のプロフィールモードをオフにして、手書きのカスタムレイアウトを有効化します
+  # 【重要】通常の記事リストを隠し、profileModeのカスタムレイアウトだけを表示させます
   profileMode:
-    enabled: false 
+    enabled: true
 
   # SNSアイコン（フッター用）
   socialIcons:
@@ -48,14 +48,13 @@ languages:
           url: "#contact"
           weight: 40
     
-    # 独自のポートフォリオレイアウトをここに流し込みます
+    # 独自のポートフォリオレイアウト
     params:
       profileMode:
         content: |
-          <!-- 1. メインビジュアル（全画面に近い画像） -->
+          <!-- 1. メインビジュアル（Nattsu.jpgを表示） -->
           <div style="width: 100vw; margin-left: calc(-50vw + 50%); margin-top: -30px; margin-bottom: 80px; overflow: hidden;">
-            <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=1200" alt="Main Visual" style="width: 100%; height: auto; display: block; max-height: 70vh; object-fit: cover;">
-            <!-- ※上のURLをご自身のワンちゃんの画像URL（images/dog.jpgなど）に後ほど差し替えます -->
+            <img src="./Nattsu.jpg" alt="Nattsu" style="width: 100%; height: auto; display: block; max-height: 70vh; object-fit: cover;">
           </div>
 
           <!-- 全体の幅を整えるコンテナ -->
@@ -90,16 +89,11 @@ languages:
             <div id="profile" style="margin-bottom: 120px; text-align: left;">
               <h2 style="font-size: 1.8rem; font-weight: 300; letter-spacing: 2px; margin-bottom: 30px; border-bottom: 1px solid #111; padding-bottom: 5px;">PROFILE</h2>
               
-              <!-- 画像とテキストの横並び (Flexbox) -->
               <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
-                <div style="width: 150px; height: 150px; background: #eee; border-radius: 4px; flex-shrink: 0;">
-                  <!-- プロフィール用の顔写真などが入るエリア -->
-                </div>
+                <div style="width: 150px; height: 150px; background: #eee; border-radius: 4px; flex-shrink: 0;"></div>
                 <div style="flex: 1; min-width: 280px; line-height: 1.8;">
                   <p style="font-size: 1.1rem; font-weight: bold; margin-bottom: 10px;">蓮田 瑞穂 / Mizuho Hasuda</p>
-                  <p style="color: #444; font-size: 0.95rem;">
-                    ここにプロフィールテキストを入力します。これまでの経歴や、現在取り組んでいる技術や研究領域について記述してください。
-                  </p>
+                  <p style="color: #444; font-size: 0.95rem;">ここにプロフィールテキストを入力します。</p>
                 </div>
               </div>
             </div>
@@ -118,7 +112,6 @@ languages:
                 Email: <a href="mailto:your-email@example.com" style="color: #000; text-decoration: underline;">your-email@example.com</a>
               </p>
             </div>
-
           </div>
 
 # HTMLを埋め込むための許可設定
