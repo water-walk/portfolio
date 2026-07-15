@@ -7,89 +7,121 @@ minify:
   disableXML: true
   minifyOutput: true
 
-# 言語設定
-languages:
-  en:
-    languageName: "JP"
-    weight: 1
-    menu:
-      main:
-        - name: "UPDATE"
-          url: "#updates"
-          weight: 10
-        - name: "WORK"
-          url: "#work"
-          weight: 20
-        - name: "ABOUT"
-          url: "#about"
-          weight: 30
-        - name: "CONTACT"
-          url: "#contact"
-          weight: 40
-
 # 設定
 params:
   env: production
   description: "Hasuda's portfolio"
   author: "Mizuho Hasuda"
 
-  # 見た目
-  defaultTheme: light      # 背景
-  disableThemeToggle: true # ダークモード切替を隠す
-  
+  # 見た目（白背景・ダークモード切替なし）
+  defaultTheme: light
+  disableThemeToggle: true
   ShowBreadCrumbs: false
   ShowCodeCopyButtons: true
 
-  # トップ画面
+  # 通常のプロフィールモードをオフにして、手書きのカスタムレイアウトを有効化します
   profileMode:
-    enabled: true
-    title: "Hasuda's portfolio"
-    subtitle: "oooo"
-    imageWidth: 200
-    imageHeight: 200
-    buttons:
-      - name: "View Works"
-        url: "#work"
+    enabled: false 
 
-  # SNSアイコン
+  # SNSアイコン（フッター用）
   socialIcons:
     - name: github
       url: "https://github.com/water-walk"
 
-  content: |
-    <div id="about" style="margin-top: 150px; text-align: center; max-width: 700px; margin-left: auto; margin-right: auto; font-family: 'Helvetica Neue', Arial, sans-serif;">
-      <h2 style="margin-bottom: 50px; font-weight: 300; letter-spacing: 4px;">ABOUT</h2>
-      <div style="text-align: left; padding: 0 20px;">
-        <style>
-          .about-row { display: flex; margin-bottom: 20px; border-bottom: 1px solid #f0f0f0; padding-bottom: 10px; }
-          .about-label { width: 120px; font-weight: bold; color: #888; font-size: 0.9rem; letter-spacing: 1px; }
-          .about-content { flex: 1; color: #333; line-height: 1.6; }
-        </style>
-        <div class="about-row">
-          <div class="about-label">NAME</div>
-          <div class="about-content">蓮田 瑞歩 / Mizuho Hasuda</div>
-        </div>
-        <div class="about-row">
-          <div class="about-label">BIO</div>
-          <div class="about-content">
-            ここに自己紹介文を入力します。Kishinoさんのように、現在の所属や活動拠点、専門領域などを1〜2文で簡潔に書くと雰囲気が近づきます。
+# 手書き案に合わせたナビゲーションメニュー
+languages:
+  en:
+    languageName: "JP"
+    weight: 1
+    menu:
+      main:
+        - name: "WORK"
+          url: "#work"
+          weight: 10
+        - name: "PROFILE"
+          url: "#profile"
+          weight: 20
+        - name: "PUBLICATION"
+          url: "#publication"
+          weight: 30
+        - name: "CONTACT"
+          url: "#contact"
+          weight: 40
+    
+    # 独自のポートフォリオレイアウトをここに流し込みます
+    params:
+      profileMode:
+        content: |
+          <!-- 1. メインビジュアル（全画面に近い画像） -->
+          <div style="width: 100vw; margin-left: calc(-50vw + 50%); margin-top: -30px; margin-bottom: 80px; overflow: hidden;">
+            <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=1200" alt="Main Visual" style="width: 100%; height: auto; display: block; max-height: 70vh; object-fit: cover;">
+            <!-- ※上のURLをご自身のワンちゃんの画像URL（images/dog.jpgなど）に後ほど差し替えます -->
           </div>
-        </div>
-        <div class="about-row">
-          <div class="about-label">SKILLS</div>
-          <div class="about-content">C++, Python, Unity, OpenFrameworks, Digital Fabrication</div>
-        </div>
-        <div class="about-row">
-          <div class="about-label">LINKS</div>
-          <div class="about-content">
-            <a href="https://github.com/water-walk" style="color: #000; text-decoration: none; border-bottom: 1px solid #000; margin-right: 15px;">GitHub</a>
-            <a href="https://x.com/your_id" style="color: #000; text-decoration: none; border-bottom: 1px solid #000;">X (Twitter)</a>
-          </div>
-        </div>
-      </div>
-    </div>
 
-# HTMLタグを直接書けるようにする許可設定
+          <!-- 全体の幅を整えるコンテナ -->
+          <div style="max-width: 900px; margin: 0 auto; padding: 0 20px; font-family: 'Helvetica Neue', Arial, sans-serif;">
+            
+            <!-- 2. WORK (制作実績) -->
+            <div id="work" style="margin-bottom: 120px; text-align: left;">
+              <h2 style="font-size: 1.8rem; font-weight: 300; letter-spacing: 2px; margin-bottom: 10px; border-bottom: 1px solid #111; padding-bottom: 5px;">WORK</h2>
+              <p style="font-size: 0.9rem; color: #666; margin-bottom: 30px;">制作実績</p>
+              
+              <!-- 横並びのカードレイアウト -->
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px;">
+                <div style="border: 1px solid #ddd; padding: 15px; border-radius: 4px; background: #fff;">
+                  <div style="aspect-ratio: 4/3; background: #eee; margin-bottom: 10px; border-radius: 2px;"></div>
+                  <h3 style="font-size: 1rem; margin-bottom: 5px;">Work 01</h3>
+                  <p style="font-size: 0.8rem; color: #666;">作品の説明がここに入ります。</p>
+                </div>
+                <div style="border: 1px solid #ddd; padding: 15px; border-radius: 4px; background: #fff;">
+                  <div style="aspect-ratio: 4/3; background: #eee; margin-bottom: 10px; border-radius: 2px;"></div>
+                  <h3 style="font-size: 1rem; margin-bottom: 5px;">Work 02</h3>
+                  <p style="font-size: 0.8rem; color: #666;">作品の説明がここに入ります。</p>
+                </div>
+                <div style="border: 1px solid #ddd; padding: 15px; border-radius: 4px; background: #fff;">
+                  <div style="aspect-ratio: 4/3; background: #eee; margin-bottom: 10px; border-radius: 2px;"></div>
+                  <h3 style="font-size: 1rem; margin-bottom: 5px;">Work 03</h3>
+                  <p style="font-size: 0.8rem; color: #666;">作品の説明がここに入ります。</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. PROFILE -->
+            <div id="profile" style="margin-bottom: 120px; text-align: left;">
+              <h2 style="font-size: 1.8rem; font-weight: 300; letter-spacing: 2px; margin-bottom: 30px; border-bottom: 1px solid #111; padding-bottom: 5px;">PROFILE</h2>
+              
+              <!-- 画像とテキストの横並び (Flexbox) -->
+              <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
+                <div style="width: 150px; height: 150px; background: #eee; border-radius: 4px; flex-shrink: 0;">
+                  <!-- プロフィール用の顔写真などが入るエリア -->
+                </div>
+                <div style="flex: 1; min-width: 280px; line-height: 1.8;">
+                  <p style="font-size: 1.1rem; font-weight: bold; margin-bottom: 10px;">蓮田 瑞穂 / Mizuho Hasuda</p>
+                  <p style="color: #444; font-size: 0.95rem;">
+                    ここにプロフィールテキストを入力します。これまでの経歴や、現在取り組んでいる技術や研究領域について記述してください。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. PUBLICATION -->
+            <div id="publication" style="margin-bottom: 120px; text-align: left;">
+              <h2 style="font-size: 1.8rem; font-weight: 300; letter-spacing: 2px; margin-bottom: 30px; border-bottom: 1px solid #111; padding-bottom: 5px;">PUBLICATION</h2>
+              <p style="font-size: 0.95rem; color: #444;">学会発表や展示などの実績をここに記載します。</p>
+            </div>
+
+            <!-- 5. CONTACT -->
+            <div id="contact" style="margin-bottom: 100px; text-align: left;">
+              <h2 style="font-size: 1.8rem; font-weight: 300; letter-spacing: 2px; margin-bottom: 30px; border-bottom: 1px solid #111; padding-bottom: 5px;">CONTACT</h2>
+              <p style="font-size: 0.95rem; color: #444;">
+                お問い合わせは以下までお願いいたします。<br>
+                Email: <a href="mailto:your-email@example.com" style="color: #000; text-decoration: underline;">your-email@example.com</a>
+              </p>
+            </div>
+
+          </div>
+
+# HTMLを埋め込むための許可設定
 markup:
   goldmark:
     renderer:
