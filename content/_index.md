@@ -3,28 +3,46 @@ layout: "single"
 ---
 
 <style>
-  /* サイトの一番上のヘッダーメニュー自体を少し半透明（透過）にして、浮かせます */
-  .header {
-    background: rgba(255, 255, 255, 0.75) !important;
-    backdrop-filter: blur(8px); /* 後ろの画像が少しボケて透けるオシャレエフェクト */
-    position: relative;
-    z-index: 10;
+  /* 1. サイト全体の白い余白制限を解除して、一番上まで突き抜けるようにします */
+  .main {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    max-width: 100% !important;
   }
-  /* 余計な境界線を消して、画像と一体化させます */
-  .nav {
-    background: transparent !important;
+  
+  /* 2. 記事のタイトルや日付が出るエリアを完全に消し去ります */
+  .post-header, .post-content, .post-meta {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* 3. ヘッダーメニューの位置を画像の上に重ねて、背景をすりガラス風に透過します */
+  header.header {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    background: rgba(255, 255, 255, 0.4) !important; /* 40%の薄い白でしっかり透けさせます */
+    backdrop-filter: blur(12px) !important; /* すりガラス効果を高めました */
+    -webkit-backdrop-filter: blur(12px) !important;
+    z-index: 999 !important; /* 一番手前に引き出します */
+    border: none !important;
+  }
+
+  /* 4. メニューの文字色を見やすく黒にします */
+  .menu a, .logo a {
+    color: #111 !important;
+    font-weight: 500 !important;
   }
 </style>
 
-<!-- 1. メインビジュアル（位置を上に引き上げてメニューの下に入り込ませます） -->
-<div style="width: 100vw; margin-left: calc(-50vw + 50%); margin-top: -120px; margin-bottom: 80px; overflow: hidden; position: relative; z-index: 1;">
+<!-- 1. メインビジュアル（一番上からドカンと表示） -->
+<div style="width: 100vw; margin: 0; padding: 0; overflow: hidden; position: relative; z-index: 1;">
   <img src="./Nattsu.jpg" alt="Nattsu" style="width: 100%; height: auto; display: block; max-height: 85vh; object-fit: cover;">
 </div>
 
-<!-- 全体の幅を整えるコンテナ（ここから下はそのまま） -->
-<!-- 全体の幅を整えるコンテナ（ここから下はそのまま） -->
-<!-- 全体の幅を整えるコンテナ -->
-<div style="max-width: 900px; margin: 0 auto; padding: 0 20px; font-family: 'Helvetica Neue', Arial, sans-serif;">
+<!-- 全体の幅を整えるコンテナ（WORKやPROFILEなどの中身） -->
+<div style="max-width: 900px; margin: 80px auto 0; padding: 0 20px; font-family: 'Helvetica Neue', Arial, sans-serif;">
   
   <!-- 2. WORK (制作実績) -->
   <div id="work" style="margin-bottom: 120px; text-align: left;">
