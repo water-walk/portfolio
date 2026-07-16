@@ -32,7 +32,6 @@ languages:
         - name: "CONTACT"
           url: "#contact"
           weight: 40
-
 markup:
   goldmark:
     renderer:
