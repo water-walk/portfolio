@@ -124,6 +124,7 @@ layout: "single"
 
   <!-- CONTACT -->
   <div id="contact" style="margin-bottom: 100px; text-align: left;">
+
     <div class="section-title-container">
       <div class="bg-en-title">CONTACT</div>
       <div class="fg-ja-title">お問い合わせ</div>
