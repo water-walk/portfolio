@@ -122,7 +122,6 @@ header.header {
   <img src="./Nattsu.jpg" alt="Nattsu" style="width: 100%; height: auto; display: block; max-height: 85vh; object-fit: cover;">
 </div>
 
-<!-- コンテナ（クォーテーションをすべてシングルクォーテーション「'」に変更し自動変換を回避） -->
 <div style='max-width: 900px; margin: 80px auto 0; padding: 0 20px; font-family: Helvetica Neue, Arial, sans-serif;'>
 
   <!-- WORK -->
@@ -132,28 +131,6 @@ header.header {
       <div class='fg-ja-title'>制作実績</div>
     </div>
     
-    <div class='work-scroll-container'>
-      <div class='work-card'>
-        <div class='work-thumbnail'></div>
-        <h3 class='work-title'>Work 01</h3>
-        <p class='work-desc'>ここに1つ目の作品の説明や、制作したものの情報が入ります。</p>
-      </div>
-      <div class='work-card'>
-        <div class='work-thumbnail'></div>
-        <h3 class='work-title'>Work 02</h3>
-        <p class='work-desc'>ここに2つ目の作品の説明や、制作したものの情報が入ります。</p>
-      </div>
-      <div class='work-card'>
-        <div class='work-thumbnail'></div>
-        <h3 class='work-title'>Work 03</h3>
-        <p class='work-desc'>ここに3つ目の作品の説明や、制作したものの情報が入ります。</p>
-      </div>
-      <div class='work-card'>
-        <div class='work-thumbnail'></div>
-        <h3 class='work-title'>Work 04</h3>
-        <p class='work-desc'>横スクロールを試すために4つ目のカードを追加してみました！</p>
-      </div>
-    </div>
   </div>
 
   <!-- PROFILE -->
@@ -163,13 +140,6 @@ header.header {
       <div class='fg-ja-title'>自己紹介</div>
     </div>
     
-    <div style='display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;'>
-      <div style='width: 150px; height: 150px; background: #eee; border-radius: 4px; flex-shrink: 0;'></div>
-      <div style='flex: 1; min-width: 280px; line-height: 1.8;'>
-        <p style='font-size: 1.1rem; font-weight: bold; margin-bottom: 10px; color: #111;'>蓮田 瑞穂 / Mizuho Hasuda</p>
-        <p style='color: #444; font-size: 0.95rem;'>ここにプロフィールテキストを入力します。</p>
-      </div>
-    </div>
   </div>
 
   <!-- CONTACT -->
@@ -179,8 +149,5 @@ header.header {
       <div class='fg-ja-title'>お問い合わせ</div>
     </div>
     
-    <p style='font-size: 0.95rem; color: #444;'>
-      Email: <a style='color: #000; text-decoration: underline;' href='mailto:mizuho.nattsu.0809@gmail.com'>mizuho.nattsu.0809@gmail.com</a>
-    </p>
   </div>
 </div>
