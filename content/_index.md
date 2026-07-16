@@ -64,32 +64,62 @@ header.header {
   z-index: 2;
 }
 
-/* カード部分用のCSSをここにまとめ、HTML側からクォーテーションをすべて排除しました */
-.work-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
+/* --- 横スクロール（流れるWORK）用のCSS設定 --- */
+.work-scroll-container {
+  display: flex;
+  overflow-x: auto; /* 横スクロールを許可 */
+  white-space: nowrap; /* 中身が勝手に改行されないようにする */
+  gap: 24px;
+  padding: 10px 0 30px 0;
+  /* スクロールバーの見た目をモダンで極細にする設定 */
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+  -webkit-overflow-scrolling: touch; /* スマホで滑らかに動かすための魔法のコード */
 }
+
+/* スクロールバーの細かなデザイン（Chrome, Safari向け） */
+.work-scroll-container::-webkit-scrollbar {
+  height: 6px; /* スクロールバーの高さ（細め） */
+}
+.work-scroll-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+.work-scroll-container::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+/* カード1枚ずつのサイズを固定し、横に並べる */
 .work-card {
-  border: 1px solid #ddd;
-  padding: 15px;
-  border-radius: 4px;
+  flex: 0 0 280px; /* カードの横幅を280pxにカチッと固定します */
+  border: 1px solid #eee;
+  padding: 18px;
+  border-radius: 8px;
   background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03); /* ほんの少し影をつけて上品に */
+  transition: transform 0.3s ease;
 }
+.work-card:hover {
+  transform: translateY(-4px); /* マウスを乗せたらフワッと少し浮くエフェクト */
+}
+
 .work-thumbnail {
   aspect-ratio: 4/3;
-  background: #eee;
-  margin-bottom: 10px;
-  border-radius: 2px;
+  background: #f0f0f0;
+  margin-bottom: 12px;
+  border-radius: 4px;
 }
 .work-title {
-  font-size: 1rem;
-  margin-bottom: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 6px 0;
   color: #111;
 }
 .work-desc {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   color: #666;
+  margin: 0;
+  white-space: normal; /* 説明文の中身だけはちゃんと自動改行を許可する */
 }
 </style>
 
@@ -101,28 +131,34 @@ header.header {
 <!-- コンテナ -->
 <div style="max-width: 900px; margin: 80px auto 0; padding: 0 20px; font-family: Helvetica Neue, Arial, sans-serif;">
 
-  <!-- WORK (制作実績) -->
+  <!-- WORK (制作実績 - 横スクロール版) -->
   <div id="work" style="margin-bottom: 120px; text-align: left;">
     <div class="section-title-container">
       <div class="bg-en-title">WORK</div>
       <div class="fg-ja-title">制作実績</div>
     </div>
     
-    <div class="work-grid">
+    <!-- 横に流れるコンテナ -->
+    <div class="work-scroll-container">
       <div class="work-card">
         <div class="work-thumbnail"></div>
         <h3 class="work-title">Work 01</h3>
-        <p class="work-desc">作品の説明がここに入ります。</p>
+        <p class="work-desc">ここに1つ目の作品の説明や、制作したものの情報が入ります。</p>
       </div>
       <div class="work-card">
         <div class="work-thumbnail"></div>
         <h3 class="work-title">Work 02</h3>
-        <p class="work-desc">作品の説明がここに入ります。</p>
+        <p class="work-desc">ここに2つ目の作品の説明や、制作したものの情報が入ります。</p>
       </div>
       <div class="work-card">
         <div class="work-thumbnail"></div>
         <h3 class="work-title">Work 03</h3>
-        <p class="work-desc">作品の説明がここに入ります。</p>
+        <p class="work-desc">ここに3つ目の作品の説明や、制作したものの情報が入ります。</p>
+      </div>
+      <div class="work-card">
+        <div class="work-thumbnail"></div>
+        <h3 class="work-title">Work 04</h3>
+        <p class="work-desc">横スクロールを試すために4つ目のカードを追加してみました！</p>
       </div>
     </div>
   </div>
