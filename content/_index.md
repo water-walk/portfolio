@@ -3,23 +3,9 @@ layout: single
 ---
 
 <style>
+/* サイト全体のヘッダーなどの余白を崩さない最低限の設定 */
 body {
   margin: 0 !important;
-  padding: 0 !important;
-}
-.container {
-  max-width: 100% !important;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-.main {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-  max-width: 100% !important;
-}
-.post-header, .post-content, .post-meta {
-  margin: 0 !important;
-  padding: 0 !important;
 }
 header.header {
   position: absolute !important;
@@ -37,6 +23,8 @@ header.header {
   color: #111 !important;
   font-weight: 500 !important;
 }
+
+/* タイトルの重なりデザイン */
 .section-title-container {
   position: relative;
   margin-bottom: 40px;
@@ -64,17 +52,19 @@ header.header {
   z-index: 2;
 }
 
-/* スクロールエリア用のCSS設定 */
+/* --- 横スクロール（流れるWORK）用のCSS設定 --- */
 .work-scroll-container {
   display: flex;
-  overflow-x: auto;
-  white-space: nowrap;
+  overflow-x: auto; /* 横スクロールを許可 */
+  white-space: nowrap; /* 中身が勝手に改行されないようにする */
   gap: 24px;
   padding: 10px 0 30px 0;
   scrollbar-width: thin;
   scrollbar-color: #ccc transparent;
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch; /* スマホ用 */
 }
+
+/* スクロールバーの細かなデザイン */
 .work-scroll-container::-webkit-scrollbar {
   height: 6px;
 }
@@ -85,8 +75,10 @@ header.header {
   background-color: #ddd;
   border-radius: 10px;
 }
+
+/* カード1枚ずつのサイズを固定し、横に並べる */
 .work-card {
-  flex: 0 0 280px;
+  flex: 0 0 280px; /* カードの横幅を280pxにカチッと固定 */
   border: 1px solid #eee;
   padding: 18px;
   border-radius: 8px;
@@ -95,8 +87,9 @@ header.header {
   transition: transform 0.3s ease;
 }
 .work-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-4px); /* フワッと浮くエフェクト */
 }
+
 .work-thumbnail {
   aspect-ratio: 4/3;
   background: #f0f0f0;
@@ -113,7 +106,7 @@ header.header {
   font-size: 0.85rem;
   color: #666;
   margin: 0;
-  white-space: normal;
+  white-space: normal; /* 説明文の中身だけはちゃんと自動改行を許可 */
 }
 </style>
 
@@ -122,16 +115,17 @@ header.header {
   <img src="./Nattsu.jpg" alt="Nattsu" style="width: 100%; height: auto; display: block; max-height: 85vh; object-fit: cover;">
 </div>
 
-<!-- コンテナ（クォーテーションをすべてシングルクォーテーション「'」に変更し自動変換を回避） -->
+<!-- コンテナ（シングルクォーテーションで固定） -->
 <div style='max-width: 900px; margin: 80px auto 0; padding: 0 20px; font-family: Helvetica Neue, Arial, sans-serif;'>
 
-  <!-- WORK -->
+  <!-- WORK (制作実績 - 横スクロール版) -->
   <div id='work' style='margin-bottom: 120px; text-align: left;'>
     <div class='section-title-container'>
       <div class='bg-en-title'>WORK</div>
       <div class='fg-ja-title'>制作実績</div>
     </div>
     
+    <!-- 横に流れるコンテナ -->
     <div class='work-scroll-container'>
       <div class='work-card'>
         <div class='work-thumbnail'></div>
