@@ -86,6 +86,23 @@ layout: "single"
       <div class="fg-ja-title">制作実績</div>
     </div>
     
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px;">
+      <div style="border: 1px solid #ddd; padding: 15px; border-radius: 4px; background: #fff;">
+        <div style="aspect-ratio: 4/3; background: #eee; margin-bottom: 10px; border-radius: 2px;"></div>
+        <h3 style="font-size: 1rem; margin-bottom: 5px; color: #111;">Work 01</h3>
+        <p style="font-size: 0.8rem; color: #666;">作品の説明がここに入ります。</p>
+      </div>
+      <div style="border: 1px solid #ddd; padding: 15px; border-radius: 4px; background: #fff;">
+        <div style="aspect-ratio: 4/3; background: #eee; margin-bottom: 10px; border-radius: 2px;"></div>
+        <h3 style="font-size: 1rem; margin-bottom: 5px; color: #111;">Work 02</h3>
+        <p style="font-size: 0.8rem; color: #666;">作品の説明がここに入ります。</p>
+      </div>
+      <div style="border: 1px solid #ddd; padding: 15px; border-radius: 4px; background: #fff;">
+        <div style="aspect-ratio: 4/3; background: #eee; margin-bottom: 10px; border-radius: 2px;"></div>
+        <h3 style="font-size: 1rem; margin-bottom: 5px; color: #111;">Work 03</h3>
+        <p style="font-size: 0.8rem; color: #666;">作品の説明がここに入ります。</p>
+      </div>
+    </div>
   </div>
 
   <!-- PROFILE -->
