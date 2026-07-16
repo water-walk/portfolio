@@ -3,73 +3,66 @@ layout: "single"
 ---
 
 <style>
-  body {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  .container {
-    max-width: 100% !important;
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-
-  .main {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-    max-width: 100% !important;
-  }
-  
-  .post-header, .post-content, .post-meta {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-  header.header {
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    background: rgba(255, 255, 255, 0.4) !important; 
-    backdrop-filter: blur(12px) !important; 
-    -webkit-backdrop-filter: blur(12px) !important;
-    z-index: 999 !important; 
-    border: none !important;
-    padding: 0 20px !important; 
-  }
-
-  .menu a, .logo a {
-    color: #111 !important;
-    font-weight: 500 !important;
-  }
-
-  .section-title-container {
-    position: relative;
-    margin-bottom: 40px;
-    height: 90px; 
-  }
-
-  .bg-en-title {
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 4.5rem;
-    font-weight: 800;
-    color: rgba(173, 216, 230, 0.45); 
-    line-height: 1;
-    letter-spacing: 4px;
-    user-select: none;
-  }
-
-  .fg-ja-title {
-    position: absolute;
-    bottom: 5px;
-    left: 10px; 
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: #111;
-    line-height: 1;
-    z-index: 2;
-  }
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.container {
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.main {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  max-width: 100% !important;
+}
+.post-header, .post-content, .post-meta {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+header.header {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  background: rgba(255, 255, 255, 0.4) !important; 
+  backdrop-filter: blur(12px) !important; 
+  -webkit-backdrop-filter: blur(12px) !important;
+  z-index: 999 !important; 
+  border: none !important;
+  padding: 0 20px !important; 
+}
+.menu a, .logo a {
+  color: #111 !important;
+  font-weight: 500 !important;
+}
+.section-title-container {
+  position: relative;
+  margin-bottom: 40px;
+  height: 90px;
+}
+.bg-en-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 4.5rem;
+  font-weight: 800;
+  color: rgba(173, 216, 230, 0.45);
+  line-height: 1;
+  letter-spacing: 4px;
+  user-select: none;
+}
+.fg-ja-title {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #111;
+  line-height: 1;
+  z-index: 2;
+}
 </style>
 
 <!-- メインビジュアル -->
@@ -77,8 +70,9 @@ layout: "single"
   <img src="./Nattsu.jpg" alt="Nattsu" style="width: 100%; height: auto; display: block; max-height: 85vh; object-fit: cover;">
 </div>
 
+<!-- コンテナ -->
 <div style="max-width: 900px; margin: 80px auto 0; padding: 0 20px; font-family: 'Helvetica Neue', Arial, sans-serif;">
-  
+
   <!-- WORK (制作実績) -->
   <div id="work" style="margin-bottom: 120px; text-align: left;">
     <div class="section-title-container">
@@ -107,7 +101,6 @@ layout: "single"
 
   <!-- PROFILE -->
   <div id="profile" style="margin-bottom: 120px; text-align: left;">
-
     <div class="section-title-container">
       <div class="bg-en-title">PROFILE</div>
       <div class="fg-ja-title">自己紹介</div>
@@ -124,7 +117,6 @@ layout: "single"
 
   <!-- CONTACT -->
   <div id="contact" style="margin-bottom: 100px; text-align: left;">
-
     <div class="section-title-container">
       <div class="bg-en-title">CONTACT</div>
       <div class="fg-ja-title">お問い合わせ</div>
