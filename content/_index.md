@@ -149,7 +149,7 @@ layout: "single"
 
 <!-- コンテナ -->
 <div style='max-width: 900px; margin: 80px auto 0; padding: 0 20px; font-family: "Helvetica Neue", Arial, sans-serif;'>
-  
+
 <!-- WORK (制作実績) -->
 <div id='work' style='margin-bottom: 120px; text-align: left;'>
 <div class='section-title-container'>
@@ -180,8 +180,17 @@ layout: "single"
 <!-- 作品3 -->
 <a href='#' target='_blank' style='text-decoration: none; color: inherit;'>
 <div class='work-card'>
-<img src='./work03.jpg' alt='作品3' style='width: 100%; aspect-ratio: 4/3; object-fit: cover; margin-bottom: 12px; border-radius: 4px; display: block;'>
+<div class='work-thumbnail'></div>
 <h3 class='work-title'>作品タイトル03</h3>
+<p class='work-desc'>作品の概要や使用技術をここに書きます。</p>
+</div>
+</a>
+
+<!-- 作品4 -->
+<a href='#' target='_blank' style='text-decoration: none; color: inherit;'>
+<div class='work-card'>
+<div class='work-thumbnail'></div>
+<h3 class='work-title'>作品タイトル04</h3>
 <p class='work-desc'>作品の概要や使用技術をここに書きます。</p>
 </div>
 </a>
