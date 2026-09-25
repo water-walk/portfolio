@@ -217,7 +217,7 @@ layout: "single"
 <div id='work' class='marquee-container'>
 <div class='section-title-container'>
 <div class='bg-en-title'>WORK</div>
-<div class='fg-ja-title'>制作実績</div>
+<div class='fg-ja-title'>作品</div>
 </div>
 
 <div class='marquee-track'>
@@ -351,7 +351,7 @@ layout: "single"
   <div id='achievements' style='margin-bottom: 120px; text-align: left;'>
     <div class='section-title-container'>
       <div class='bg-en-title'>ACHIEVEMENTS</div>
-      <div class='fg-ja-title'>活動・実績</div>
+      <div class='fg-ja-title'>活動</div>
     </div>
     
     <p style='font-size: 0.95rem; color: #444; line-height: 1.8;'>
