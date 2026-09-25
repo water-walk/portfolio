@@ -150,7 +150,7 @@ layout: "single"
 <!-- コンテナ -->
 <div style='max-width: 900px; margin: 80px auto 0; padding: 0 20px; font-family: "Helvetica Neue", Arial, sans-serif;'>
   
-  <!-- WORK -->
+<!-- WORK (制作実績) -->
   <div id='work' style='margin-bottom: 120px; text-align: left;'>
     <div class='section-title-container'>
       <div class='bg-en-title'>WORK</div>
@@ -158,26 +158,37 @@ layout: "single"
     </div>
     
     <div class='work-scroll-container'>
-      <div class='work-card'>
-        <div class='work-thumbnail'></div>
-        <h3 class='work-title'>Work 01</h3>
-        <p class='work-desc'>作品の説明がここに入ります。</p>
-      </div>
-      <div class='work-card'>
-        <div class='work-thumbnail'></div>
-        <h3 class='work-title'>Work 02</h3>
-        <p class='work-desc'>作品の説明がここに入ります。</p>
-      </div>
-      <div class='work-card'>
-        <div class='work-thumbnail'></div>
-        <h3 class='work-title'>Work 03</h3>
-        <p class='work-desc'>作品の説明がここに入ります。</p>
-      </div>
-      <div class='work-card'>
-        <div class='work-thumbnail'></div>
-        <h3 class='work-title'>Work 04</h3>
-        <p class='work-desc'>作品の説明がここに入ります。</p>
-      </div>
+      
+      <!-- 作品1 -->
+      <a href='#' target='_blank' style='text-decoration: none; color: inherit;'>
+        <div class='work-card'>
+          <!-- サムネイル画像（画像がない時は下のグレー枠コメントアウトを解除して使用） -->
+          <img src='./work01.jpg' alt='作品1' style='width: 100%; aspect-ratio: 4/3; object-fit: cover; margin-bottom: 12px; border-radius: 4px; display: block;'>
+          <!-- <div class='work-thumbnail'></div> -->
+          
+          <h3 class='work-title'>作品タイトル01</h3>
+          <p class='work-desc'>作品の概要や使用技術（Processing / Arduino など）をここに書きます。</p>
+        </div>
+      </a>
+
+      <!-- 作品2 -->
+      <a href='#' target='_blank' style='text-decoration: none; color: inherit;'>
+        <div class='work-card'>
+          <img src='./work02.jpg' alt='作品2' style='width: 100%; aspect-ratio: 4/3; object-fit: cover; margin-bottom: 12px; border-radius: 4px; display: block;'>
+          <h3 class='work-title'>作品タイトル02</h3>
+          <p class='work-desc'>作品の概要や使用技術をここに書きます。</p>
+        </div>
+      </a>
+
+      <!-- 作品3 -->
+      <a href='#' target='_blank' style='text-decoration: none; color: inherit;'>
+        <div class='work-card'>
+          <img src='./work03.jpg' alt='作品3' style='width: 100%; aspect-ratio: 4/3; object-fit: cover; margin-bottom: 12px; border-radius: 4px; display: block;'>
+          <h3 class='work-title'>作品タイトル03</h3>
+          <p class='work-desc'>作品の概要や使用技術をここに書きます。</p>
+        </div>
+      </a>
+
     </div>
   </div>
 
