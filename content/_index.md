@@ -182,25 +182,24 @@ layout: "single"
   </div>
 
 <!-- PROFILE -->
-  <div id='profile' style='margin-bottom: 120px; text-align: left;'>
-    <div class='section-title-container'>
-      <div class='bg-en-title'>PROFILE</div>
-      <div class='fg-ja-title'>自己紹介</div>
-    </div>
-    
-    <div style='display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;'>
-      <!-- アイコン画像（丸型にする場合は border-radius: 50% に変更） -->
-      <img src='./profile.jpg' alt='蓮田 瑞歩' style='width: 150px; height: 150px; object-fit: cover; border-radius: 50%; flex-shrink: 0;'>
-      
-      <div style='flex: 1; min-width: 280px; line-height: 1.8;'>
-        <p style='font-size: 1.1rem; font-weight: bold; margin-bottom: 10px; color: #111;'>蓮田 瑞歩 / Mizuho Hasuda</p>
-        <p style='color: #444; font-size: 0.95rem;'>
-          ここに自己紹介のテキストが入ります。<br>
-          大学・専攻、興味のある分野（Web開発、UI/UXデザインなど）、普段扱っている言語やツールなどを記載するのがおすすめです。
-        </p>
-      </div>
-    </div>
-  </div>
+<div id='profile' style='margin-bottom: 120px; text-align: left;'>
+<div class='section-title-container'>
+<div class='bg-en-title'>PROFILE</div>
+<div class='fg-ja-title'>自己紹介</div>
+</div>
+
+<div style='display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;'>
+<img src='./profile.jpg' alt='蓮田 瑞穂' style='width: 150px; height: 150px; object-fit: cover; border-radius: 50%; flex-shrink: 0;'>
+
+<div style='flex: 1; min-width: 280px; line-height: 1.8;'>
+<p style='font-size: 1.1rem; font-weight: bold; margin-bottom: 10px; color: #111;'>蓮田 瑞穂 / Mizuho Hasuda</p>
+<p style='color: #444; font-size: 0.95rem;'>
+ここに自己紹介のテキストが入ります。<br>
+大学・専攻、興味のある分野（Web開発、UI/UXデザインなど）、普段扱っている言語やツールなどを記載するのがおすすめです。
+</p>
+</div>
+</div>
+</div>
 
   <!-- ACHIEVEMENTS（新規追加） -->
   <div id='achievements' style='margin-bottom: 120px; text-align: left;'>
