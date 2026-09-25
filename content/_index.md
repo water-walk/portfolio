@@ -268,6 +268,48 @@ layout: "single"
 
 
 <!-- ===== 2セット目（ループ用複製） ===== -->
+<a href='./works/work01/' class='work-simple-card'>
+<div class='work-img-wrapper'>
+<img src='./work01.jpg' alt='作品1' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
+</div>
+<h3 class='work-simple-title'>もわもわ</h3>
+</a>
+
+<a href='./works/work02/' class='work-simple-card'>
+<div class='work-img-wrapper'>
+<img src='./work02.jpg' alt='作品2' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
+</div>
+<h3 class='work-simple-title'>感情共有デバイス</h3>
+</a>
+
+<a href='./works/work03/' class='work-simple-card'>
+<div class='work-img-wrapper'>
+<img src='./work03.jpg' alt='作品3' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
+</div>
+<h3 class='work-simple-title'>奇跡の軌跡</h3>
+</a>
+
+<a href='./works/work04/' class='work-simple-card'>
+<div class='work-img-wrapper'>
+<img src='./work04.jpg' alt='作品4' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
+</div>
+<h3 class='work-simple-title'>視覚的モールス信号</h3>
+</a>
+
+<a href='./works/work05/' class='work-simple-card'>
+<div class='work-img-wrapper'>
+<img src='./work05.jpg' alt='作品5' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
+</div>
+</a>
+
+
+<a href='./works/work06/' class='work-simple-card'>
+<div class='work-img-wrapper'>
+<img src='./work06.jpg' alt='作品6' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
+</div>
+<h3 class='work-simple-title'>りびんぐすくえあ</h3>
+</a>
+
 
 </div>
 </div>
