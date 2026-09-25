@@ -24,7 +24,6 @@ layout: "single"
     padding: 0 !important;
   }
 
-  /* ★ヘッダーの高さを低く（スリムに）調整しました */
   header.header {
     position: absolute !important;
     top: 0 !important;
@@ -37,27 +36,24 @@ layout: "single"
     border: none !important;
     padding: 0 20px !important; 
   }
-  /* ヘッダー内部のナビゲーション（高さを制限して細くします） */
   header.header nav.nav {
-    min-height: 48px !important; /* 初期値の60px前後から48pxに縮小 */
+    min-height: 48px !important;
     height: 48px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: space-between !important;
   }
-  /* ロゴの上下余白を無くして高さを抑える */
   .logo a {
     line-height: 48px !important;
     margin: 0 !important;
     padding: 0 !important;
   }
-  /* メニュー全体の高さをヘッダーに合わせる */
   ul#menu {
     align-items: center !important;
     margin: 0 !important;
   }
   ul#menu li a {
-    padding: 6px 12px !important; /* メニュー項目の上下の隙間を小さく */
+    padding: 6px 12px !important;
   }
 
   .menu a, .logo a {
@@ -65,7 +61,6 @@ layout: "single"
     font-weight: 500 !important;
   }
 
-  /* 重なりタイトル */
   .section-title-container {
     position: relative;
     margin-bottom: 40px;
@@ -95,7 +90,6 @@ layout: "single"
     z-index: 2;
   }
 
-  /* --- 横スクロール（流れるWORK）の設定 --- */
   .work-scroll-container {
     display: flex;
     overflow-x: auto;
@@ -153,10 +147,10 @@ layout: "single"
   <img src='./Nattsu.jpg' alt='Nattsu' style='width: 100%; height: auto; display: block; max-height: 85vh; object-fit: cover;'>
 </div>
 
-<!-- コンテナ（シングルクォーテーション固定で全角バグを防止） -->
+<!-- コンテナ -->
 <div style='max-width: 900px; margin: 80px auto 0; padding: 0 20px; font-family: "Helvetica Neue", Arial, sans-serif;'>
   
-  <!-- WORK (制作実績 - 横スクロール版) -->
+  <!-- WORK -->
   <div id='work' style='margin-bottom: 120px; text-align: left;'>
     <div class='section-title-container'>
       <div class='bg-en-title'>WORK</div>
@@ -197,10 +191,22 @@ layout: "single"
     <div style='display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;'>
       <div style='width: 150px; height: 150px; background: #eee; border-radius: 4px; flex-shrink: 0;'></div>
       <div style='flex: 1; min-width: 280px; line-height: 1.8;'>
-        <p style='font-size: 1.1rem; font-weight: bold; margin-bottom: 10px; color: #111;'>蓮田 瑞歩 / Mizuho Hasuda</p>
+        <p style='font-size: 1.1rem; font-weight: bold; margin-bottom: 10px; color: #111;'>蓮田 瑞穂 / Mizuho Hasuda</p>
         <p style='color: #444; font-size: 0.95rem;'>ここにプロフィールテキストを入力します。</p>
       </div>
     </div>
+  </div>
+
+  <!-- ACHIEVEMENTS（新規追加） -->
+  <div id='achievements' style='margin-bottom: 120px; text-align: left;'>
+    <div class='section-title-container'>
+      <div class='bg-en-title'>ACHIEVEMENTS</div>
+      <div class='fg-ja-title'>活動・実績</div>
+    </div>
+    
+    <p style='font-size: 0.95rem; color: #444; line-height: 1.8;'>
+      ここに受賞歴や資格、その他実績などを記載します。
+    </p>
   </div>
 
   <!-- CONTACT -->

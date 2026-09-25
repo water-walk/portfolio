@@ -26,8 +26,8 @@ languages:
         - name: "PROFILE"
           url: "#profile"
           weight: 20
-        - name: "PUBLICATION"
-          url: "#publication"
+        - name: "ACHIEVEMENTS"
+          url: "#achievements"
           weight: 30
         - name: "CONTACT"
           url: "#contact"
