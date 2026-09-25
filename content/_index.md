@@ -151,16 +151,52 @@ layout: "single"
 <div style='max-width: 900px; margin: 80px auto 0; padding: 0 20px; font-family: "Helvetica Neue", Arial, sans-serif;'>
 
 <!-- WORK (制作実績) -->
-<div id='work' style='margin-bottom: 120px; text-align: left;'>
+<style>
+/* 無限スクロールの枠組み */
+.marquee-container {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 120px;
+  text-align: left;
+}
+
+/* 横並びにして動かすトラック */
+.marquee-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: marquee-scroll 25s linear infinite;
+}
+
+/* マウスを乗せた時に一時停止させる */
+.marquee-container:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* 左へスライドするアニメーション定義 */
+@keyframes marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* 作品カードの共通スタイル */
+.work-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+}
+</style>
+
+<div id='work' class='marquee-container'>
 <div class='section-title-container'>
 <div class='bg-en-title'>WORK</div>
 <div class='fg-ja-title'>制作実績</div>
 </div>
 
-<div class='work-scroll-container'>
+<div class='marquee-track'>
 
-<!-- 作品1 -->
-<a href='#' target='_blank' style='text-decoration: none; color: inherit; display: flex;'>
+<!-- ===== 1セット目 ===== -->
+<a href='#' target='_blank' class='work-card-link'>
 <div class='work-card' style='display: flex; flex-direction: column;'>
 <div style='width: 100%; aspect-ratio: 4/3; background: #eee; margin-bottom: 12px; border-radius: 4px; overflow: hidden; flex-shrink: 0;'>
 <img src='./work01.jpg' alt='作品1' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
@@ -170,8 +206,7 @@ layout: "single"
 </div>
 </a>
 
-<!-- 作品2 -->
-<a href='#' target='_blank' style='text-decoration: none; color: inherit; display: flex;'>
+<a href='#' target='_blank' class='work-card-link'>
 <div class='work-card' style='display: flex; flex-direction: column;'>
 <div style='width: 100%; aspect-ratio: 4/3; background: #eee; margin-bottom: 12px; border-radius: 4px; overflow: hidden; flex-shrink: 0;'>
 <img src='./work02.jpg' alt='作品2' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
@@ -181,8 +216,7 @@ layout: "single"
 </div>
 </a>
 
-<!-- 作品3 -->
-<a href='#' target='_blank' style='text-decoration: none; color: inherit; display: flex;'>
+<a href='#' target='_blank' class='work-card-link'>
 <div class='work-card' style='display: flex; flex-direction: column;'>
 <div style='width: 100%; aspect-ratio: 4/3; background: #eee; margin-bottom: 12px; border-radius: 4px; overflow: hidden; flex-shrink: 0;'>
 <img src='./work03.jpg' alt='作品3' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
@@ -192,8 +226,49 @@ layout: "single"
 </div>
 </a>
 
-<!-- 作品4 -->
-<a href='#' target='_blank' style='text-decoration: none; color: inherit; display: flex;'>
+<a href='#' target='_blank' class='work-card-link'>
+<div class='work-card' style='display: flex; flex-direction: column;'>
+<div style='width: 100%; aspect-ratio: 4/3; background: #eee; margin-bottom: 12px; border-radius: 4px; overflow: hidden; flex-shrink: 0;'>
+<img src='./work04.jpg' alt='作品4' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
+</div>
+<h3 class='work-title'>作品タイトル04</h3>
+<p class='work-desc'>作品の概要や使用技術をここに書きます。</p>
+</div>
+</a>
+
+
+<!-- ===== 2セット目（ループ用複製） ===== -->
+<a href='#' target='_blank' class='work-card-link'>
+<div class='work-card' style='display: flex; flex-direction: column;'>
+<div style='width: 100%; aspect-ratio: 4/3; background: #eee; margin-bottom: 12px; border-radius: 4px; overflow: hidden; flex-shrink: 0;'>
+<img src='./work01.jpg' alt='作品1' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
+</div>
+<h3 class='work-title'>作品タイトル01</h3>
+<p class='work-desc'>作品の概要や使用技術（Processing / Arduino など）をここに書きます。</p>
+</div>
+</a>
+
+<a href='#' target='_blank' class='work-card-link'>
+<div class='work-card' style='display: flex; flex-direction: column;'>
+<div style='width: 100%; aspect-ratio: 4/3; background: #eee; margin-bottom: 12px; border-radius: 4px; overflow: hidden; flex-shrink: 0;'>
+<img src='./work02.jpg' alt='作品2' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
+</div>
+<h3 class='work-title'>作品タイトル02</h3>
+<p class='work-desc'>作品の概要や使用技術をここに書きます。</p>
+</div>
+</a>
+
+<a href='#' target='_blank' class='work-card-link'>
+<div class='work-card' style='display: flex; flex-direction: column;'>
+<div style='width: 100%; aspect-ratio: 4/3; background: #eee; margin-bottom: 12px; border-radius: 4px; overflow: hidden; flex-shrink: 0;'>
+<img src='./work03.jpg' alt='作品3' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
+</div>
+<h3 class='work-title'>作品タイトル03</h3>
+<p class='work-desc'>作品の概要や使用技術をここに書きます。</p>
+</div>
+</a>
+
+<a href='#' target='_blank' class='work-card-link'>
 <div class='work-card' style='display: flex; flex-direction: column;'>
 <div style='width: 100%; aspect-ratio: 4/3; background: #eee; margin-bottom: 12px; border-radius: 4px; overflow: hidden; flex-shrink: 0;'>
 <img src='./work04.jpg' alt='作品4' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
