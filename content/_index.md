@@ -189,19 +189,31 @@ layout: "single"
 </div>
 
 <div style='display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;'>
-<img src='./profile.jpg' alt='蓮田 瑞穂' style='width: 150px; height: 150px; object-fit: cover; border-radius: 50%; flex-shrink: 0;'>
+<img src='./profile.jpg' alt='蓮田 瑞歩' style='width: 150px; height: 150px; object-fit: cover; border-radius: 50%; flex-shrink: 0;'>
 
-<div style='flex: 1; min-width: 280px; line-height: 1.8;'>
-<p style='font-size: 1.1rem; font-weight: bold; margin-bottom: 10px; color: #111;'>蓮田 瑞穂 / Mizuho Hasuda</p>
-<p style='color: #444; font-size: 0.95rem;'>
-ここに自己紹介のテキストが入ります。<br>
-大学・専攻、興味のある分野（Web開発、UI/UXデザインなど）、普段扱っている言語やツールなどを記載するのがおすすめです。
-</p>
+<div style='flex: 1; min-width: 280px;'>
+<p style='font-size: 1.2rem; font-weight: bold; margin-bottom: 20px; color: #111;'>蓮田 瑞歩 / Mizuho Hasuda</p>
+
+<dl style='display: grid; grid-template-columns: 100px 1fr; gap: 12px 16px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0;'>
+  
+  <dt style='font-weight: bold; color: #111;'>所属</dt>
+  <dd style='margin: 0;'>明星大学 情報学部 情報学科 4年生</dd>
+
+  <dt style='font-weight: bold; color: #111;'>研究室</dt>
+  <dd style='margin: 0;'>インタラクティブメディア 研究室</dd>
+
+  <dt style='font-weight: bold; color: #111;'>連絡先</dt>
+  <dd style='margin: 0;'><a href='mizuho.nattsu.0809@gmail.com' style='color: #333; text-decoration: underline;'>mizuho.nattsu.0809@gmail.com</a></dd>
+
+  <dt style='font-weight: bold; color: #111;'>趣味</dt>
+  <dd style='margin: 0;'>カメラ、馬、車</dd>
+
+</dl>
 </div>
 </div>
 </div>
 
-  <!-- ACHIEVEMENTS（新規追加） -->
+  <!-- ACHIEVEMENTS -->
   <div id='achievements' style='margin-bottom: 120px; text-align: left;'>
     <div class='section-title-container'>
       <div class='bg-en-title'>ACHIEVEMENTS</div>
