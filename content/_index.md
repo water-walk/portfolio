@@ -355,18 +355,18 @@ layout: "single"
 </div>
 
 <!-- Subtitle: 発表歴 -->
-<h3 style='font-size: 1.1rem; font-weight: bold; margin: 30px 0 16px; padding-bottom: 6px; border-bottom: 2px solid #222; color: #111;'>発表歴</h3>
+<h3 style='font-size: 1.1rem; font-weight: bold; margin: 30px 0 16px; padding-bottom: 6px; border-bottom: 2px solid #222; color: #111; width: 100%;'>発表歴</h3>
 
-<dl style='display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0 0 40px 0;'>
+<dl style='display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0 0 40px 0; width: 100%; box-sizing: border-box;'>
 
-<dt style='font-weight: bold; color: #111; white-space: nowrap;'>2025.03</dt>
-<dd style='margin: 0;'>
-2026 Mizuho Hasuda, Kota Kikuchi, Toshitaka Amaoka<br>
+<dt style='font-weight: bold; color: #111; white-space: nowrap;'>2026.06</dt>
+<dd style='margin: 0; width: 100%;'>
+Mizuho Hasuda, Kota Kikuchi, Toshitaka Amaoka<br>
 RibinguSukuea: Creating Lifelikeness through Perceptual Discrepancy and Interaction History<br>
 NICOGRAPH International 2026, poster
 </dd>
 
-<dt style='font-weight: bold; color: #111; white-space: nowrap;'>2025.03</dt>
+<dt style='font-weight: bold; color: #111; white-space: nowrap;'>2025.11</dt>
 <dd style='margin: 0;'>
 2025 大根田花柊, 蓮田瑞歩, 平松守瑠, 菊池康太<br>
 Cam to Turn: オルゴールで奏でる人流データ<br>
@@ -377,17 +377,17 @@ Cam to Turn: オルゴールで奏でる人流データ<br>
 
 
 <!-- Subtitle: 展示歴 -->
-<h3 style='font-size: 1.1rem; font-weight: bold; margin: 30px 0 16px; padding-bottom: 6px; border-bottom: 2px solid #222; color: #111;'>展示歴</h3>
+<h3 style='font-size: 1.1rem; font-weight: bold; margin: 30px 0 16px; padding-bottom: 6px; border-bottom: 2px solid #222; color: #111; width: 100%;'>その他参加歴</h3>
 
-<dl style='display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0;'>
+<dl style='display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0; width: 100%; box-sizing: border-box;'>
 
-<dt style='font-weight: bold; color: #111; white-space: nowrap;'>2024.09</dt>
-<dd style='margin: 0;'>
-かわいい感性デザイン賞 応募作品展示（優秀賞）
+<dt style='font-weight: bold; color: #111; white-space: nowrap;'>2026.8~9</dt>
+<dd style='margin: 0; width: 100%;'>
+<a href='https://yoso.sp.netkeiba.com/masters/ai2026_student/' target='_blank' style='color: #0066cc; text-decoration: underline; font-weight: bold;'>機械学習 全国学生大会 2026 AI競馬予想マスターズ</a><br>
+大会総合ランキング 16位(的中率：39.18%)<br>
 </dd>
-
 </dl>
-</div>
+
 
   <!-- CONTACT -->
   <div id='contact' style='margin-bottom: 100px; text-align: left;'>
