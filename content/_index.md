@@ -255,6 +255,7 @@ layout: "single"
 <div class='work-img-wrapper'>
 <img src='./work05.jpg' alt='作品5' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
 </div>
+<h3 class='work-simple-title'>Echoes</h3>
 </a>
 
 
