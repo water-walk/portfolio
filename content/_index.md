@@ -347,17 +347,54 @@ layout: "single"
 </div>
 </div>
 
-  <!-- ACHIEVEMENTS -->
-  <div id='achievements' style='margin-bottom: 120px; text-align: left;'>
-    <div class='section-title-container'>
-      <div class='bg-en-title'>ACHIEVEMENTS</div>
-      <div class='fg-ja-title'>活動</div>
-    </div>
-    
-    <p style='font-size: 0.95rem; color: #444; line-height: 1.8;'>
-      ここに受賞歴や資格、その他実績などを記載します。
-    </p>
-  </div>
+<!-- ACHIEVEMENTS -->
+<div id='achievements' style='margin-bottom: 120px; text-align: left;'>
+<div class='section-title-container'>
+<div class='bg-en-title'>ACHIEVEMENTS</div>
+<div class='fg-ja-title'>活動/div>
+</div>
+
+<!-- Subtitle: 発表歴 -->
+<h3 style='font-size: 1.1rem; font-weight: bold; margin: 30px 0 16px; padding-bottom: 6px; border-bottom: 2px solid #222; color: #111;'>発表歴</h3>
+
+<dl style='display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0 0 40px 0;'>
+
+<dt style='font-weight: bold; color: #111; white-space: nowrap;'>2025.11</dt>
+<dd style='margin: 0;'>
+大根田花柊，蓮田瑞歩，平松守瑠，菊池康太
+Cam to Turn: オルゴールで奏でる人流データ
+</dd>
+
+<dt style='font-weight: bold; color: #111; white-space: nowrap;'>2025.03</dt>
+<dd style='margin: 0;'>
+NICOGRAPH2025（NICOGRAPH賞）
+</dd>
+
+<dt style='font-weight: bold; color: #111; white-space: nowrap;'>2024.11</dt>
+<dd style='margin: 0;'>
+NICOGRAPH2024（ポスター賞）
+</dd>
+
+</dl>
+
+
+<!-- Subtitle: 展示歴 -->
+<h3 style='font-size: 1.1rem; font-weight: bold; margin: 30px 0 16px; padding-bottom: 6px; border-bottom: 2px solid #222; color: #111;'>展示歴</h3>
+
+<dl style='display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0;'>
+
+<dt style='font-weight: bold; color: #111; white-space: nowrap;'>2024.12</dt>
+<dd style='margin: 0;'>
+明星大学 情報学部卒研展2024（教職員賞）
+</dd>
+
+<dt style='font-weight: bold; color: #111; white-space: nowrap;'>2024.09</dt>
+<dd style='margin: 0;'>
+かわいい感性デザイン賞 応募作品展示（優秀賞）
+</dd>
+
+</dl>
+</div>
 
   <!-- CONTACT -->
   <div id='contact' style='margin-bottom: 100px; text-align: left;'>
