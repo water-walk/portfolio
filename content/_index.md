@@ -389,15 +389,18 @@ Cam to Turn: オルゴールで奏でる人流データ<br>
 </dl>
 
 
-  <!-- CONTACT -->
-  <div id='contact' style='margin-bottom: 100px; text-align: left;'>
-    <div class='section-title-container'>
-      <div class='bg-en-title'>CONTACT</div>
-      <div class='fg-ja-title'>お問い合わせ</div>
-    </div>
-    
-    <p style='font-size: 0.95rem; color: #444;'>
-      Email: <a style='color: #000; text-decoration: underline;' href='mailto:mizuho.nattsu.0809@gmail.com'>mizuho.nattsu.0809@gmail.com</a>
-    </p>
-  </div>
+<!-- CONTACT (お問い合わせ) -->
+<div id='contact' style='margin-bottom: 120px; text-align: left;'>
+<div class='section-title-container'>
+<div class='bg-en-title'>CONTACT</div>
+<div class='fg-ja-title'>お問い合わせ</div>
+</div>
+
+<p style='font-size: 0.95rem; color: #444; line-height: 1.8; margin-bottom: 16px;'>
+お問い合わせやご連絡は、以下のメールアドレスまでお願いいたします。
+</p>
+
+<div style='font-size: 1.05rem; font-weight: bold;'>
+<a href='mizuho.nattsu.0809@gmail.com' style='color: #0066cc; text-decoration: underline;'>your-email@example.com</a>
+</div>
 </div>
