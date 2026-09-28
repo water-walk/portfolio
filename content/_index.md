@@ -90,55 +90,65 @@ layout: "single"
     z-index: 2;
   }
 
-  .work-scroll-container {
+  /* 無限スクロールの枠組み */
+  .marquee-container {
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 120px;
+    text-align: left;
+  }
+
+  /* 横並びにして動かすトラック */
+  .marquee-track {
     display: flex;
-    overflow-x: auto;
-    white-space: nowrap;
-    gap: 24px;
-    padding: 10px 0 30px 0;
-    scrollbar-width: thin;
-    scrollbar-color: #ccc transparent;
-    -webkit-overflow-scrolling: touch;
+    gap: 20px;
+    width: max-content;
+    animation: marquee-scroll 25s linear infinite;
   }
-  .work-scroll-container::-webkit-scrollbar {
-    height: 6px;
+
+  /* マウスホバーで一時停止 */
+  .marquee-container:hover .marquee-track {
+    animation-play-state: paused;
   }
-  .work-scroll-container::-webkit-scrollbar-track {
-    background: transparent;
+
+  /* 流れるアニメーション */
+  @keyframes marquee-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
   }
-  .work-scroll-container::-webkit-scrollbar-thumb {
-    background-color: #ddd;
-    border-radius: 10px;
+
+  /* コンパクトな作品カード */
+  .work-simple-card {
+    width: 220px;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, opacity 0.2s ease;
   }
-  .work-card {
-    flex: 0 0 280px;
-    border: 1px solid #eee;
-    padding: 18px;
-    border-radius: 8px;
-    background: #fff;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
-    transition: transform 0.3s ease;
-  }
-  .work-card:hover {
+
+  .work-simple-card:hover {
     transform: translateY(-4px);
+    opacity: 0.85;
   }
-  .work-thumbnail {
+
+  .work-img-wrapper {
+    width: 100%;
     aspect-ratio: 4/3;
-    background: #f0f0f0;
-    margin-bottom: 12px;
-    border-radius: 4px;
+    background: #eee;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    overflow: hidden;
   }
-  .work-title {
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin: 0 0 6px 0;
-    color: #111;
-  }
-  .work-desc {
-    font-size: 0.85rem;
-    color: #666;
+
+  .work-simple-title {
+    font-size: 0.95rem;
+    font-weight: bold;
     margin: 0;
-    white-space: normal;
+    color: #222;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 </style>
 
@@ -150,261 +160,182 @@ layout: "single"
 <!-- コンテナ -->
 <div style='max-width: 900px; margin: 80px auto 0; padding: 0 20px; font-family: "Helvetica Neue", Arial, sans-serif;'>
 
-<!-- WORK (制作実績) -->
-<style>
-/* 無限スクロールの枠組み */
-.marquee-container {
-  overflow: hidden;
-  width: 100%;
-  margin-bottom: 120px;
-  text-align: left;
-}
+  <!-- WORK (制作実績) -->
+  <div id='work' class='marquee-container'>
+    <div class='section-title-container'>
+      <div class='bg-en-title'>WORK</div>
+      <div class='fg-ja-title'>作品</div>
+    </div>
 
-/* 横並びにして動かすトラック */
-.marquee-track {
-  display: flex;
-  gap: 20px;
-  width: max-content;
-  animation: marquee-scroll 25s linear infinite;
-}
+    <div class='marquee-track'>
+      <!-- ===== 1セット目 ===== -->
+      <a href='./works/work01/' class='work-simple-card'>
+        <div class='work-img-wrapper'>
+          <img src='./work01.jpg' alt='作品1' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
+        </div>
+        <h3 class='work-simple-title'>もわもわ</h3>
+      </a>
 
-/* マウスホバーで一時停止 */
-.marquee-container:hover .marquee-track {
-  animation-play-state: paused;
-}
+      <a href='./works/work02/' class='work-simple-card'>
+        <div class='work-img-wrapper'>
+          <img src='./work02.jpg' alt='作品2' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
+        </div>
+        <h3 class='work-simple-title'>感情共有デバイス</h3>
+      </a>
 
-/* 流れるアニメーション */
-@keyframes marquee-scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
+      <a href='./works/work03/' class='work-simple-card'>
+        <div class='work-img-wrapper'>
+          <img src='./work03.jpg' alt='作品3' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
+        </div>
+        <h3 class='work-simple-title'>奇跡の軌跡</h3>
+      </a>
 
-/* コンパクトな作品カード */
-.work-simple-card {
-  width: 220px;
-  text-decoration: none;
-  color: inherit;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.2s ease, opacity 0.2s ease;
-}
+      <a href='./works/work04/' class='work-simple-card'>
+        <div class='work-img-wrapper'>
+          <img src='./work04.jpg' alt='作品4' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
+        </div>
+        <h3 class='work-simple-title'>視覚的モールス信号</h3>
+      </a>
 
-.work-simple-card:hover {
-  transform: translateY(-4px);
-  opacity: 0.85;
-}
+      <a href='./works/work05/' class='work-simple-card'>
+        <div class='work-img-wrapper'>
+          <img src='./work05.jpg' alt='作品5' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
+        </div>
+        <h3 class='work-simple-title'>Echoes</h3>
+      </a>
 
-.work-img-wrapper {
-  width: 100%;
-  aspect-ratio: 4/3;
-  background: #eee;
-  margin-bottom: 8px;
-  border-radius: 6px;
-  overflow: hidden;
-}
+      <a href='./works/work06/' class='work-simple-card'>
+        <div class='work-img-wrapper'>
+          <img src='./work06.jpg' alt='作品6' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
+        </div>
+        <h3 class='work-simple-title'>りびんぐすくえあ</h3>
+      </a>
 
-.work-simple-title {
-  font-size: 0.95rem;
-  font-weight: bold;
-  margin: 0;
-  color: #222;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-</style>
+      <!-- ===== 2セット目（ループ用複製） ===== -->
+      <a href='./works/work01/' class='work-simple-card'>
+        <div class='work-img-wrapper'>
+          <img src='./work01.jpg' alt='作品1' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
+        </div>
+        <h3 class='work-simple-title'>もわもわ</h3>
+      </a>
 
-<div id='work' style='margin-bottom: 120px; text-align: left;'>
-<div class='section-title-container'>
-<div class='bg-en-title'>WORK</div>
-<div class='fg-ja-title'>作品</div>
-</div>
+      <a href='./works/work02/' class='work-simple-card'>
+        <div class='work-img-wrapper'>
+          <img src='./work02.jpg' alt='作品2' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
+        </div>
+        <h3 class='work-simple-title'>感情共有デバイス</h3>
+      </a>
 
-<div class='marquee-track'>
+      <a href='./works/work03/' class='work-simple-card'>
+        <div class='work-img-wrapper'>
+          <img src='./work03.jpg' alt='作品3' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
+        </div>
+        <h3 class='work-simple-title'>奇跡の軌跡</h3>
+      </a>
 
-<!-- ===== 1セット目 ===== -->
-<a href='./works/work01/' class='work-simple-card'>
-<div class='work-img-wrapper'>
-<img src='./work01.jpg' alt='作品1' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
-</div>
-<h3 class='work-simple-title'>もわもわ</h3>
-</a>
+      <a href='./works/work04/' class='work-simple-card'>
+        <div class='work-img-wrapper'>
+          <img src='./work04.jpg' alt='作品4' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
+        </div>
+        <h3 class='work-simple-title'>視覚的モールス信号</h3>
+      </a>
 
-<a href='./works/work02/' class='work-simple-card'>
-<div class='work-img-wrapper'>
-<img src='./work02.jpg' alt='作品2' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
-</div>
-<h3 class='work-simple-title'>感情共有デバイス</h3>
-</a>
+      <a href='./works/work05/' class='work-simple-card'>
+        <div class='work-img-wrapper'>
+          <img src='./work05.jpg' alt='作品5' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
+        </div>
+        <h3 class='work-simple-title'>Echoes</h3>
+      </a>
 
-<a href='./works/work03/' class='work-simple-card'>
-<div class='work-img-wrapper'>
-<img src='./work03.jpg' alt='作品3' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
-</div>
-<h3 class='work-simple-title'>奇跡の軌跡</h3>
-</a>
+      <a href='./works/work06/' class='work-simple-card'>
+        <div class='work-img-wrapper'>
+          <img src='./work06.jpg' alt='作品6' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
+        </div>
+        <h3 class='work-simple-title'>りびんぐすくえあ</h3>
+      </a>
+    </div>
+  </div>
 
-<a href='./works/work04/' class='work-simple-card'>
-<div class='work-img-wrapper'>
-<img src='./work04.jpg' alt='作品4' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
-</div>
-<h3 class='work-simple-title'>視覚的モールス信号</h3>
-</a>
+  <!-- PROFILE -->
+  <div id='profile' style='margin-bottom: 120px; text-align: left;'>
+    <div class='section-title-container'>
+      <div class='bg-en-title'>PROFILE</div>
+      <div class='fg-ja-title'>自己紹介</div>
+    </div>
 
-<a href='./works/work05/' class='work-simple-card'>
-<div class='work-img-wrapper'>
-<img src='./work05.jpg' alt='作品5' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
-</div>
-<h3 class='work-simple-title'>Echoes</h3>
-</a>
+    <div style='display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;'>
+      <img src='./profile.jpg' alt='蓮田 瑞歩' style='width: 150px; height: 150px; object-fit: cover; border-radius: 50%; flex-shrink: 0;'>
 
+      <div style='flex: 1; min-width: 280px;'>
+        <p style='font-size: 1.2rem; font-weight: bold; margin-bottom: 20px; color: #111;'>蓮田 瑞歩 / Mizuho Hasuda</p>
 
-<a href='./works/work06/' class='work-simple-card'>
-<div class='work-img-wrapper'>
-<img src='./work06.jpg' alt='作品6' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
-</div>
-<h3 class='work-simple-title'>りびんぐすくえあ</h3>
-</a>
+        <dl style='display: grid; grid-template-columns: 120px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0;'>
+          <dt style='font-weight: bold; color: #111; white-space: nowrap;'>所属</dt>
+          <dd style='margin: 0;'>明星大学 情報学部 情報学科 4年生</dd>
 
+          <dt style='font-weight: bold; color: #111; white-space: nowrap;'>研究室</dt>
+          <dd style='margin: 0;'>インタラクティブメディア 研究室</dd>
 
+          <dt style='font-weight: bold; color: #111; white-space: nowrap;'>連絡先</dt>
+          <dd style='margin: 0;'><a href='mailto:mizuho.nattsu.0809@gmail.com' style='color: #333; text-decoration: underline;'>mizuho.nattsu.0809@gmail.com</a></dd>
 
-<!-- ===== 2セット目（ループ用複製） ===== -->
-<a href='./works/work01/' class='work-simple-card'>
-<div class='work-img-wrapper'>
-<img src='./work01.jpg' alt='作品1' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
-</div>
-<h3 class='work-simple-title'>もわもわ</h3>
-</a>
+          <dt style='font-weight: bold; color: #111; white-space: nowrap;'>趣味</dt>
+          <dd style='margin: 0;'>カメラ、馬、車</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
 
-<a href='./works/work02/' class='work-simple-card'>
-<div class='work-img-wrapper'>
-<img src='./work02.jpg' alt='作品2' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
-</div>
-<h3 class='work-simple-title'>感情共有デバイス</h3>
-</a>
+  <!-- ACHIEVEMENTS -->
+  <div id='achievements' style='margin-bottom: 120px; text-align: left;'>
+    <div class='section-title-container'>
+      <div class='bg-en-title'>ACHIEVEMENTS</div>
+      <div class='fg-ja-title'>活動</div>
+    </div>
 
-<a href='./works/work03/' class='work-simple-card'>
-<div class='work-img-wrapper'>
-<img src='./work03.jpg' alt='作品3' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
-</div>
-<h3 class='work-simple-title'>奇跡の軌跡</h3>
-</a>
+    <h3 style='font-size: 1.1rem; font-weight: bold; margin: 30px 0 16px; padding-bottom: 6px; border-bottom: 2px solid #222; color: #111; width: 100%;'>発表歴</h3>
 
-<a href='./works/work04/' class='work-simple-card'>
-<div class='work-img-wrapper'>
-<img src='./work04.jpg' alt='作品4' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
-</div>
-<h3 class='work-simple-title'>視覚的モールス信号</h3>
-</a>
+    <dl style='display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0 0 40px 0; width: 100%; box-sizing: border-box;'>
+      <dt style='font-weight: bold; color: #111; white-space: nowrap;'>2026.06</dt>
+      <dd style='margin: 0; width: 100%;'>
+        Mizuho Hasuda, Kota Kikuchi, Toshitaka Amaoka<br>
+        RibinguSukuea: Creating Lifelikeness through Perceptual Discrepancy and Interaction History<br>
+        NICOGRAPH International 2026, poster
+      </dd>
 
-<a href='./works/work05/' class='work-simple-card'>
-<div class='work-img-wrapper'>
-<img src='./work05.jpg' alt='作品5' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
-</div>
-</a>
+      <dt style='font-weight: bold; color: #111; white-space: nowrap;'>2025.11</dt>
+      <dd style='margin: 0;'>
+        2025 大根田花柊, 蓮田瑞歩, 平松守瑠, 菊池康太<br>
+        Cam to Turn: オルゴールで奏でる人流データ<br>
+        芸術科学会 NICOGRAPH2025, ポスター発表
+      </dd>
+    </dl>
 
+    <h3 style='font-size: 1.1rem; font-weight: bold; margin: 30px 0 16px; padding-bottom: 6px; border-bottom: 2px solid #222; color: #111; width: 100%;'>その他参加歴</h3>
 
-<a href='./works/work06/' class='work-simple-card'>
-<div class='work-img-wrapper'>
-<img src='./work06.jpg' alt='作品6' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
-</div>
-<h3 class='work-simple-title'>りびんぐすくえあ</h3>
-</a>
+    <dl style='display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0; width: 100%; box-sizing: border-box;'>
+      <dt style='font-weight: bold; color: #111; white-space: nowrap;'>2026.08-09</dt>
+      <dd style='margin: 0; width: 100%;'>
+        <a href='https://yoso.sp.netkeiba.com/masters/ai2026_student/' target='_blank' style='color: #0066cc; text-decoration: underline; font-weight: bold;'>機械学習 全国学生大会 2026 AI競馬予想マスターズ</a><br>
+        大会総合ランキング 16位(的中率：39.18%)<br>
+      </dd>
+    </dl>
+  </div>
 
-</div>
-</div>
-</div>
+  <!-- CONTACT (お問い合わせ) -->
+  <div id='contact' style='margin-bottom: 120px; text-align: left;'>
+    <div class='section-title-container'>
+      <div class='bg-en-title'>CONTACT</div>
+      <div class='fg-ja-title'>お問い合わせ</div>
+    </div>
 
-<!-- PROFILE -->
-<div id='profile' style='margin-bottom: 120px; text-align: left;'>
-<div class='section-title-container'>
-<div class='bg-en-title'>PROFILE</div>
-<div class='fg-ja-title'>自己紹介</div>
-</div>
+    <p style='font-size: 0.95rem; color: #444; line-height: 1.8; margin-bottom: 16px;'>
+      お問い合わせやご連絡は、以下のメールアドレスまでお願いいたします。
+    </p>
 
-<div style='display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;'>
-<img src='./profile.jpg' alt='蓮田 瑞歩' style='width: 150px; height: 150px; object-fit: cover; border-radius: 50%; flex-shrink: 0;'>
+    <div style='font-size: 1.05rem; font-weight: bold;'>
+      <a href='mailto:mizuho.nattsu.0809@gmail.com' style='color: #0066cc; text-decoration: underline;'>mizuho.nattsu.0809@gmail.com</a>
+    </div>
+  </div>
 
-<div style='flex: 1; min-width: 280px;'>
-<p style='font-size: 1.2rem; font-weight: bold; margin-bottom: 20px; color: #111;'>蓮田 瑞歩 / Mizuho Hasuda</p>
-
-<!-- テーブル形式のリスト（横書きで綺麗に整列） -->
-<dl style='display: grid; grid-template-columns: 120px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0;'>
-  
-  <dt style='font-weight: bold; color: #111; white-space: nowrap;'>所属</dt>
-  <dd style='margin: 0;'>明星大学 情報学部 情報学科 4年生</dd>
-
-  <dt style='font-weight: bold; color: #111; white-space: nowrap;'>研究室</dt>
-  <dd style='margin: 0;'>インタラクティブメディア 研究室</dd>
-
-  <dt style='font-weight: bold; color: #111; white-space: nowrap;'>連絡先</dt>
-  <dd style='margin: 0;'><a href='mailto:mizuho.nattsu.0809@gmail.com' style='color: #333; text-decoration: underline;'>mizuho.nattsu.0809@gmail.com</a></dd>
-
-  <dt style='font-weight: bold; color: #111; white-space: nowrap;'>趣味</dt>
-  <dd style='margin: 0;'>カメラ、馬、車</dd>
-
-</dl>
-</div>
-</div>
-</div>
-
-<!-- ACHIEVEMENTS -->
-<div id='achievements' style='margin-bottom: 120px; text-align: left;'>
-<div class='section-title-container'>
-<div class='bg-en-title'>ACHIEVEMENTS</div>
-<div class='fg-ja-title'>活動</div>
-</div>
-
-<!-- Subtitle: 発表歴 -->
-<h3 style='font-size: 1.1rem; font-weight: bold; margin: 30px 0 16px; padding-bottom: 6px; border-bottom: 2px solid #222; color: #111; width: 100%;'>発表歴</h3>
-
-<dl style='display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0 0 40px 0; width: 100%; box-sizing: border-box;'>
-
-<dt style='font-weight: bold; color: #111; white-space: nowrap;'>2026.06</dt>
-<dd style='margin: 0; width: 100%;'>
-Mizuho Hasuda, Kota Kikuchi, Toshitaka Amaoka<br>
-RibinguSukuea: Creating Lifelikeness through Perceptual Discrepancy and Interaction History<br>
-NICOGRAPH International 2026, poster
-</dd>
-
-<dt style='font-weight: bold; color: #111; white-space: nowrap;'>2025.11</dt>
-<dd style='margin: 0;'>
-2025 大根田花柊, 蓮田瑞歩, 平松守瑠, 菊池康太<br>
-Cam to Turn: オルゴールで奏でる人流データ<br>
-芸術科学会 NICOGRAPH2025, ポスター発表
-</dd>
-
-</dl>
-
-
-<!-- Subtitle: 展示歴 -->
-<h3 style='font-size: 1.1rem; font-weight: bold; margin: 30px 0 16px; padding-bottom: 6px; border-bottom: 2px solid #222; color: #111; width: 100%;'>その他参加歴</h3>
-
-<dl style='display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0; width: 100%; box-sizing: border-box;'>
-
-<dt style='font-weight: bold; color: #111; white-space: nowrap;'>2026.08-09</dt>
-<dd style='margin: 0; width: 100%;'>
-<a href='https://yoso.sp.netkeiba.com/masters/ai2026_student/' target='_blank' style='color: #0066cc; text-decoration: underline; font-weight: bold;'>機械学習 全国学生大会 2026 AI競馬予想マスターズ</a><br>
-大会総合ランキング 16位(的中率：39.18%)<br>
-</dd>
-</dl>
-
-</div>
-</div>
-</div>
-
-<!-- CONTACT (お問い合わせ) -->
-<div id='contact' style='margin-bottom: 120px; text-align: left;'>
-<div class='section-title-container'>
-<div class='bg-en-title'>CONTACT</div>
-<div class='fg-ja-title'>お問い合わせ</div>
-</div>
-
-<p style='font-size: 0.95rem; color: #444; line-height: 1.8; margin-bottom: 16px;'>
-お問い合わせやご連絡は、以下のメールアドレスまでお願いいたします。
-</p>
-
-<div style='font-size: 1.05rem; font-weight: bold;'>
-<a href='mizuho.nattsu.0809@gmail.com' style='color: #0066cc; text-decoration: underline;'>mizuho.nattsu.0809@gmail.com</a>
-</div>
 </div>
