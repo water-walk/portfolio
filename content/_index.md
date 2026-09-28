@@ -402,6 +402,6 @@ Cam to Turn: オルゴールで奏でる人流データ<br>
 </p>
 
 <div style='font-size: 1.05rem; font-weight: bold;'>
-<a href='mizuho.nattsu.0809@gmail.com' style='color: #0066cc; text-decoration: underline;'>your-email@example.com</a>
+<a href='mizuho.nattsu.0809@gmail.com' style='color: #0066cc; text-decoration: underline;'>mizuho.nattsu.0809@gmail.com</a>
 </div>
 </div>
