@@ -221,7 +221,7 @@ text-overflow: ellipsis;
 <dt style='font-weight: bold; color: #111; white-space: nowrap;'>No.02</dt>
 <dd style='margin: 0;'><a href='./works/p02/' style='color: #0066cc; text-decoration: underline; font-weight: bold;'>感情共有デバイス</a></dd>
 
-<dt style='font-weight: bold; color: #111; white-space: nowrap;'>No.04</dt>
+<dt style='font-weight: bold; color: #111; white-space: nowrap;'>No.03</dt>
 <dd style='margin: 0;'><a href='./works/p03/' style='color: #0066cc; text-decoration: underline; font-weight: bold;'>視覚的モールス信号</a></dd>
 
 </dl>
