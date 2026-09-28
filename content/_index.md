@@ -351,7 +351,7 @@ layout: "single"
 <div id='achievements' style='margin-bottom: 120px; text-align: left;'>
 <div class='section-title-container'>
 <div class='bg-en-title'>ACHIEVEMENTS</div>
-<div class='fg-ja-title'>活動/div>
+<div class='fg-ja-title'>活動</div>
 </div>
 
 <!-- Subtitle: 発表歴 -->
@@ -359,10 +359,11 @@ layout: "single"
 
 <dl style='display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0 0 40px 0;'>
 
-<dt style='font-weight: bold; color: #111; white-space: nowrap;'>2025.11</dt>
+<dt style='font-weight: bold; color: #111; white-space: nowrap;'>2025.03</dt>
 <dd style='margin: 0;'>
-大根田花柊，蓮田瑞歩，平松守瑠，菊池康太
-Cam to Turn: オルゴールで奏でる人流データ
+大根田花柊，蓮田瑞歩，平松守瑠，菊池康太<br>
+<span style='font-size: 0.85rem; color: #666;'>Cam to Turn: オルゴールで奏でる人流データ</span><br>
+NICOGRAPH2025 ポスター発表
 </dd>
 
 <dt style='font-weight: bold; color: #111; white-space: nowrap;'>2025.03</dt>
