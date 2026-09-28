@@ -1,5 +1,5 @@
 ---
-title: "奇跡の軌跡"
+title: "りびんぐすくえあ RibinguSukuea"
 date: 2025-07-01
 period: "2025.07"
 ---

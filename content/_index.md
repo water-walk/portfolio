@@ -169,40 +169,19 @@ text-overflow: ellipsis;
 <div class='work-img-wrapper'>
 <img src='./work01.jpg' alt='作品1' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
 </div>
-<h3 class='work-simple-title'>もわもわ</h3>
+<h3 class='work-simple-title'>奇跡の軌跡</h3>
 </a>
 
 <a href='./works/work02/' class='work-simple-card'>
 <div class='work-img-wrapper'>
 <img src='./work02.jpg' alt='作品2' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
 </div>
-<h3 class='work-simple-title'>感情共有デバイス</h3>
+<h3 class='work-simple-title'>Echoes</h3>
 </a>
 
 <a href='./works/work03/' class='work-simple-card'>
 <div class='work-img-wrapper'>
 <img src='./work03.jpg' alt='作品3' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
-</div>
-<h3 class='work-simple-title'>奇跡の軌跡</h3>
-</a>
-
-<a href='./works/work04/' class='work-simple-card'>
-<div class='work-img-wrapper'>
-<img src='./work04.jpg' alt='作品4' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
-</div>
-<h3 class='work-simple-title'>視覚的モールス信号</h3>
-</a>
-
-<a href='./works/work05/' class='work-simple-card'>
-<div class='work-img-wrapper'>
-<img src='./work05.jpg' alt='作品5' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
-</div>
-<h3 class='work-simple-title'>Echoes</h3>
-</a>
-
-<a href='./works/work06/' class='work-simple-card'>
-<div class='work-img-wrapper'>
-<img src='./work06.jpg' alt='作品6' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
 </div>
 <h3 class='work-simple-title'>りびんぐすくえあ</h3>
 </a>
@@ -256,23 +235,15 @@ text-overflow: ellipsis;
 <h3 style='font-size: 1.1rem; font-weight: bold; margin: 40px 0 16px; padding-bottom: 6px; border-bottom: 2px solid #222; color: #111; width: 100%;'>プロトタイプ集</h3>
 
 <dl style='display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0; width: 100%; box-sizing: border-box;'>
-<dt style='font-weight: bold; color: #111; white-space: nowrap;'>作品 01</dt>
-<dd style='margin: 0;'><a href='./works/work01/' style='color: #0066cc; text-decoration: underline; font-weight: bold;'>もわもわ</a></dd>
+<dt style='font-weight: bold; color: #111; white-space: nowrap;'>No.01</dt>
+<dd style='margin: 0;'><a href='./works/p01/' style='color: #0066cc; text-decoration: underline; font-weight: bold;'>もわもわ</a></dd>
 
-<dt style='font-weight: bold; color: #111; white-space: nowrap;'>作品 02</dt>
-<dd style='margin: 0;'><a href='./works/work02/' style='color: #0066cc; text-decoration: underline; font-weight: bold;'>感情共有デバイス</a></dd>
+<dt style='font-weight: bold; color: #111; white-space: nowrap;'>No.02</dt>
+<dd style='margin: 0;'><a href='./works/p02/' style='color: #0066cc; text-decoration: underline; font-weight: bold;'>感情共有デバイス</a></dd>
 
-<dt style='font-weight: bold; color: #111; white-space: nowrap;'>作品 03</dt>
-<dd style='margin: 0;'><a href='./works/work03/' style='color: #0066cc; text-decoration: underline; font-weight: bold;'>奇跡の軌跡</a></dd>
+<dt style='font-weight: bold; color: #111; white-space: nowrap;'>No.04</dt>
+<dd style='margin: 0;'><a href='./works/p03/' style='color: #0066cc; text-decoration: underline; font-weight: bold;'>視覚的モールス信号</a></dd>
 
-<dt style='font-weight: bold; color: #111; white-space: nowrap;'>作品 04</dt>
-<dd style='margin: 0;'><a href='./works/work04/' style='color: #0066cc; text-decoration: underline; font-weight: bold;'>視覚的モールス信号</a></dd>
-
-<dt style='font-weight: bold; color: #111; white-space: nowrap;'>作品 05</dt>
-<dd style='margin: 0;'><a href='./works/work05/' style='color: #0066cc; text-decoration: underline; font-weight: bold;'>Echoes</a></dd>
-
-<dt style='font-weight: bold; color: #111; white-space: nowrap;'>作品 06</dt>
-<dd style='margin: 0;'><a href='./works/work06/' style='color: #0066cc; text-decoration: underline; font-weight: bold;'>りびんぐすくえあ</a></dd>
 </dl>
 </div>
 
