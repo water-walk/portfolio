@@ -311,7 +311,7 @@ layout: "single"
 <h3 class='work-simple-title'>りびんぐすくえあ</h3>
 </a>
 
-
+</div>
 </div>
 </div>
 
@@ -389,6 +389,9 @@ Cam to Turn: オルゴールで奏でる人流データ<br>
 </dd>
 </dl>
 
+</div>
+</div>
+</div>
 
 <!-- CONTACT (お問い合わせ) -->
 <div id='contact' style='margin-bottom: 120px; text-align: left;'>
