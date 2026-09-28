@@ -361,19 +361,16 @@ layout: "single"
 
 <dt style='font-weight: bold; color: #111; white-space: nowrap;'>2025.03</dt>
 <dd style='margin: 0;'>
-大根田花柊，蓮田瑞歩，平松守瑠，菊池康太<br>
-<span style='font-size: 0.85rem; color: #666;'>Cam to Turn: オルゴールで奏でる人流データ</span><br>
-NICOGRAPH2025 ポスター発表
+2026 Mizuho Hasuda, Kota Kikuchi, Toshitaka Amaoka<br>
+RibinguSukuea: Creating Lifelikeness through Perceptual Discrepancy and Interaction History<br>
+NICOGRAPH International 2026, poster
 </dd>
 
 <dt style='font-weight: bold; color: #111; white-space: nowrap;'>2025.03</dt>
 <dd style='margin: 0;'>
-NICOGRAPH2025（NICOGRAPH賞）
-</dd>
-
-<dt style='font-weight: bold; color: #111; white-space: nowrap;'>2024.11</dt>
-<dd style='margin: 0;'>
-NICOGRAPH2024（ポスター賞）
+2025 大根田花柊, 蓮田瑞歩, 平松守瑠, 菊池康太<br>
+Cam to Turn: オルゴールで奏でる人流データ<br>
+芸術科学会 NICOGRAPH2025, ポスター発表
 </dd>
 
 </dl>
@@ -383,11 +380,6 @@ NICOGRAPH2024（ポスター賞）
 <h3 style='font-size: 1.1rem; font-weight: bold; margin: 30px 0 16px; padding-bottom: 6px; border-bottom: 2px solid #222; color: #111;'>展示歴</h3>
 
 <dl style='display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0;'>
-
-<dt style='font-weight: bold; color: #111; white-space: nowrap;'>2024.12</dt>
-<dd style='margin: 0;'>
-明星大学 情報学部卒研展2024（教職員賞）
-</dd>
 
 <dt style='font-weight: bold; color: #111; white-space: nowrap;'>2024.09</dt>
 <dd style='margin: 0;'>
