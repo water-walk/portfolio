@@ -214,7 +214,7 @@ layout: "single"
 }
 </style>
 
-<div id='work' class='marquee-container'>
+<div id='work' style='margin-bottom: 120px; text-align: left;'>
 <div class='section-title-container'>
 <div class='bg-en-title'>WORK</div>
 <div class='fg-ja-title'>作品</div>
