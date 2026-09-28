@@ -93,7 +93,7 @@ z-index: 2;
 .marquee-container {
 overflow: hidden;
 width: 100%;
-margin-bottom: 120px;
+margin-bottom: 40px;
 text-align: left;
 }
 
@@ -156,12 +156,13 @@ text-overflow: ellipsis;
 <div style='max-width: 900px; margin: 80px auto 0; padding: 0 20px; font-family: "Helvetica Neue", Arial, sans-serif;'>
 
 <!-- WORK (制作実績) -->
-<div id='work' class='marquee-container'>
+<div id='work' style='margin-bottom: 120px; text-align: left;'>
 <div class='section-title-container'>
 <div class='bg-en-title'>WORK</div>
 <div class='fg-ja-title'>作品</div>
 </div>
 
+<div class='marquee-container'>
 <div class='marquee-track'>
 <!-- ===== 1セット目 ===== -->
 <a href='./works/work01/' class='work-simple-card'>
@@ -249,6 +250,30 @@ text-overflow: ellipsis;
 <h3 class='work-simple-title'>りびんぐすくえあ</h3>
 </a>
 </div>
+</div>
+
+<!-- プロトタイプ集 -->
+<h3 style='font-size: 1.1rem; font-weight: bold; margin: 40px 0 16px; padding-bottom: 6px; border-bottom: 2px solid #222; color: #111; width: 100%;'>プロトタイプ集</h3>
+
+<dl style='display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0; width: 100%; box-sizing: border-box;'>
+<dt style='font-weight: bold; color: #111; white-space: nowrap;'>作品 01</dt>
+<dd style='margin: 0;'><a href='./works/work01/' style='color: #0066cc; text-decoration: underline; font-weight: bold;'>もわもわ</a></dd>
+
+<dt style='font-weight: bold; color: #111; white-space: nowrap;'>作品 02</dt>
+<dd style='margin: 0;'><a href='./works/work02/' style='color: #0066cc; text-decoration: underline; font-weight: bold;'>感情共有デバイス</a></dd>
+
+<dt style='font-weight: bold; color: #111; white-space: nowrap;'>作品 03</dt>
+<dd style='margin: 0;'><a href='./works/work03/' style='color: #0066cc; text-decoration: underline; font-weight: bold;'>奇跡の軌跡</a></dd>
+
+<dt style='font-weight: bold; color: #111; white-space: nowrap;'>作品 04</dt>
+<dd style='margin: 0;'><a href='./works/work04/' style='color: #0066cc; text-decoration: underline; font-weight: bold;'>視覚的モールス信号</a></dd>
+
+<dt style='font-weight: bold; color: #111; white-space: nowrap;'>作品 05</dt>
+<dd style='margin: 0;'><a href='./works/work05/' style='color: #0066cc; text-decoration: underline; font-weight: bold;'>Echoes</a></dd>
+
+<dt style='font-weight: bold; color: #111; white-space: nowrap;'>作品 06</dt>
+<dd style='margin: 0;'><a href='./works/work06/' style='color: #0066cc; text-decoration: underline; font-weight: bold;'>りびんぐすくえあ</a></dd>
+</dl>
 </div>
 
 <!-- PROFILE -->
