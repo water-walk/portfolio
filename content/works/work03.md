@@ -1,5 +1,6 @@
 ---
 title: "Cam to Turn"
+date: 2025-11-30
 period: "2025年度"
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "りびんぐすくえあ RibinguSukuea"
+date: 2026-02-14
 period: "2025年度後期"
 ---
 
