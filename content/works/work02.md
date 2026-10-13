@@ -1,6 +1,5 @@
 ---
 title: "Echoes"
-date: 2025-11-14
 period: "2025.11"
 ---
 
