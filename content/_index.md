@@ -73,7 +73,7 @@ top: 0;
 left: 0;
 font-size: 4.5rem;
 font-weight: 800;
-color: rgba(102, 205, 170, 0.85);
+color: rgba(102, 205, 170, 0.35);
 line-height: 1;
 letter-spacing: 4px;
 user-select: none;
