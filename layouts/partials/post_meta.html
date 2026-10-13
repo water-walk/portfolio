@@ -1,0 +1,17 @@
+{{- $scratch := newScratch -}}
+
+{{- if .Params.period -}}
+  {{- $scratch.Add "meta" (slice .Params.period) -}}
+{{- else if not .Date.IsZero -}}
+  {{- $scratch.Add "meta" (slice (.Date.Format (default "January 2, 2006" .Site.Params.DateFormat))) -}}
+{{- end -}}
+
+{{- if .Params.author -}}
+  {{- $scratch.Add "meta" (slice .Params.author) -}}
+{{- else if .Site.Params.author -}}
+  {{- $scratch.Add "meta" (slice .Site.Params.author) -}}
+{{- end -}}
+
+{{- with ($scratch.Get "meta") -}}
+  {{- delimit . " · " -}}
+{{- end -}}
