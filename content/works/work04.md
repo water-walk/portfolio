@@ -1,6 +1,5 @@
 ---
 title: "りびんぐすくえあ RibinguSukuea"
-date: 2026-02
 period: "2026.02"
 ---
 
@@ -14,4 +13,4 @@ period: "2026.02"
 * python
 * webカメラ
 
-<!-- ![作品画像](./work04.jpg) -->
+<!-- ![作品画像](./work03.jpg) -->

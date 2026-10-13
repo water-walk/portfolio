@@ -169,7 +169,7 @@ text-overflow: ellipsis;
 <div class='work-img-wrapper'>
 <img src='./work01.jpg' alt='作品1' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
 </div>
-<h3 class='work-simple-title'>奇跡の軌</h3>
+<h3 class='work-simple-title'>奇跡の軌跡</h3>
 </a>
 
 <a href='./works/work02/' class='work-simple-card'>

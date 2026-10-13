@@ -1,6 +1,5 @@
 ---
 title: "Cam to Turn"
-date: 2025-11
 period: "2025.11"
 ---
 
