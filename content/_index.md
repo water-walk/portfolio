@@ -158,7 +158,7 @@ text-overflow: ellipsis;
 <!-- WORK (制作実績) -->
 <div id='work' style='margin-bottom: 120px; text-align: left;'>
 <div class='section-title-container'>
-<div class='bg-en-title'>WORK</div>
+<div class='bg-en-title'>WORKS</div>
 <div class='fg-ja-title'>作品</div>
 </div>
 
