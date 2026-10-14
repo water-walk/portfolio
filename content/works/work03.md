@@ -15,4 +15,8 @@ period: "2025年度"
 
 <!-- ![作品画像](./work03.jpg) -->
 
-{{< youtube 8H81Pnpr-js >}}
+<p style="margin-top: 20px;">
+<a href="https://youtu.be/8H81Pnpr-js" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #FF0000; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 0.95rem;">
+▶ YouTubeで見る
+</a>
+</p>
