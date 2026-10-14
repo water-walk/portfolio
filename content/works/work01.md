@@ -1,5 +1,5 @@
 ---
-title: "奇跡の軌跡"
+title: "5秒間の軌跡"
 date: 2025-07-01
 period: "2025年度前期"
 hidemeta: true
@@ -213,14 +213,11 @@ p5.jsを使用して映像の描画とインタラクションを制御してい
 </div>
 
 <!-- 4. 動作動画 -->
-<div class='work-info-block'>
-<div class='work-info-label'>DEMO MOVIE</div>
-<div style='margin-top: 6px;'>
-{{< youtube 8H81Pnpr-js >}}
-</div>
-</div>
-
-</div>
+<p style="margin-top: 20px;">
+<a href="https://youtu.be/OPBoLv4kO8c" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #FF0000; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 0.95rem;">
+▶ YouTubeで見る
+</a>
+</p>
 
 </div>
 </div>
