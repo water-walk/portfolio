@@ -19,9 +19,16 @@ padding-top: 0 !important;
 max-width: 100% !important;
 }
 
-.post-header, .post-content, .post-meta {
+.post-header, .post-meta {
 margin: 0 !important;
 padding: 0 !important;
+}
+
+/* トップページのメインコンテンツ幅は標準を維持して崩れを防ぐ */
+.post-content {
+max-width: 900px !important;
+margin: 0 auto !important;
+padding: 0 20px !important;
 }
 
 header.header {
@@ -73,7 +80,7 @@ top: 0;
 left: 0;
 font-size: 4.5rem;
 font-weight: 800;
-color: rgba(102, 205, 170, 0.35);
+color: rgba(60, 179, 113, 0.35);
 line-height: 1;
 letter-spacing: 4px;
 user-select: none;
@@ -120,6 +127,7 @@ color: inherit;
 display: flex;
 flex-direction: column;
 transition: transform 0.2s ease, opacity 0.2s ease;
+flex-shrink: 0;
 }
 
 .work-simple-card:hover {
@@ -169,7 +177,7 @@ text-overflow: ellipsis;
 <div class='work-img-wrapper'>
 <img src='./work01.jpg' alt='作品1' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
 </div>
-<h3 class='work-simple-title'>5秒間の軌跡</h3>
+<h3 class='work-simple-title'>奇跡の軌跡</h3>
 </a>
 
 <a href='./works/work02/' class='work-simple-card'>
@@ -198,7 +206,7 @@ text-overflow: ellipsis;
 <div class='work-img-wrapper'>
 <img src='./work01.jpg' alt='作品1' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
 </div>
-<h3 class='work-simple-title'>5秒間の軌跡</h3>
+<h3 class='work-simple-title'>奇跡の軌跡</h3>
 </a>
 
 <a href='./works/work02/' class='work-simple-card'>
@@ -221,6 +229,9 @@ text-overflow: ellipsis;
 </div>
 <h3 class='work-simple-title'>りびんぐすくえあ</h3>
 </a>
+
+</div>
+</div>
 
 <!-- プロトタイプ集 -->
 <h3 style='font-size: 1.1rem; font-weight: bold; margin: 40px 0 16px; padding-bottom: 6px; border-bottom: 2px solid #222; color: #111; width: 100%;'>プロトタイプ集</h3>
