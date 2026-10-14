@@ -135,6 +135,53 @@ border-radius: 4px;
 font-size: 0.9rem;
 font-weight: 600;
 }
+
+/* 関連リンクのカードデザイン */
+.related-links-container {
+display: flex;
+flex-direction: column;
+gap: 12px;
+margin-top: 10px;
+}
+.related-link-card {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 16px 20px;
+background: #f8fafc;
+border: 1px solid #e2e8f0;
+border-radius: 8px;
+text-decoration: none;
+color: inherit;
+transition: all 0.2s ease;
+}
+.related-link-card:hover {
+background: #f1f5f9;
+border-color: #cbd5e1;
+transform: translateY(-2px);
+box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+.related-link-info {
+display: flex;
+flex-direction: column;
+gap: 4px;
+}
+.related-link-title {
+font-size: 0.95rem;
+font-weight: bold;
+color: #1e293b;
+}
+.related-link-url {
+font-size: 0.8rem;
+color: #64748b;
+word-break: break-all;
+}
+.related-link-icon {
+font-size: 1.1rem;
+font-weight: bold;
+color: #0066cc;
+padding-left: 12px;
+}
 </style>
 
 <div class='work-detail-container'>
@@ -206,9 +253,10 @@ Human Data Interactionを基盤とした「専門家でない人が気候変動�
 </div>
 </div>
 
-</div>
-
-<!-- リンク 1（必要に応じて増やしたり減らしたりできます） -->
+<!-- 4. 関連リンク -->
+<div class='work-info-block' style='margin-top: 10px; padding-top: 20px; border-top: 1px solid #eaeaea;'>
+<div class='work-info-label'>RELATED LINKS</div>
+<div class='related-links-container'>
 <a href='https://www.is.meisei-u.ac.jp/news/2474/' target='_blank' class='related-link-card'>
 <div class='related-link-info'>
 <div class='related-link-title'>明星大学 情報学部情報学科 MUROS week 開催！ドイツ・デュッセルドルフ応用科学大学の学生とグローバル・プロジェクトを行いました</div>
@@ -216,63 +264,15 @@ Human Data Interactionを基盤とした「専門家でない人が気候変動�
 </div>
 <div class='related-link-icon'>→</div>
 </a>
-
 </div>
 </div>
 
-<style>
-/* 関連リンクのカードデザイン */
-.related-links-container {
-display: flex;
-flex-direction: column;
-gap: 12px;
-margin-top: 10px;
-}
-.related-link-card {
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 16px 20px;
-background: #f8fafc;
-border: 1px solid #e2e8f0;
-border-radius: 8px;
-text-decoration: none;
-color: inherit;
-transition: all 0.2s ease;
-}
-.related-link-card:hover {
-background: #f1f5f9;
-border-color: #cbd5e1;
-transform: translateY(-2px);
-box-shadow: 0 4px 12px rgba(0,0,0,0.03);
-}
-.related-link-info {
-display: flex;
-flex-direction: column;
-gap: 4px;
-}
-.related-link-title {
-font-size: 0.95rem;
-font-weight: bold;
-color: #1e293b;
-}
-.related-link-url {
-font-size: 0.8rem;
-color: #64748b;
-word-break: break-all;
-}
-.related-link-icon {
-font-size: 1.1rem;
-font-weight: bold;
-color: #0066cc;
-padding-left: 12px;
-}
-</style>
-
-
+</div>
 
 </div>
+
 </div>
+
 
 <!-- 画像切り替え用JavaScript -->
 <script>
