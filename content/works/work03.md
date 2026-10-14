@@ -59,17 +59,18 @@ hidemeta: true
 
 .work-main-img-box {
   width: 100%;
-  aspect-ratio: 4/3;
-  background: #f4f4f4;
+  aspect-ratio: 16/10;
+  background: #fff;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: none;
+  border: none;
   margin-bottom: 12px;
 }
 .work-main-img-box img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
   transition: opacity 0.2s ease;
 }
@@ -83,20 +84,21 @@ hidemeta: true
   scrollbar-width: thin;
 }
 .work-thumb-item {
-  width: 80px;
+  width: 60px;
   height: 60px;
+  border-radius: 50%;
   flex-shrink: 0;
-  border-radius: 4px;
   overflow: hidden;
   cursor: pointer;
   border: 2px solid transparent;
   opacity: 0.6;
   transition: all 0.2s ease;
-  background: #eee;
+  background: #f4f4f4;
 }
 .work-thumb-item.active, .work-thumb-item:hover {
   opacity: 1;
   border-color: #0066cc;
+  transform: scale(1.05);
 }
 .work-thumb-item img {
   width: 100%;

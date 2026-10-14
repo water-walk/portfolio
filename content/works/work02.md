@@ -29,71 +29,79 @@ font-size: 1rem;
 color: #555;
 font-weight: 600;
 }
+
+/* 左右2カラム構造（幅を広く確保） */
 .work-content-grid {
-display: grid;
-grid-template-columns: 1fr 1.1fr;
-gap: 50px;
-align-items: start;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 50px;
+  align-items: start;
 }
 
 @media (max-width: 768px) {
-.work-content-grid {
-grid-template-columns: 1fr;
-gap: 24px;
+  .work-content-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
 }
-}
+
+/* 左側：ギャラリービューア */
 .work-gallery-wrapper {
-width: 100%;
-position: sticky;
-top: 80px;
+  width: 100%;
+  position: sticky;
+  top: 80px;
 }
 
 .work-main-img-box {
-width: 100%;
-aspect-ratio: 4/3;
-background: #f4f4f4;
-border-radius: 8px;
-overflow: hidden;
-box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-margin-bottom: 12px;
+  width: 100%;
+  aspect-ratio: 16/10;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: none;
+  border: none;
+  margin-bottom: 12px;
 }
 .work-main-img-box img {
-width: 100%;
-height: 100%;
-object-fit: cover;
-display: block;
-transition: opacity 0.2s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  transition: opacity 0.2s ease;
 }
 
+/* 下部のサムネイル横スクロール */
 .work-thumb-scroll {
-display: flex;
-gap: 10px;
-overflow-x: auto;
-padding-bottom: 8px;
-scrollbar-width: thin;
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scrollbar-width: thin;
 }
 .work-thumb-item {
-width: 80px;
-height: 60px;
-flex-shrink: 0;
-border-radius: 4px;
-overflow: hidden;
-cursor: pointer;
-border: 2px solid transparent;
-opacity: 0.6;
-transition: all 0.2s ease;
-background: #eee;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid transparent;
+  opacity: 0.6;
+  transition: all 0.2s ease;
+  background: #f4f4f4;
 }
 .work-thumb-item.active, .work-thumb-item:hover {
-opacity: 1;
-border-color: #0066cc;
+  opacity: 1;
+  border-color: #0066cc;
+  transform: scale(1.05);
 }
 .work-thumb-item img {
-width: 100%;
-height: 100%;
-object-fit: cover;
-display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
+
 
 .work-info-section {
 display: flex;
