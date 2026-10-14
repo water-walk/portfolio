@@ -87,17 +87,18 @@ hidemeta: true
 
 /* サムネイルの丸型設定 */
 .work-thumb-item {
-  width: 60px;
-  height: 60px;
+  width: 60px !important;
+  height: 60px !important;
   border-radius: 50% !important;
   flex-shrink: 0;
-  overflow: hidden;
+  overflow: hidden !important;
   cursor: pointer;
   border: 2px solid transparent;
   opacity: 0.6;
   transition: all 0.2s ease;
-  background: #f4f4f4;
+  background: transparent !important;
   box-sizing: border-box;
+  padding: 0 !important;
 }
 
 .work-thumb-item.active, .work-thumb-item:hover {
@@ -107,11 +108,17 @@ hidemeta: true
 }
 
 .work-thumb-item img {
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
   object-fit: cover !important;
-  display: block;
+  border-radius: 0 !important; 
+  margin: 0 !important; 
+  padding: 0 !important;
+  display: block !important;
 }
+
 
 /* 右側：情報テキスト群 */
 .work-info-section {
