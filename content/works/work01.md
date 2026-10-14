@@ -162,18 +162,12 @@ hidemeta: true
 <!-- 左カラム：画像ギャラリー -->
 <div class='work-gallery-wrapper'>
 <div class='work-main-img-box'>
-<img id='mainDisplayImg' src='../images/work01.jpg' alt='メイン画像'>
+<img id='mainDisplayImg' src='/portfolio/work01.jpg' alt='メイン画像'>
 </div>
 
 <div class='work-thumb-scroll'>
 <div class='work-thumb-item active' onclick='switchWorkImg(this, "../images/work01.jpg")'>
-<img src='../images/work01.jpg' alt='サムネイル1'>
-</div>
-<div class='work-thumb-item' onclick='switchWorkImg(this, "../images/work02.jpg")'>
-<img src='../images/work02.jpg' alt='サムネイル2'>
-</div>
-<div class='work-thumb-item' onclick='switchWorkImg(this, "../images/work03.jpg")'>
-<img src='../images/work03.jpg' alt='サムネイル3'>
+<img src='/portfolio/work01.jpg' alt='サムネイル1'>
 </div>
 </div>
 </div>
@@ -218,6 +212,73 @@ p5.jsを使用して映像の描画とインタラクションを制御してい
 ▶ YouTubeで見る
 </a>
 </p>
+
+<!-- 関連リンク（RELATED LINKS）セクション -->
+<div class='work-info-block' style='margin-top: 50px; padding-top: 30px; border-top: 1px solid #eaeaea;'>
+<div class='work-info-label'>RELATED LINKS</div>
+<div class='related-links-container'>
+
+<!-- リンク 1（必要に応じて増やしたり減らしたりできます） -->
+<a href='https://www.tokyonode.jp/sp/exhibition-ah-neo/' target='_blank' class='related-link-card'>
+<div class='related-link-info'>
+<div class='related-link-title'>Open Lab公式サイト 授業紹介企画第4弾「インタラクティブシステム」
+</div>
+<div class='related-link-url'>https://openlab.is.meisei-u.ac.jp/2025/08/02/1050/</div>
+</div>
+<div class='related-link-icon'>→</div>
+</a>
+
+</div>
+</div>
+
+<style>
+/* 関連リンクのカードデザイン */
+.related-links-container {
+display: flex;
+flex-direction: column;
+gap: 12px;
+margin-top: 10px;
+}
+.related-link-card {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 16px 20px;
+background: #f8fafc;
+border: 1px solid #e2e8f0;
+border-radius: 8px;
+text-decoration: none;
+color: inherit;
+transition: all 0.2s ease;
+}
+.related-link-card:hover {
+background: #f1f5f9;
+border-color: #cbd5e1;
+transform: translateY(-2px);
+box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+.related-link-info {
+display: flex;
+flex-direction: column;
+gap: 4px;
+}
+.related-link-title {
+font-size: 0.95rem;
+font-weight: bold;
+color: #1e293b;
+}
+.related-link-url {
+font-size: 0.8rem;
+color: #64748b;
+word-break: break-all;
+}
+.related-link-icon {
+font-size: 1.1rem;
+font-weight: bold;
+color: #0066cc;
+padding-left: 12px;
+}
+</style>
 
 </div>
 </div>
