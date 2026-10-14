@@ -176,6 +176,9 @@ hidemeta: true
 <div class='work-thumb-item' onclick='switchWorkImg(this, "/portfolio/work04_3.jpg")'>
 <img src='/portfolio/work04_3.jpg' alt='サムネイル3'>
 </div>
+<div class='work-thumb-item' onclick='switchWorkImg(this, "/portfolio/work04_4.jpg")'>
+<img src='/portfolio/work04_4.jpg' alt='サムネイル4'>
+</div>
 </div>
 </div>
 
