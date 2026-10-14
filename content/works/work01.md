@@ -196,8 +196,8 @@ hidemeta: true
 <div class='work-info-block'>
 <div class='work-info-label'>CONCEPT & DESCRIPTION</div>
 <div class='work-info-text'>
-<p style='margin: 0 0 16px 0;'>「インタラクティブシステム」の授業課題として、チームで制作したインタラクティブ作品です。</p>
-<a href='https://www.tokyonode.jp/sp/exhibition-ah-neo/' target='_blank' style='color: #0066cc; text-decoration: underline;'>デザインあ展neo</a>の《あるきかたログ》から着想を得て、一人ひとりの動きが重なり、一つの流れになるという表現をもとに、人がその場にいた痕跡を可視化する作品を考えました。
+<p style='margin: 0 0 16px 0;'>「インタラクティブシステム」の授業課題として、チームで制作したインタラクティブ作品です。
+<a href='https://www.tokyonode.jp/sp/exhibition-ah-neo/' target='_blank' style='color: #0066cc; text-decoration: underline;'>デザインあ展neo</a>の《あるきかたログ》から着想を得て、一人ひとりの動きが重なり、一つの流れになるという表現をもとに、人がその場にいた痕跡を可視化する作品を考えました。</p>
 
 <p style='margin: 0 0 16px 0;'>「自分自身は見えないけれど、確かに存在する」をコンセプトに、カメラに映った人物の姿が数秒後に「影」として画面上に現れます。影は時間とともに徐々に濃くなり、その後ゆっくりと消えていきます。また、周囲の音の大きさに応じて影の輪郭が揺らぎ、目には見えない存在の痕跡や曖昧さを表現しています。</p>
 
