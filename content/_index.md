@@ -128,6 +128,10 @@ display: flex;
 flex-direction: column;
 transition: transform 0.2s ease, opacity 0.2s ease;
 flex-shrink: 0;
+background: transparent !important;
+border: none !important;
+box-shadow: none !important;
+padding: 0 !important;
 }
 
 .work-simple-card:hover {
@@ -137,11 +141,12 @@ opacity: 0.85;
 
 .work-img-wrapper {
 width: 100%;
-aspect-ratio: 4/3;
-background: #eee;
+aspect-ratio: 16/10;
+background: transparent !important;
 margin-bottom: 8px;
 border-radius: 6px;
 overflow: hidden;
+box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
 
 .work-simple-title {
