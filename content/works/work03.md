@@ -199,8 +199,6 @@ hidemeta: true
 <span class='tech-tag'>Processing</span>
 <span class='tech-tag'>Arduino</span>
 <span class='tech-tag'>ロータリーエンコーダ</span>
-<span class='tech-tag'>M5Stack</span>
-<span class='tech-tag'>バーコードリーダ</span>
 </div>
 </div>
 
