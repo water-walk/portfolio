@@ -78,15 +78,18 @@ hidemeta: true
 /* 下部のサムネイル横スクロール */
 .work-thumb-scroll {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   overflow-x: auto;
-  padding-bottom: 8px;
+  overflow-y: visible !important; 
+  padding: 10px 4px 8px 4px !important; 
   scrollbar-width: thin;
 }
+
+/* サムネイルの丸型設定 */
 .work-thumb-item {
   width: 60px;
   height: 60px;
-  border-radius: 50%;
+  border-radius: 50% !important;
   flex-shrink: 0;
   overflow: hidden;
   cursor: pointer;
@@ -94,16 +97,19 @@ hidemeta: true
   opacity: 0.6;
   transition: all 0.2s ease;
   background: #f4f4f4;
+  box-sizing: border-box;
 }
+
 .work-thumb-item.active, .work-thumb-item:hover {
   opacity: 1;
   border-color: #0066cc;
   transform: scale(1.05);
 }
+
 .work-thumb-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover !important;
   display: block;
 }
 
@@ -168,7 +174,7 @@ hidemeta: true
 </div>
 
 <div class='work-thumb-scroll'>
-<div class='work-thumb-item active' onclick='switchWorkImg(this, "../images/work01.jpg")'>
+<div class='work-thumb-item active' onclick='switchWorkImg(this, "/portfolio/work01.jpg")'>
 <img src='/portfolio/work01.jpg' alt='サムネイル1'>
 </div>
 </div>
