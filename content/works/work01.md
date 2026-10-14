@@ -1,20 +1,17 @@
 ---
-title: "作品タイトル（例：奇跡の軌跡）"
+title: "奇跡の軌跡"
 date: 2025-07-01
 period: "2025年度前期"
 hidemeta: true
 ---
 
 <style>
-/* 個別作品ページの共通レイアウト */
 .work-detail-container {
 width: 100%;
 margin-top: 20px;
 font-family: "Helvetica Neue", Arial, sans-serif;
 color: #222;
 }
-
-/* 上部タイトルエリア */
 .work-header {
 border-bottom: 2px solid #111;
 padding-bottom: 16px;
@@ -33,8 +30,6 @@ font-size: 0.95rem;
 color: #666;
 font-weight: 600;
 }
-
-/* 左右2カラム構造 */
 .work-content-grid {
 display: grid;
 grid-template-columns: 1fr 1fr;
@@ -48,8 +43,6 @@ grid-template-columns: 1fr;
 gap: 24px;
 }
 }
-
-/* 左側：ギャラリービューア */
 .work-gallery-wrapper {
 width: 100%;
 position: sticky;
@@ -73,7 +66,6 @@ display: block;
 transition: opacity 0.2s ease;
 }
 
-/* 下部のサムネイル横スクロール（チラ見せ効果） */
 .work-thumb-scroll {
 display: flex;
 gap: 10px;
@@ -104,7 +96,6 @@ object-fit: cover;
 display: block;
 }
 
-/* 右側：情報テキスト群 */
 .work-info-section {
 display: flex;
 flex-direction: column;
@@ -139,7 +130,6 @@ margin: 0;
 white-space: pre-wrap;
 }
 
-/* 技術タグ */
 .tech-tags {
 display: flex;
 flex-wrap: wrap;
@@ -211,21 +201,22 @@ font-weight: 600;
 <div class='work-info-block'>
 <div class='work-info-label'>CONCEPT & DESCRIPTION</div>
 <div class='work-info-text'>
-「自分自身は見えないけれど、確かに存在する」をテーマに、可視と不可視による存在感について考えるインタラクティブ体験作品。
+「インタラクティブシステム」の授業課題として、チームで制作したインタラクティブ作品です。
+<a href='https://www.tokyonode.jp/sp/exhibition-ah-neo/' target='_blank' style='color: #0066cc; text-decoration: underline;'>デザインあ展neo</a>の《あるきかたログ》から着想を得て、一人ひとりの動きが重なり、一つの流れになるという表現をもとに、人がその場にいた痕跡を可視化する作品を考えました。
 
-カメラ内に人がうつった数秒後に「影」として画面上に表示されます。その時の周囲の環境音や動きによって、その影の輪郭や波紋がインタラクティブに揺らぎます。
-</div>
-</div>
+「自分自身は見えないけれど、確かに存在する」をコンセプトに、カメラに映った人物の姿が数秒後に「影」として画面上に現れます。影は時間とともに徐々に濃くなり、その後ゆっくりと消えていきます。また、周囲の音の大きさに応じて影の輪郭が揺らぎ、目には見えない存在の痕跡や曖昧さを表現しています。
 
-<!-- 4. 動作動画 (YouTube限定公開等) -->
-<div class='work-info-block'>
-<div class='work-info-label'>DEMO MOVIE</div>
-<div style='margin-top: 6px;'>
-{{< youtube 8H81Pnpr-js >}}
+p5.jsを使用して映像の描画とインタラクションを制御しています。Webカメラで取得した映像からml5.js（BodyPix）を用いて人物の輪郭を抽出し、時間差で影として表示しています。
+また、マイクから取得した周囲の音をFFTで解析し、音の大きさに応じて影の輪郭が揺らぐ仕組みを実装しました。
 </div>
 </div>
 
-</div>
+
+<p style="margin-top: 20px;">
+<a href="https://www.youtube.com/watch?v=XXXXXXX" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #FF0000; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 0.95rem;">
+▶ YouTubeで見る
+</a>
+</p>
 
 </div>
 </div>
