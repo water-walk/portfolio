@@ -219,10 +219,9 @@ p5.jsを使用して映像の描画とインタラクションを制御してい
 <div class='related-links-container'>
 
 <!-- リンク 1（必要に応じて増やしたり減らしたりできます） -->
-<a href='https://www.tokyonode.jp/sp/exhibition-ah-neo/' target='_blank' class='related-link-card'>
+<a href='https://openlab.is.meisei-u.ac.jp/2025/08/02/1050/' target='_blank' class='related-link-card'>
 <div class='related-link-info'>
-<div class='related-link-title'>Open Lab公式サイト 授業紹介企画第4弾「インタラクティブシステム」
-</div>
+<div class='related-link-title'>Open Lab公式サイト 授業紹介企画第4弾「インタラクティブシステム」</div>
 <div class='related-link-url'>https://openlab.is.meisei-u.ac.jp/2025/08/02/1050/</div>
 </div>
 <div class='related-link-icon'>→</div>

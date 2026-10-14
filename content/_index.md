@@ -169,7 +169,7 @@ text-overflow: ellipsis;
 <div class='work-img-wrapper'>
 <img src='./work01.jpg' alt='作品1' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
 </div>
-<h3 class='work-simple-title'>奇跡の軌跡</h3>
+<h3 class='work-simple-title'>5秒間の軌跡</h3>
 </a>
 
 <a href='./works/work02/' class='work-simple-card'>
@@ -198,7 +198,7 @@ text-overflow: ellipsis;
 <div class='work-img-wrapper'>
 <img src='./work01.jpg' alt='作品1' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
 </div>
-<h3 class='work-simple-title'>奇跡の軌跡</h3>
+<h3 class='work-simple-title'>5秒間の軌跡</h3>
 </a>
 
 <a href='./works/work02/' class='work-simple-card'>
@@ -221,9 +221,6 @@ text-overflow: ellipsis;
 </div>
 <h3 class='work-simple-title'>りびんぐすくえあ</h3>
 </a>
-
-</div>
-</div>
 
 <!-- プロトタイプ集 -->
 <h3 style='font-size: 1.1rem; font-weight: bold; margin: 40px 0 16px; padding-bottom: 6px; border-bottom: 2px solid #222; color: #111; width: 100%;'>プロトタイプ集</h3>
