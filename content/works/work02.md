@@ -6,34 +6,33 @@ hidemeta: true
 ---
 
 <style>
+.main {
+max-width: 1100px !important;
+}
+.post-content {
+max-width: 100% !important;
+}
 .work-detail-container {
 width: 100%;
-margin-top: 20px;
+margin-top: 10px;
 font-family: "Helvetica Neue", Arial, sans-serif;
 color: #222;
 }
 .work-header {
 border-bottom: 2px solid #111;
-padding-bottom: 16px;
+padding-bottom: 12px;
 margin-bottom: 30px;
 width: 100%;
 }
-.work-title-main {
-font-size: 2.2rem;
-font-weight: 800;
-margin: 0 0 8px 0;
-color: #111;
-line-height: 1.2;
-}
 .work-period-badge {
-font-size: 0.95rem;
-color: #666;
+font-size: 1rem;
+color: #555;
 font-weight: 600;
 }
 .work-content-grid {
 display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 40px;
+grid-template-columns: 1fr 1.1fr;
+gap: 50px;
 align-items: start;
 }
 
@@ -74,8 +73,8 @@ padding-bottom: 8px;
 scrollbar-width: thin;
 }
 .work-thumb-item {
-width: 70px;
-height: 52px;
+width: 80px;
+height: 60px;
 flex-shrink: 0;
 border-radius: 4px;
 overflow: hidden;
@@ -114,17 +113,9 @@ color: #0066cc;
 text-transform: uppercase;
 letter-spacing: 1px;
 }
-.work-info-title {
-font-size: 1.15rem;
-font-weight: bold;
-color: #111;
-margin: 0;
-padding-bottom: 4px;
-border-bottom: 1px solid #ddd;
-}
 .work-info-text {
-font-size: 0.95rem;
-line-height: 1.8;
+font-size: 1rem;
+line-height: 1.9;
 color: #333;
 margin: 0;
 white-space: pre-wrap;
@@ -139,9 +130,9 @@ margin-top: 4px;
 .tech-tag {
 background: #f0f4f8;
 color: #334155;
-padding: 4px 12px;
+padding: 6px 14px;
 border-radius: 4px;
-font-size: 0.85rem;
+font-size: 0.9rem;
 font-weight: 600;
 }
 </style>
@@ -150,7 +141,6 @@ font-weight: 600;
 
 <!-- 1. 全幅タイトル ＋ 制作時期 -->
 <div class='work-header'>
-<h1 class='work-title-main'>Echoes</h1>
 <div class='work-period-badge'>制作時期：2025年11月</div>
 </div>
 
@@ -160,22 +150,22 @@ font-weight: 600;
 <!-- 左カラム：画像ギャラリー（クリック切替機能付き） -->
 <div class='work-gallery-wrapper'>
 <div class='work-main-img-box'>
-<img id='mainDisplayImg' src='../images/work02.jpg' alt='メイン画像'>
+<img id='mainDisplayImg' src='/images/work02.jpg' alt='メイン画像'>
 </div>
 
-<!-- 下部のサムネイル（少し横が見える一覧） -->
+<!-- 下部のサムネイル一覧 -->
 <div class='work-thumb-scroll'>
-<div class='work-thumb-item active' onclick='switchWorkImg(this, "../images/work01.jpg")'>
-<img src='../images/work02.jpg' alt='サムネイル1'>
+<div class='work-thumb-item active' onclick='switchWorkImg(this, "/images/work02.jpg")'>
+<img src='/images/work02.jpg' alt='サムネイル1'>
 </div>
-<div class='work-thumb-item' onclick='switchWorkImg(this, "../images/work02.jpg")'>
-<img src='../images/work02_2.jpg' alt='サムネイル2'>
+<div class='work-thumb-item' onclick='switchWorkImg(this, "/images/work02_2.jpg")'>
+<img src='/images/work02_2.jpg' alt='サムネイル2'>
 </div>
-<div class='work-thumb-item' onclick='switchWorkImg(this, "../images/work03.jpg")'>
-<img src='../images/work02_3.jpg' alt='サムネイル3'>
+<div class='work-thumb-item' onclick='switchWorkImg(this, "/images/work02_3.jpg")'>
+<img src='/images/work02_3.jpg' alt='サムネイル3'>
 </div>
-<div class='work-thumb-item' onclick='switchWorkImg(this, "../images/work03.jpg")'>
-<img src='../images/work02_4.jpg' alt='サムネイル4'>
+<div class='work-thumb-item' onclick='switchWorkImg(this, "/images/work02_4.jpg")'>
+<img src='/images/work02_4.jpg' alt='サムネイル4'>
 </div>
 </div>
 </div>
@@ -190,15 +180,14 @@ font-weight: 600;
 </div>
 
 <!-- 2. 使用機材・技術 -->
-
 <div class='work-info-block'>
-  <div class='work-info-label'>TECHNOLOGY / HARDWARE</div>
-  <div class='tech-tags'>
-    <span class='tech-tag'>Arduino</span>
-    <span class='tech-tag'>Processing</span>
-    <span class='tech-tag'>超音波距離センサー</span>
-    <span class='tech-tag'>サーボモーター</span>
-  </div>
+<div class='work-info-label'>TECHNOLOGY / HARDWARE</div>
+<div class='tech-tags'>
+<span class='tech-tag'>Arduino</span>
+<span class='tech-tag'>Processing</span>
+<span class='tech-tag'>超音波距離センサー</span>
+<span class='tech-tag'>サーボモーター</span>
+</div>
 </div>
 
 <!-- 3. 説明文章 -->
@@ -217,25 +206,25 @@ Human Data Interactionを基盤とした「専門家でない人が気候変動�
 </div>
 </div>
 
-
+</div>
 </div>
 </div>
 
 <!-- 画像切り替え用JavaScript -->
 <script>
 function switchWorkImg(element, newSrc) {
-  var mainImg = document.getElementById('mainDisplayImg');
-  if (mainImg) {
-    mainImg.style.opacity = '0.3';
-    setTimeout(function() {
-      mainImg.src = newSrc;
-      mainImg.style.opacity = '1';
-    }, 150);
-  }
-  var thumbs = document.querySelectorAll('.work-thumb-item');
-  thumbs.forEach(function(thumb) {
-    thumb.classList.remove('active');
-  });
-  element.classList.add('active');
+var mainImg = document.getElementById('mainDisplayImg');
+if (mainImg) {
+mainImg.style.opacity = '0.3';
+setTimeout(function() {
+mainImg.src = newSrc;
+mainImg.style.opacity = '1';
+}, 150);
+}
+var thumbs = document.querySelectorAll('.work-thumb-item');
+thumbs.forEach(function(thumb) {
+thumb.classList.remove('active');
+});
+element.classList.add('active');
 }
 </script>
