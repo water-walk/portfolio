@@ -278,7 +278,7 @@ text-overflow: ellipsis;
 <dd style='margin: 0;'><a href='mailto:mizuho.nattsu.0809@gmail.com' style='color: #333; text-decoration: underline;'>mizuho.nattsu.0809@gmail.com</a></dd>
 
 <dt style='font-weight: bold; color: #111; white-space: nowrap;'>趣味</dt>
-<dd style='margin: 0;'>カメラ、馬、車</dd>
+<dd style='margin: 0;'>カメラ、馬、おもちゃ</dd>
 </dl>
 </div>
 </div>
