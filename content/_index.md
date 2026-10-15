@@ -162,7 +162,7 @@ text-overflow: ellipsis;
 
 <!-- メインビジュアル -->
 <div style='width: 100%; margin: 0; padding: 0; overflow: hidden; position: relative; z-index: 1;'>
-<img src='./Nattu.jpg' alt='Nattsu' style='width: 100%; height: auto; display: block; max-height: 85vh; object-fit: cover;'>
+<img src='./Nattsu.jpg' alt='Nattsu' style='width: 100%; height: auto; display: block; max-height: 85vh; object-fit: cover;'>
 </div>
 
 <!-- コンテナ -->
