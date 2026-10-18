@@ -193,9 +193,12 @@ ul#menu li a {
 
 <!-- WORK (制作実績) -->
 <div id='work' style='margin-bottom: 120px; text-align: left;'>
-<div class='section-title-container'>
-<div class='bg-en-title'>WORKS</div>
-<div class='fg-ja-title'>作品</div>
+<div style='display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 30px; width: 100%;'>
+  <div class='section-title-container' style='margin-bottom: 0; height: 80px; width: auto;'>
+    <div class='bg-en-title'>WORKS</div>
+    <div class='fg-ja-title'>作品</div>
+  </div>
+  <a href='./works/' style='font-size: 0.9rem; font-weight: bold; color: #0066cc; text-decoration: none;'>View More →</a>
 </div>
 
 <div class='marquee-container'>

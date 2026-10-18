@@ -1,0 +1,105 @@
+---
+layout: "single"
+title: "作品一覧"
+hidemeta: true
+---
+
+<style>
+/* 全体の幅を80%に統一 */
+.post-content {
+  width: 80% !important;
+  max-width: 2000px !important;
+  margin: 0 auto !important;
+  box-sizing: border-box;
+}
+
+/* 横3列のカードグリッドレイアウト */
+.works-grid-3col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 30px;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .works-grid-3col {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* カードのデザイン（ホーム画面や詳細ページと完全統一） */
+.work-grid-card {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  background: transparent !important;
+  border: none !important;
+}
+
+.work-grid-card:hover {
+  transform: translateY(-4px);
+  opacity: 0.85;
+}
+
+.work-grid-img-wrapper {
+  width: 100%;
+  aspect-ratio: 16/10;
+  background: transparent !important;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.work-grid-title {
+  font-size: 1.05rem;
+  font-weight: bold;
+  margin: 0;
+  color: #222;
+}
+</style>
+
+<!-- ページヘッダー -->
+<div style="margin-top: 40px; text-align: left;">
+  <h1 style="font-size: 2.2rem; font-weight: 800; color: #111; margin-bottom: 8px;">作品一覧</h1>
+  <p style="font-size: 0.95rem; color: #666;">これまでに制作したメイン作品のコレクションです。</p>
+</div>
+
+<!-- 横3列の作品カード一覧 -->
+<div class="works-grid-3col">
+
+  <!-- 作品 1 -->
+  <a href="./work01/" class="work-grid-card">
+    <div class="work-grid-img-wrapper">
+      <img src="../work01.jpg" alt="奇跡の軌跡" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+    </div>
+    <h3 class="work-grid-title">奇跡の軌跡</h3>
+  </a>
+
+  <!-- 作品 2 -->
+  <a href="./work02/" class="work-grid-card">
+    <div class="work-grid-img-wrapper">
+      <img src="../work02.jpg" alt="Echoes" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+    </div>
+    <h3 class="work-grid-title">Echoes</h3>
+  </a>
+
+  <!-- 作品 3 -->
+  <a href="./work03/" class="work-grid-card">
+    <div class="work-grid-img-wrapper">
+      <img src="../work03.jpg" alt="Cam to Turn" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+    </div>
+    <h3 class="work-grid-title">Cam to Turn</h3>
+  </a>
+
+  <!-- 作品 4 -->
+  <a href="./work04/" class="work-grid-card">
+    <div class="work-grid-img-wrapper">
+      <img src="../work04.jpg" alt="りびんぐすくえあ" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+    </div>
+    <h3 class="work-grid-title">りびんぐすくえあ</h3>
+  </a>
+
+</div>
