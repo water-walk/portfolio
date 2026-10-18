@@ -258,7 +258,6 @@ ul#menu li a {
 <div class='work-img-wrapper'>
 <img src='./work04.jpg' alt='作品4' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
 </div>
-<h3 class='work-simple-title'>りびんぐすくえあ</h3>
 </a>
 
 </div>
