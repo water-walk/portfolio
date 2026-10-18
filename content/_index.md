@@ -24,11 +24,15 @@ margin: 0 !important;
 padding: 0 !important;
 }
 
-/* トップページのメインコンテンツ幅は標準を維持して崩れを防ぐ */
 .post-content {
-max-width: 900px !important;
-margin: 0 auto !important;
-padding: 0 20px !important;
+  max-width: 1250px !important;
+  margin: 0 auto !important;
+  padding: 0 40px !important;
+}
+
+/* ヘッダーの左右の余白も微調整（必要に応じて） */
+header.header {
+  padding: 0 40px !important; 
 }
 
 header.header {
@@ -41,7 +45,7 @@ backdrop-filter: blur(12px) !important;
 -webkit-backdrop-filter: blur(12px) !important;
 z-index: 999 !important; 
 border: none !important;
-padding: 0 20px !important; 
+padding: 0 40px !important; 
 }
 header.header nav.nav {
 min-height: 48px !important;
