@@ -208,28 +208,24 @@ ul#menu li a {
 <div class='work-img-wrapper'>
 <img src='./work01.jpg' alt='作品1' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
 </div>
-<h3 class='work-simple-title'>奇跡の軌跡</h3>
 </a>
 
 <a href='./works/work02/' class='work-simple-card'>
 <div class='work-img-wrapper'>
 <img src='./work02.jpg' alt='作品2' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
 </div>
-<h3 class='work-simple-title'>Echoes</h3>
 </a>
 
 <a href='./works/work03/' class='work-simple-card'>
 <div class='work-img-wrapper'>
 <img src='./work03.jpg' alt='作品3' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
 </div>
-<h3 class='work-simple-title'>Cam to Turn</h3>
 </a>
 
 <a href='./works/work04/' class='work-simple-card'>
 <div class='work-img-wrapper'>
 <img src='./work04.jpg' alt='作品4' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
 </div>
-<h3 class='work-simple-title'>りびんぐすくえあ</h3>
 </a>
 
 <!-- ===== 2セット目（ループ用複製） ===== -->
@@ -237,21 +233,18 @@ ul#menu li a {
 <div class='work-img-wrapper'>
 <img src='./work01.jpg' alt='作品1' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
 </div>
-<h3 class='work-simple-title'>奇跡の軌跡</h3>
 </a>
 
 <a href='./works/work02/' class='work-simple-card'>
 <div class='work-img-wrapper'>
 <img src='./work02.jpg' alt='作品2' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
 </div>
-<h3 class='work-simple-title'>Echoes</h3>
 </a>
 
 <a href='./works/work03/' class='work-simple-card'>
 <div class='work-img-wrapper'>
 <img src='./work03.jpg' alt='作品3' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
 </div>
-<h3 class='work-simple-title'>Cam to Turn</h3>
 </a>
 
 <a href='./works/work04/' class='work-simple-card'>
