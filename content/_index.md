@@ -193,14 +193,14 @@ ul#menu li a {
 
 <!-- WORK (制作実績) -->
 <div id='work' style='margin-bottom: 120px; text-align: left;'>
-<div style='display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 30px; width: 100%;'>
-  <div class='section-title-container' style='margin-bottom: 0; height: 80px; width: auto;'>
-    <div class='bg-en-title'>WORKS</div>
-    <div class='fg-ja-title'>作品</div>
-  </div>
-  <a href='./works/' style='font-size: 0.9rem; font-weight: bold; color: #0066cc; text-decoration: none;'>View More →</a>
+
+<!-- 1. WORKSのタイトル（元通りのレイアウトに戻して縦崩れを解消） -->
+<div class='section-title-container'>
+<div class='bg-en-title'>WORKS</div>
+<div class='fg-ja-title'>作品</div>
 </div>
 
+<!-- 2. 作品の横スクロール（マーキー） -->
 <div class='marquee-container'>
 <div class='marquee-track'>
 <!-- ===== 1セット目 ===== -->
@@ -264,8 +264,11 @@ ul#menu li a {
 </div>
 </div>
 
-<!-- プロトタイプ集 -->
-<h3 style='font-size: 1.1rem; font-weight: bold; margin: 40px 0 16px; padding-bottom: 6px; border-bottom: 2px solid #222; color: #111; width: 100%;'>プロトタイプ集</h3>
+<!-- 3. プロトタイプ集の見出し ＋ 指定位置（オレンジの丸の場所）に配置した View More リンク -->
+<div style='display: flex; justify-content: space-between; align-items: baseline; margin: 40px 0 16px 0; border-bottom: 2px solid #222; padding-bottom: 6px; width: 100%;'>
+<h3 style='font-size: 1.1rem; font-weight: bold; margin: 0; color: #111;'>プロトタイプ集</h3>
+<a href='./works/' style='font-size: 0.85rem; font-weight: bold; color: #0066cc; text-decoration: none;'>View More →</a>
+</div>
 
 <dl style='display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0; width: 100%; box-sizing: border-box;'>
 <dt style='font-weight: bold; color: #111; white-space: nowrap;'>No.01</dt>
@@ -276,8 +279,8 @@ ul#menu li a {
 
 <dt style='font-weight: bold; color: #111; white-space: nowrap;'>No.03</dt>
 <dd style='margin: 0;'><a href='./works/p03/' style='color: #0066cc; text-decoration: underline; font-weight: bold;'>視覚的モールス信号</a></dd>
-
 </dl>
+
 </div>
 
 <!-- PROFILE -->
