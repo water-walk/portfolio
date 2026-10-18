@@ -33,37 +33,31 @@ body {
   padding: 0 !important;
 }
 
-/* メインコンテンツエリアも画面の左右端まで大きく使う（必要に応じて左右のパディングを調整） */
+/* メインコンテンツエリアを左右2割・中央6割（幅60%）に設定 */
 .post-content {
-  max-width: 100% !important;
-  width: 100% !important;
-  margin: 0 !important;
-  padding: 0 40px !important; /* 画面端から少しだけ内側に余白が欲しい場合は数値を調整（完全にするなら0） */
+  width: 60% !important;
+  max-width: 1400px !important; /* 超大型画面でも広がりすぎない安全上限 */
+  min-width: 320px;            /* スマホで潰れない最小幅 */
+  margin: 0 auto !important;   /* 左右2割ずつ均等に余白を作って中央寄せ */
+  padding: 0 !important;
   box-sizing: border-box;
 }
 
-/* 固定ヘッダーの調整 */
-header.header {
-  position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
+/* マーキー（横スクロール）もコンテンツ幅（60%）の中に綺麗に収める */
+.marquee-container {
+  overflow: hidden;
   width: 100% !important;
-  background: rgba(255, 255, 255, 0.85) !important; 
-  backdrop-filter: blur(12px) !important; 
-  -webkit-backdrop-filter: blur(12px) !important;
-  z-index: 999 !important; 
-  border: none !important;
-  padding: 0 40px !important; 
-  box-sizing: border-box;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  position: static !important;
+  margin-bottom: 40px;
 }
 
+/* ヘッダーの位置もコンテンツの左右位置（中央60%）に美しく合わせる場合 */
 header.header nav.nav {
-  min-height: 48px !important;
-  height: 48px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  max-width: 100% !important;
+  width: 60% !important;
+  max-width: 1400px !important;
+  margin: 0 auto !important;
 }
 
 .logo a {
