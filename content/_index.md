@@ -3,29 +3,23 @@ layout: "single"
 ---
 
 <style>
-/* 画面全体のマージンとパディングを完全になくす */
+/* ページ全体の基準：余白やみだしを防止 */
 body {
   margin: 0 !important;
   padding: 0 !important;
-  width: 100% !important;
   overflow-x: hidden;
 }
 
-/* Hugoのコンテナ制限を解除して画面幅いっぱいに広げる */
 .container {
   max-width: 100% !important;
-  width: 100% !important;
   padding: 0 !important;
   margin: 0 !important;
 }
 
 .main {
-  max-width: 100% !important;
-  width: 100% !important;
   margin-top: 0 !important;
-  padding-top: 48px !important; /* ヘッダーの高さ分の余白 */
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  padding-top: 60px !important; /* 固定ヘッダー分のゆとり */
+  max-width: 100% !important;
 }
 
 .post-header, .post-meta {
@@ -33,31 +27,41 @@ body {
   padding: 0 !important;
 }
 
-/* メインコンテンツエリアを左右2割・中央6割（幅60%）に設定 */
+/* 【重要】すべてのコンテンツ（ヒーロー画像、各種セクション、リスト等）を「幅80%・中央寄せ」に統一 */
 .post-content {
   width: 80% !important;
-  max-width: 2000px !important; /* 超大型画面でも広がりすぎない安全上限 */
-  min-width: 320px;            /* スマホで潰れない最小幅 */
-  margin: 0 auto !important;   /* 左右2割ずつ均等に余白を作って中央寄せ */
+  max-width: 2000px !important;
+  min-width: 320px;
+  margin: 0 auto !important;
   padding: 0 !important;
   box-sizing: border-box;
 }
 
-/* マーキー（横スクロール）もコンテンツ幅（60%）の中に綺麗に収める */
-.marquee-container {
-  overflow: hidden;
+/* 固定ヘッダーの幅も「80%」に完全同期させる */
+header.header {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
   width: 100% !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  position: static !important;
-  margin-bottom: 40px;
+  background: rgba(255, 255, 255, 0.85) !important; 
+  backdrop-filter: blur(12px) !important; 
+  -webkit-backdrop-filter: blur(12px) !important;
+  z-index: 999 !important; 
+  border: none !important;
+  padding: 0 !important; 
+  box-sizing: border-box;
 }
 
-/* ヘッダーの位置もコンテンツの左右位置（中央60%）に美しく合わせる場合 */
 header.header nav.nav {
-  width: 60% !important;
-  max-width: 1400px !important;
+  width: 80% !important;
+  max-width: 2000px !important;
   margin: 0 auto !important;
+  min-height: 48px !important;
+  height: 48px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  box-sizing: border-box;
 }
 
 .logo a {
@@ -80,18 +84,18 @@ ul#menu li a {
   font-weight: 500 !important;
 }
 
-/* セクションタイトル等の調整 */
+/* 各セクションのタイトル周り */
 .section-title-container {
   position: relative;
-  margin-bottom: 40px;
-  height: 90px;
+  margin-bottom: 30px;
+  height: 80px;
 }
 
 .bg-en-title {
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: 800;
   color: rgba(60, 179, 113, 0.35);
   line-height: 1;
@@ -103,30 +107,24 @@ ul#menu li a {
   position: absolute;
   bottom: 5px;
   left: 10px;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #111;
   line-height: 1;
   z-index: 2;
 }
 
-/* マーキー（横スクロール）セクションの幅拡張 */
+/* マーキー（横スクロール）セクションも80%幅の枠内に収める */
 .marquee-container {
   overflow: hidden;
-  width: 100vw; /* 画面幅いっぱいに広げる */
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  width: 100%;
   margin-bottom: 50px;
-  padding: 0 20px;
-  box-sizing: border-box;
+  text-align: left;
 }
 
 .marquee-track {
   display: flex;
-  gap: 24px;
+  gap: 20px;
   width: max-content;
   animation: marquee-scroll 25s linear infinite;
 }
@@ -140,8 +138,9 @@ ul#menu li a {
   100% { transform: translateX(-50%); }
 }
 
+/* 作品カード（枠なし・サイズ統一） */
 .work-simple-card {
-  width: 280px; /* カードサイズを少し大きくして見栄えをリッチに */
+  width: 240px;
   text-decoration: none;
   color: inherit;
   display: flex;
@@ -164,13 +163,13 @@ ul#menu li a {
   aspect-ratio: 16/10;
   background: transparent !important;
   margin-bottom: 8px;
-  border-radius: 8px;
+  border-radius: 6px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
 
 .work-simple-title {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: bold;
   margin: 0;
   color: #222;
