@@ -3,164 +3,186 @@ layout: "single"
 ---
 
 <style>
+/* 画面全体のマージンとパディングを完全になくす */
 body {
-margin: 0 !important;
-padding: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  overflow-x: hidden;
 }
+
+/* Hugoのコンテナ制限を解除して画面幅いっぱいに広げる */
 .container {
-max-width: 100% !important;
-padding: 0 !important;
-margin: 0 !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .main {
-margin-top: 0 !important;
-padding-top: 0 !important;
-max-width: 100% !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  margin-top: 0 !important;
+  padding-top: 48px !important; /* ヘッダーの高さ分の余白 */
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .post-header, .post-meta {
-margin: 0 !important;
-padding: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
+/* メインコンテンツエリアも画面の左右端まで大きく使う（必要に応じて左右のパディングを調整） */
 .post-content {
-  max-width: 1250px !important;
-  margin: 0 auto !important;
-  padding: 0 40px !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 40px !important; /* 画面端から少しだけ内側に余白が欲しい場合は数値を調整（完全にするなら0） */
+  box-sizing: border-box;
 }
 
-/* ヘッダーの左右の余白も微調整（必要に応じて） */
+/* 固定ヘッダーの調整 */
 header.header {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  background: rgba(255, 255, 255, 0.85) !important; 
+  backdrop-filter: blur(12px) !important; 
+  -webkit-backdrop-filter: blur(12px) !important;
+  z-index: 999 !important; 
+  border: none !important;
   padding: 0 40px !important; 
+  box-sizing: border-box;
 }
 
-header.header {
-position: absolute !important;
-top: 0 !important;
-left: 0 !important;
-width: 100% !important;
-background: rgba(255, 255, 255, 0.4) !important; 
-backdrop-filter: blur(12px) !important; 
--webkit-backdrop-filter: blur(12px) !important;
-z-index: 999 !important; 
-border: none !important;
-padding: 0 40px !important; 
-}
 header.header nav.nav {
-min-height: 48px !important;
-height: 48px !important;
-display: flex !important;
-align-items: center !important;
-justify-content: space-between !important;
+  min-height: 48px !important;
+  height: 48px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  max-width: 100% !important;
 }
+
 .logo a {
-line-height: 48px !important;
-margin: 0 !important;
-padding: 0 !important;
+  line-height: 48px !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
+
 ul#menu {
-align-items: center !important;
-margin: 0 !important;
+  align-items: center !important;
+  margin: 0 !important;
 }
+
 ul#menu li a {
-padding: 6px 12px !important;
+  padding: 6px 12px !important;
 }
 
 .menu a, .logo a {
-color: #111 !important;
-font-weight: 500 !important;
+  color: #111 !important;
+  font-weight: 500 !important;
 }
 
+/* セクションタイトル等の調整 */
 .section-title-container {
-position: relative;
-margin-bottom: 40px;
-height: 90px;
+  position: relative;
+  margin-bottom: 40px;
+  height: 90px;
 }
 
 .bg-en-title {
-position: absolute;
-top: 0;
-left: 0;
-font-size: 4.5rem;
-font-weight: 800;
-color: rgba(60, 179, 113, 0.35);
-line-height: 1;
-letter-spacing: 4px;
-user-select: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 4.5rem;
+  font-weight: 800;
+  color: rgba(60, 179, 113, 0.35);
+  line-height: 1;
+  letter-spacing: 4px;
+  user-select: none;
 }
 
 .fg-ja-title {
-position: absolute;
-bottom: 5px;
-left: 10px;
-font-size: 1.6rem;
-font-weight: 700;
-color: #111;
-line-height: 1;
-z-index: 2;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #111;
+  line-height: 1;
+  z-index: 2;
 }
 
+/* マーキー（横スクロール）セクションの幅拡張 */
 .marquee-container {
-overflow: hidden;
-width: 100%;
-margin-bottom: 40px;
-text-align: left;
+  overflow: hidden;
+  width: 100vw; /* 画面幅いっぱいに広げる */
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-bottom: 50px;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .marquee-track {
-display: flex;
-gap: 20px;
-width: max-content;
-animation: marquee-scroll 25s linear infinite;
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  animation: marquee-scroll 25s linear infinite;
 }
 
 .marquee-container:hover .marquee-track {
-animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 @keyframes marquee-scroll {
-0% { transform: translateX(0); }
-100% { transform: translateX(-50%); }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 .work-simple-card {
-width: 220px;
-text-decoration: none;
-color: inherit;
-display: flex;
-flex-direction: column;
-transition: transform 0.2s ease, opacity 0.2s ease;
-flex-shrink: 0;
-background: transparent !important;
-border: none !important;
-box-shadow: none !important;
-padding: 0 !important;
+  width: 280px; /* カードサイズを少し大きくして見栄えをリッチに */
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  flex-shrink: 0;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
 }
 
 .work-simple-card:hover {
-transform: translateY(-4px);
-opacity: 0.85;
+  transform: translateY(-4px);
+  opacity: 0.85;
 }
 
 .work-img-wrapper {
-width: 100%;
-aspect-ratio: 16/10;
-background: transparent !important;
-margin-bottom: 8px;
-border-radius: 6px;
-overflow: hidden;
-box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  width: 100%;
+  aspect-ratio: 16/10;
+  background: transparent !important;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
 
 .work-simple-title {
-font-size: 0.95rem;
-font-weight: bold;
-margin: 0;
-color: #222;
-white-space: nowrap;
-overflow: hidden;
-text-overflow: ellipsis;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+  color: #222;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 </style>
 
