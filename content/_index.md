@@ -183,13 +183,13 @@ ul#menu li a {
 }
 </style>
 
-<!-- メインビジュアル -->
-<div style='width: 100%; margin: 0; padding: 0; overflow: hidden; position: relative; z-index: 1;'>
-<img src='./back.jpg' alt='Nattsu' style='width: 100%; height: auto; display: block; max-height: 85vh; object-fit: cover;'>
+<!-- メインビジュアル（80%幅のコンテンツ内に収め、横幅を下のパーツと完全同期） -->
+<div style='width: 100%; margin: 20px 0 60px 0; padding: 0; overflow: hidden; position: relative; z-index: 1;'>
+<img src='./back.jpg' alt='Nattsu' style='width: 100%; height: auto; display: block; max-height: 75vh; object-fit: cover; border-radius: 8px;'>
 </div>
 
-<!-- コンテナ -->
-<div style='max-width: 900px; margin: 80px auto 0; padding: 0 20px; font-family: "Helvetica Neue", Arial, sans-serif;'>
+<!-- 各セクション（すべて80%幅の .post-content の中に統一） -->
+<div style='width: 100%; font-family: "Helvetica Neue", Arial, sans-serif;'>
 
 <!-- WORK (制作実績) -->
 <div id='work' style='margin-bottom: 120px; text-align: left;'>
