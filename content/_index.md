@@ -3,7 +3,7 @@ layout: "single"
 ---
 
 <style>
-/* ページ全体の基準：余白やみだしを防止 */
+/* ページ全体の基準 */
 body {
   margin: 0 !important;
   padding: 0 !important;
@@ -18,7 +18,7 @@ body {
 
 .main {
   margin-top: 0 !important;
-  padding-top: 60px !important; /* 固定ヘッダー分のゆとり */
+  padding-top: 60px !important;
   max-width: 100% !important;
 }
 
@@ -27,7 +27,7 @@ body {
   padding: 0 !important;
 }
 
-/* 【重要】すべてのコンテンツ（ヒーロー画像、各種セクション、リスト等）を「幅80%・中央寄せ」に統一 */
+/* 1. すべてのメインコンテンツを「幅80%・中央寄せ」に固定 */
 .post-content {
   width: 80% !important;
   max-width: 2000px !important;
@@ -37,7 +37,7 @@ body {
   box-sizing: border-box;
 }
 
-/* 固定ヘッダーの幅も「80%」に完全同期させる */
+/* 2. 【重要】一番上のヘッダー（PaperMod標準）も完全に「幅80%」のラインに合わせる */
 header.header {
   position: fixed !important;
   top: 0 !important;
@@ -52,6 +52,7 @@ header.header {
   box-sizing: border-box;
 }
 
+/* ヘッダー内部のナビゲーションを .post-content と同じ 80% 幅にして左端をピタッと揃える */
 header.header nav.nav {
   width: 80% !important;
   max-width: 2000px !important;
@@ -61,6 +62,7 @@ header.header nav.nav {
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
+  padding: 0 !important;
   box-sizing: border-box;
 }
 
@@ -73,6 +75,7 @@ header.header nav.nav {
 ul#menu {
   align-items: center !important;
   margin: 0 !important;
+  padding-right: 0 !important;
 }
 
 ul#menu li a {
@@ -89,6 +92,7 @@ ul#menu li a {
   position: relative;
   margin-bottom: 30px;
   height: 80px;
+  width: 100%;
 }
 
 .bg-en-title {
@@ -106,7 +110,7 @@ ul#menu li a {
 .fg-ja-title {
   position: absolute;
   bottom: 5px;
-  left: 10px;
+  left: 0; /* 左端をコンテナのラインに綺麗に合わせる */
   font-size: 1.5rem;
   font-weight: 700;
   color: #111;
@@ -114,7 +118,7 @@ ul#menu li a {
   z-index: 2;
 }
 
-/* マーキー（横スクロール）セクションも80%幅の枠内に収める */
+/* マーキー（横スクロール）セクション */
 .marquee-container {
   overflow: hidden;
   width: 100%;
