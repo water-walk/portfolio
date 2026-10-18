@@ -264,8 +264,8 @@ ul#menu li a {
 </div>
 </div>
 
-<!-- 3. プロトタイプ集の見出し ＋ 指定位置（オレンジの丸の場所）に配置した View More リンク -->
-<div style='display: flex; justify-content: space-between; align-items: baseline; margin: 40px 0 16px 0; border-bottom: 2px solid #222; padding-bottom: 6px; width: 100%;'>
+<!-- 3. プロトタイプ集の見出し ＋ 微調整した View More リンクの位置 -->
+<div style='display: flex; justify-content: space-between; align-items: center; margin: 40px 0 16px 0; border-bottom: 2px solid #222; padding-bottom: 6px; width: 100%;'>
 <h3 style='font-size: 1.1rem; font-weight: bold; margin: 0; color: #111;'>プロトタイプ集</h3>
 <a href='./works/' style='font-size: 0.85rem; font-weight: bold; color: #0066cc; text-decoration: none;'>View More →</a>
 </div>
