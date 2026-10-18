@@ -35,7 +35,7 @@ body {
 
 /* メインコンテンツエリアを左右2割・中央6割（幅60%）に設定 */
 .post-content {
-  width: 60% !important;
+  width: 80% !important;
   max-width: 1400px !important; /* 超大型画面でも広がりすぎない安全上限 */
   min-width: 320px;            /* スマホで潰れない最小幅 */
   margin: 0 auto !important;   /* 左右2割ずつ均等に余白を作って中央寄せ */
