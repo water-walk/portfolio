@@ -116,7 +116,7 @@ ul#menu li a {
 .marquee-container {
   overflow: hidden;
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 20px; /* カプセルボタンとの間隔を調整するため少し詰めています */
   text-align: left;
 }
 
@@ -134,6 +134,49 @@ ul#menu li a {
 @keyframes marquee-scroll {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
+}
+
+/* カプセル型 VIEW MORE ボタンのスタイル */
+.view-more-btn-wrapper {
+  display: flex;
+  justify-content: flex-end; /* 右寄せ（中央にしたい場合は center に変更） */
+  margin: 0 0 50px 0;
+  width: 100%;
+}
+
+.view-more-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px 32px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #111;
+  background-color: transparent;
+  border: 2px solid #111;
+  border-radius: 50px;
+  text-decoration: none !important;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.view-more-btn .arrow {
+  display: inline-block;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+}
+
+.view-more-btn:hover {
+  background-color: #111;
+  color: #fff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.view-more-btn:hover .arrow {
+  transform: translateX(5px);
 }
 
 .work-simple-card {
@@ -239,11 +282,9 @@ ul#menu li a {
 
     for (let i = 0; i < cols; i++) {
       for (let j = 0; j < rows; j++) {
-        // 各マスの中心位置（絶対にブレない固定位置）
         let x = i * cellWidth + cellWidth / 2;
         let y = j * cellHeight + cellHeight / 2;
 
-        // マウスとの距離
         let dx = mouse.x - x;
         let dy = mouse.y - y;
         let dist = Math.sqrt(dx * dx + dy * dy);
@@ -251,21 +292,18 @@ ul#menu li a {
         let offsetY = 0;
         let scale = 1;
 
-        // マウスに近いブロックだけが上方向に浮き上がり、波打つように揺れる
         if (dist < mouse.radius) {
           let force = (1 - dist / mouse.radius);
-          offsetY = -Math.sin(angle * 2.5 + dist * 0.08) * 12 * force; // 上下にふわふわ揺れる
-          scale = 1 + force * 0.15; // 控えめに拡大
+          offsetY = -Math.sin(angle * 2.5 + dist * 0.08) * 12 * force;
+          scale = 1 + force * 0.15;
         }
 
         ctx.save();
-        // 位置をずらすのは offsetY（上下の浮き上がり）のみにし、横方向への引きずりを完全になくす
         ctx.translate(x, y + offsetY);
         ctx.scale(scale, scale);
 
         let size = Math.min(cellWidth, cellHeight) * 0.78;
         
-        // 四角形（本体）
         ctx.fillStyle = '#dcdcdc';
         ctx.fillRect(-size/2, -size/2, size, size);
         
@@ -273,7 +311,6 @@ ul#menu li a {
         ctx.lineWidth = 1.5;
         ctx.strokeRect(-size/2, -size/2, size, size);
 
-        // 立方体風の上の面（ハイライト）
         ctx.fillStyle = 'rgba(255, 255, 255, 0.3)';
         ctx.beginPath();
         ctx.moveTo(-size/2, -size/2);
@@ -365,9 +402,16 @@ ul#menu li a {
 </div>
 </div>
 
-<div style="position: relative; margin: 55px 0 16px 0; border-bottom: 2px solid #222; padding-bottom: 6px; width: 100%;">
+<!-- 作品カルーセルの直下に置いたカプセル型ボタン -->
+<div class="view-more-btn-wrapper">
+  <a href="./works/" class="view-more-btn">
+    VIEW MORE <span class="arrow">→</span>
+  </a>
+</div>
+
+<!-- プロトタイプ集の見出し（右上のリンクを削除してスッキリさせました） -->
+<div style="margin: 30px 0 16px 0; border-bottom: 2px solid #222; padding-bottom: 6px; width: 100%;">
 <h3 style="font-size: 1.1rem; font-weight: bold; margin: 0; color: #111;">プロトタイプ集</h3>
-<a href="./works/" style="position: absolute; right: 0; top: -32px; font-size: 1rem; font-weight: bold; color: #0066cc; text-decoration: none;">View More →</a>
 </div>
 
 <dl style="display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0; width: 100%; box-sizing: border-box;">
