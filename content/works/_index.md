@@ -62,10 +62,6 @@ hidemeta: true
 </style>
 
 <!-- ページヘッダー -->
-<div style="margin-top: 40px; text-align: left;">
-  <h1 style="font-size: 2.2rem; font-weight: 800; color: #111; margin-bottom: 8px;">作品一覧</h1>
-  <p style="font-size: 0.95rem; color: #666;">これまでに制作したメイン作品のコレクションです。</p>
-</div>
 
 <!-- 横3列の作品カード一覧 -->
 <div class="works-grid-3col">
