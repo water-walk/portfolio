@@ -188,6 +188,7 @@ ul#menu li a {
 <img src='./back.jpg' alt='Nattsu' style='width: 100%; height: auto; display: block; max-height: 75vh; object-fit: cover; border-radius: 8px;'>
 </div>
 
+
 <!-- 各セクション（すべて80%幅の .post-content の中に統一） -->
 <div style='width: 100%; font-family: "Helvetica Neue", Arial, sans-serif;'>
 
