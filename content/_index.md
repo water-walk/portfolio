@@ -176,92 +176,7 @@ ul#menu li a {
 }
 </style>
 
-<!-- マウスを乗せるとひとつひとつの四角がポコポコと揺れるメインビジュアル -->
-<style>
-.cube-grid-hero {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr); /* 横に8列並べる（お好みで調整可能） */
-  gap: 2px;
-  width: 100%;
-  aspect-ratio: 16/9;
-  max-height: 70vh;
-  margin: 20px 0 60px 0;
-  border-radius: 8px;
-  overflow: hidden;
-  background: #222;
-}
 
-.cube-cell {
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.cube-cell img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  user-select: none;
-  pointer-events: none;
-}
-
-/* マウスが触れた（ホバーした）ときのプルプル揺れるアニメーション */
-.cube-cell:hover {
-  z-index: 10;
-  animation: shakeCube 0.4s ease-in-out infinite alternate;
-  transform: scale(1.15);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-  border-radius: 4px;
-}
-
-@keyframes shakeCube {
-  0% { transform: scale(1.15) rotate(0deg) translateY(0); }
-  25% { transform: scale(1.18) rotate(-3deg) translateY(-2px); }
-  75% { transform: scale(1.18) rotate(3deg) translateY(2px); }
-  100% { transform: scale(1.15) rotate(0deg) translateY(0); }
-}
-</style>
-
-<div class="cube-grid-hero">
-  <!-- 画像パーツをグリッド状に配置（触れた個所が単体で反応して揺れます） -->
-  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
-  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
-  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
-  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
-  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
-  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
-  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
-  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
-
-  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
-  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
-  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
-  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
-  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
-  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
-  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
-  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
-
-  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
-  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
-  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
-  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
-  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
-  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
-  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
-  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
-
-  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
-  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
-  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
-  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
-  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
-  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
-  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
-  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
-</div>
 
 <div style="width: 100%; font-family: 'Helvetica Neue', Arial, sans-serif;">
 
@@ -278,7 +193,121 @@ ul#menu li a {
 <a href="./works/work01/" class="work-simple-card">
 <div class="work-img-wrapper">
 <img src="./work01.jpg" alt="作品1" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+</div><!-- マウスに反応して波打つように揺れる立方体グリッドのインタラクティブ・ビジュアル -->
+<style>
+.interactive-hero-container {
+  width: 100%;
+  margin: 20px 0 60px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  background: #111;
+  aspect-ratio: 16/9;
+  max-height: 70vh;
+}
+.interactive-hero-container canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+</style>
+
+<div class="interactive-hero-container">
+  <canvas id="cubeWaveCanvas"></canvas>
 </div>
+
+<script>
+(function() {
+  const canvas = document.getElementById('cubeWaveCanvas');
+  const ctx = canvas.getContext('2d');
+
+  let cols = 16;
+  let rows = 10;
+  let spacing = 0;
+  let mouse = { x: -1000, y: -1000, radius: 150 };
+
+  function resize() {
+    canvas.width = canvas.parentElement.clientWidth;
+    canvas.height = canvas.parentElement.clientHeight;
+  }
+  window.addEventListener('resize', resize);
+  resize();
+
+  canvas.addEventListener('mousemove', (e) => {
+    const rect = canvas.getBoundingClientRect();
+    mouse.x = e.clientX - rect.left;
+    mouse.y = e.clientY - rect.top;
+  });
+
+  canvas.addEventListener('mouseleave', () => {
+    mouse.x = -1000;
+    mouse.y = -1000;
+  });
+
+  let angle = 0;
+
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    const cellWidth = canvas.width / cols;
+    const cellHeight = canvas.height / rows;
+
+    angle += 0.03;
+
+    for (let i = 0; i < cols; i++) {
+      for (let j = 0; j < rows; j++) {
+        let x = i * cellWidth + cellWidth / 2;
+        let y = j * cellHeight + cellHeight / 2;
+
+        // マウスとの距離を計算
+        let dx = mouse.x - x;
+        let dy = mouse.y - y;
+        let dist = Math.sqrt(dx * dx + dy * dy);
+
+        let offset = 0;
+        let scale = 1;
+
+        if (dist < mouse.radius) {
+          let force = (1 - dist / mouse.radius);
+          offset = Math.sin(angle * 3 + dist * 0.05) * 15 * force;
+          scale = 1 + force * 0.4;
+        }
+
+        // 立方体（タイル）の描画
+        ctx.save();
+        ctx.translate(x + dx * 0.05, y + dy * 0.05 + offset);
+        ctx.scale(scale, scale);
+
+        let size = Math.min(cellWidth, cellHeight) * 0.75;
+        
+        // 四角形（立方体風の立体感）
+        ctx.fillStyle = '#e0e0e0';
+        ctx.fillRect(-size/2, -size/2, size, size);
+        
+        ctx.strokeStyle = '#333333';
+        ctx.lineWidth = 1.5;
+        ctx.strokeRect(-size/2, -size/2, size, size);
+
+        // 立方体の上面・側面の影（アイソメトリック風の陰影）
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.beginPath();
+        ctx.moveTo(-size/2, -size/2);
+        ctx.lineTo(size/2, -size/2);
+        ctx.lineTo(0, -size/2 - 8);
+        ctx.closePath();
+        ctx.fill();
+
+        ctx.restore();
+      }
+    }
+
+    requestAnimationFrame(draw);
+  }
+
+  draw();
+})();
+</script>
 <h3 class="work-simple-title">奇跡の軌跡</h3>
 </a>
 
