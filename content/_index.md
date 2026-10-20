@@ -176,24 +176,7 @@ ul#menu li a {
 }
 </style>
 
-
-
-<div style="width: 100%; font-family: 'Helvetica Neue', Arial, sans-serif;">
-
-<div id="work" style="margin-bottom: 120px; text-align: left;">
-
-<div class="section-title-container">
-<div class="bg-en-title">WORKS</div>
-<div class="fg-ja-title">作品</div>
-</div>
-
-<div class="marquee-container">
-<div class="marquee-track">
-
-<a href="./works/work01/" class="work-simple-card">
-<div class="work-img-wrapper">
-<img src="./work01.jpg" alt="作品1" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-</div><!-- マウスに反応して波打つように揺れる立方体グリッドのインタラクティブ・ビジュアル -->
+<!-- マウスに反応して波打つように揺れる立方体グリッドのインタラクティブ・ビジュアル -->
 <style>
 .interactive-hero-container {
   width: 100%;
@@ -308,6 +291,23 @@ ul#menu li a {
   draw();
 })();
 </script>
+
+<div style="width: 100%; font-family: 'Helvetica Neue', Arial, sans-serif;">
+
+<div id="work" style="margin-bottom: 120px; text-align: left;">
+
+<div class="section-title-container">
+<div class="bg-en-title">WORKS</div>
+<div class="fg-ja-title">作品</div>
+</div>
+
+<div class="marquee-container">
+<div class="marquee-track">
+
+<a href="./works/work01/" class="work-simple-card">
+<div class="work-img-wrapper">
+<img src="./work01.jpg" alt="作品1" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+</div>
 <h3 class="work-simple-title">奇跡の軌跡</h3>
 </a>
 
