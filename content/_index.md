@@ -3,7 +3,6 @@ layout: "single"
 ---
 
 <style>
-/* ページ全体の基準 */
 body {
   margin: 0 !important;
   padding: 0 !important;
@@ -27,7 +26,6 @@ body {
   padding: 0 !important;
 }
 
-/* 1. すべてのメインコンテンツを「幅80%・中央寄せ」に固定 */
 .post-content {
   width: 80% !important;
   max-width: 2000px !important;
@@ -37,7 +35,6 @@ body {
   box-sizing: border-box;
 }
 
-/* 2. 【重要】一番上のヘッダー（PaperMod標準）も完全に「幅80%」のラインに合わせる */
 header.header {
   position: fixed !important;
   top: 0 !important;
@@ -52,7 +49,6 @@ header.header {
   box-sizing: border-box;
 }
 
-/* ヘッダー内部のナビゲーションを .post-content と同じ 80% 幅にして左端をピタッと揃える */
 header.header nav.nav {
   width: 80% !important;
   max-width: 2000px !important;
@@ -87,7 +83,6 @@ ul#menu li a {
   font-weight: 500 !important;
 }
 
-/* 各セクションのタイトル周り */
 .section-title-container {
   position: relative;
   margin-bottom: 30px;
@@ -110,7 +105,7 @@ ul#menu li a {
 .fg-ja-title {
   position: absolute;
   bottom: 5px;
-  left: 0; /* 左端をコンテナのラインに綺麗に合わせる */
+  left: 0;
   font-size: 1.5rem;
   font-weight: 700;
   color: #111;
@@ -118,7 +113,6 @@ ul#menu li a {
   z-index: 2;
 }
 
-/* マーキー（横スクロール）セクション */
 .marquee-container {
   overflow: hidden;
   width: 100%;
@@ -142,7 +136,6 @@ ul#menu li a {
   100% { transform: translateX(-50%); }
 }
 
-/* 作品カード（枠なし・サイズ統一） */
 .work-simple-card {
   width: 240px;
   text-decoration: none;
@@ -183,178 +176,175 @@ ul#menu li a {
 }
 </style>
 
-<!-- メインビジュアル（80%幅のコンテンツ内に収め、横幅を下のパーツと完全同期） -->
-<div style='width: 100%; margin: 20px 0 60px 0; padding: 0; overflow: hidden; position: relative; z-index: 1;'>
-<img src='./back.jpg' alt='Nattsu' style='width: 100%; height: auto; display: block; max-height: 75vh; object-fit: cover; border-radius: 8px;'>
+<div style="width: 100%; margin: 20px 0 60px 0; padding: 0; overflow: hidden; position: relative; z-index: 1;">
+<img src="./back.jpg" alt="Nattsu" style="width: 100%; height: auto; display: block; max-height: 75vh; object-fit: cover; border-radius: 8px;">
 </div>
 
+<div style="width: 100%; font-family: 'Helvetica Neue', Arial, sans-serif;">
 
-<!-- 各セクション（すべて80%幅の .post-content の中に統一） -->
-<div style='width: 100%; font-family: "Helvetica Neue", Arial, sans-serif;'>
+<div id="work" style="margin-bottom: 120px; text-align: left;">
 
-<!-- WORK (制作実績) -->
-<div id='work' style='margin-bottom: 120px; text-align: left;'>
-
-<!-- 1. WORKSのタイトル（元通りのレイアウトに戻して縦崩れを解消） -->
-<div class='section-title-container'>
-<div class='bg-en-title'>WORKS</div>
-<div class='fg-ja-title'>作品</div>
+<div class="section-title-container">
+<div class="bg-en-title">WORKS</div>
+<div class="fg-ja-title">作品</div>
 </div>
 
-<!-- 2. 作品の横スクロール（マーキー） -->
-<div class='marquee-container'>
-<div class='marquee-track'>
-<!-- ===== 1セット目 ===== -->
-<a href='./works/work01/' class='work-simple-card'>
-<div class='work-img-wrapper'>
-<img src='./work01.jpg' alt='作品1' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
+<div class="marquee-container">
+<div class="marquee-track">
+
+<a href="./works/work01/" class="work-simple-card">
+<div class="work-img-wrapper">
+<img src="./work01.jpg" alt="作品1" style="width: 100%; height: 100%; object-fit: cover; display: block;">
 </div>
+<h3 class="work-simple-title">奇跡の軌跡</h3>
 </a>
 
-<a href='./works/work02/' class='work-simple-card'>
-<div class='work-img-wrapper'>
-<img src='./work02.jpg' alt='作品2' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
+<a href="./works/work02/" class="work-simple-card">
+<div class="work-img-wrapper">
+<img src="./work02.jpg" alt="作品2" style="width: 100%; height: 100%; object-fit: cover; display: block;">
 </div>
+<h3 class="work-simple-title">Echoes</h3>
 </a>
 
-<a href='./works/work03/' class='work-simple-card'>
-<div class='work-img-wrapper'>
-<img src='./work03.jpg' alt='作品3' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
+<a href="./works/work03/" class="work-simple-card">
+<div class="work-img-wrapper">
+<img src="./work03.jpg" alt="作品3" style="width: 100%; height: 100%; object-fit: cover; display: block;">
 </div>
+<h3 class="work-simple-title">Cam to Turn</h3>
 </a>
 
-<a href='./works/work04/' class='work-simple-card'>
-<div class='work-img-wrapper'>
-<img src='./work04.jpg' alt='作品4' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
+<a href="./works/work04/" class="work-simple-card">
+<div class="work-img-wrapper">
+<img src="./work04.jpg" alt="作品4" style="width: 100%; height: 100%; object-fit: cover; display: block;">
 </div>
+<h3 class="work-simple-title">りびんぐすくえあ</h3>
 </a>
 
-<!-- ===== 2セット目（ループ用複製） ===== -->
-<a href='./works/work01/' class='work-simple-card'>
-<div class='work-img-wrapper'>
-<img src='./work01.jpg' alt='作品1' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
+<a href="./works/work01/" class="work-simple-card">
+<div class="work-img-wrapper">
+<img src="./work01.jpg" alt="作品1" style="width: 100%; height: 100%; object-fit: cover; display: block;">
 </div>
+<h3 class="work-simple-title">奇跡の軌跡</h3>
 </a>
 
-<a href='./works/work02/' class='work-simple-card'>
-<div class='work-img-wrapper'>
-<img src='./work02.jpg' alt='作品2' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
+<a href="./works/work02/" class="work-simple-card">
+<div class="work-img-wrapper">
+<img src="./work02.jpg" alt="作品2" style="width: 100%; height: 100%; object-fit: cover; display: block;">
 </div>
+<h3 class="work-simple-title">Echoes</h3>
 </a>
 
-<a href='./works/work03/' class='work-simple-card'>
-<div class='work-img-wrapper'>
-<img src='./work03.jpg' alt='作品3' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
+<a href="./works/work03/" class="work-simple-card">
+<div class="work-img-wrapper">
+<img src="./work03.jpg" alt="作品3" style="width: 100%; height: 100%; object-fit: cover; display: block;">
 </div>
+<h3 class="work-simple-title">Cam to Turn</h3>
 </a>
 
-<a href='./works/work04/' class='work-simple-card'>
-<div class='work-img-wrapper'>
-<img src='./work04.jpg' alt='作品4' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
+<a href="./works/work04/" class="work-simple-card">
+<div class="work-img-wrapper">
+<img src="./work04.jpg" alt="作品4" style="width: 100%; height: 100%; object-fit: cover; display: block;">
 </div>
+<h3 class="work-simple-title">りびんぐすくえあ</h3>
 </a>
 
 </div>
 </div>
 
-<!-- プロトタイプ集の見出し ＋ 上下に余裕を持たせた View More リンク -->
-<div style='position: relative; margin: 55px 0 16px 0; border-bottom: 2px solid #222; padding-bottom: 6px; width: 100%;'>
-<h3 style='font-size: 1.1rem; font-weight: bold; margin: 0; color: #111;'>プロトタイプ集</h3>
-<a href='./works/' style='position: absolute; right: 0; top: -32px; font-size: 1rem; font-weight: bold; color: #0066cc; text-decoration: none;'>View More →</a>
+<div style="position: relative; margin: 55px 0 16px 0; border-bottom: 2px solid #222; padding-bottom: 6px; width: 100%;">
+<h3 style="font-size: 1.1rem; font-weight: bold; margin: 0; color: #111;">プロトタイプ集</h3>
+<a href="./works/" style="position: absolute; right: 0; top: -32px; font-size: 1rem; font-weight: bold; color: #0066cc; text-decoration: none;">View More →</a>
 </div>
 
-<dl style='display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0; width: 100%; box-sizing: border-box;'>
-<dt style='font-weight: bold; color: #111; white-space: nowrap;'>No.01</dt>
-<dd style='margin: 0;'><a href='./works/p01/' style='color: #0066cc; text-decoration: underline; font-weight: bold;'>もわもわ</a></dd>
+<dl style="display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0; width: 100%; box-sizing: border-box;">
+<dt style="font-weight: bold; color: #111; white-space: nowrap;">No.01</dt>
+<dd style="margin: 0;"><a href="./works/p01/" style="color: #0066cc; text-decoration: underline; font-weight: bold;">もわもわ</a></dd>
 
-<dt style='font-weight: bold; color: #111; white-space: nowrap;'>No.02</dt>
-<dd style='margin: 0;'><a href='./works/p02/' style='color: #0066cc; text-decoration: underline; font-weight: bold;'>感情共有デバイス</a></dd>
+<dt style="font-weight: bold; color: #111; white-space: nowrap;">No.02</dt>
+<dd style="margin: 0;"><a href="./works/p02/" style="color: #0066cc; text-decoration: underline; font-weight: bold;">感情共有デバイス</a></dd>
 
-<dt style='font-weight: bold; color: #111; white-space: nowrap;'>No.03</dt>
-<dd style='margin: 0;'><a href='./works/p03/' style='color: #0066cc; text-decoration: underline; font-weight: bold;'>視覚的モールス信号</a></dd>
+<dt style="font-weight: bold; color: #111; white-space: nowrap;">No.03</dt>
+<dd style="margin: 0;"><a href="./works/p03/" style="color: #0066cc; text-decoration: underline; font-weight: bold;">視覚的モールス信号</a></dd>
 </dl>
 
 </div>
 
-<!-- PROFILE -->
-<div id='profile' style='margin-bottom: 120px; text-align: left;'>
-<div class='section-title-container'>
-<div class='bg-en-title'>PROFILE</div>
-<div class='fg-ja-title'>自己紹介</div>
+<div id="profile" style="margin-bottom: 120px; text-align: left;">
+<div class="section-title-container">
+<div class="bg-en-title">PROFILE</div>
+<div class="fg-ja-title">自己紹介</div>
 </div>
 
-<div style='display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;'>
-<img src='./profile.jpg' alt='蓮田 瑞歩' style='width: 150px; height: 150px; object-fit: cover; border-radius: 50%; flex-shrink: 0;'>
+<div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
+<img src="./profile.jpg" alt="蓮田 瑞歩" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; flex-shrink: 0;">
 
-<div style='flex: 1; min-width: 280px;'>
-<p style='font-size: 1.2rem; font-weight: bold; margin-bottom: 20px; color: #111;'>蓮田 瑞歩 / Mizuho Hasuda</p>
+<div style="flex: 1; min-width: 280px;">
+<p style="font-size: 1.2rem; font-weight: bold; margin-bottom: 20px; color: #111;">蓮田 瑞歩 / Mizuho Hasuda</p>
 
-<dl style='display: grid; grid-template-columns: 120px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0;'>
-<dt style='font-weight: bold; color: #111; white-space: nowrap;'>所属</dt>
-<dd style='margin: 0;'>明星大学 情報学部 情報学科 4年生</dd>
+<dl style="display: grid; grid-template-columns: 120px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0;">
+<dt style="font-weight: bold; color: #111; white-space: nowrap;">所属</dt>
+<dd style="margin: 0;">明星大学 情報学部 情報学科 4年生</dd>
 
-<dt style='font-weight: bold; color: #111; white-space: nowrap;'>研究室</dt>
-<dd style='margin: 0;'>インタラクティブメディア 研究室</dd>
+<dt style="font-weight: bold; color: #111; white-space: nowrap;">研究室</dt>
+<dd style="margin: 0;">インタラクティブメディア 研究室</dd>
 
-<dt style='font-weight: bold; color: #111; white-space: nowrap;'>連絡先</dt>
-<dd style='margin: 0;'><a href='mailto:mizuho.nattsu.0809@gmail.com' style='color: #333; text-decoration: underline;'>mizuho.nattsu.0809@gmail.com</a></dd>
+<dt style="font-weight: bold; color: #111; white-space: nowrap;">連絡先</dt>
+<dd style="margin: 0;"><a href="mailto:mizuho.nattsu.0809@gmail.com" style="color: #333; text-decoration: underline;">mizuho.nattsu.0809@gmail.com</a></dd>
 
-<dt style='font-weight: bold; color: #111; white-space: nowrap;'>趣味</dt>
-<dd style='margin: 0;'>カメラ、馬、おもちゃ</dd>
+<dt style="font-weight: bold; color: #111; white-space: nowrap;">趣味</dt>
+<dd style="margin: 0;">カメラ、馬、おもちゃ</dd>
 </dl>
 </div>
 </div>
 </div>
 
-<!-- ACHIEVEMENTS -->
-<div id='achievements' style='margin-bottom: 120px; text-align: left;'>
-<div class='section-title-container'>
-<div class='bg-en-title'>ACHIEVEMENTS</div>
-<div class='fg-ja-title'>活動</div>
+<div id="achievements" style="margin-bottom: 120px; text-align: left;">
+<div class="section-title-container">
+<div class="bg-en-title">ACHIEVEMENTS</div>
+<div class="fg-ja-title">活動</div>
 </div>
 
-<h3 style='font-size: 1.1rem; font-weight: bold; margin: 30px 0 16px; padding-bottom: 6px; border-bottom: 2px solid #222; color: #111; width: 100%;'>発表歴</h3>
+<h3 style="font-size: 1.1rem; font-weight: bold; margin: 30px 0 16px; padding-bottom: 6px; border-bottom: 2px solid #222; color: #111; width: 100%;">発表歴</h3>
 
-<dl style='display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0 0 40px 0; width: 100%; box-sizing: border-box;'>
-<dt style='font-weight: bold; color: #111; white-space: nowrap;'>2026.06</dt>
-<dd style='margin: 0; width: 100%;'>
+<dl style="display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0 0 40px 0; width: 100%; box-sizing: border-box;">
+<dt style="font-weight: bold; color: #111; white-space: nowrap;">2026.06</dt>
+<dd style="margin: 0; width: 100%;">
 Mizuho Hasuda, Kota Kikuchi, Toshitaka Amaoka<br>
 RibinguSukuea: Creating Lifelikeness through Perceptual Discrepancy and Interaction History<br>
 NICOGRAPH International 2026, poster
 </dd>
 
-<dt style='font-weight: bold; color: #111; white-space: nowrap;'>2025.11</dt>
-<dd style='margin: 0;'>
+<dt style="font-weight: bold; color: #111; white-space: nowrap;">2025.11</dt>
+<dd style="margin: 0;">
 2025 大根田花柊, 蓮田瑞歩, 平松守瑠, 菊池康太<br>
 Cam to Turn: オルゴールで奏でる人流データ<br>
 芸術科学会 NICOGRAPH2025, ポスター発表
 </dd>
 </dl>
 
-<h3 style='font-size: 1.1rem; font-weight: bold; margin: 30px 0 16px; padding-bottom: 6px; border-bottom: 2px solid #222; color: #111; width: 100%;'>その他参加歴</h3>
+<h3 style="font-size: 1.1rem; font-weight: bold; margin: 30px 0 16px; padding-bottom: 6px; border-bottom: 2px solid #222; color: #111; width: 100%;">その他参加歴</h3>
 
-<dl style='display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0; width: 100%; box-sizing: border-box;'>
-<dt style='font-weight: bold; color: #111; white-space: nowrap;'>2026.08-09</dt>
-<dd style='margin: 0; width: 100%;'>
-<a href='https://yoso.sp.netkeiba.com/masters/ai2026_student/' target='_blank' style='color: #0066cc; text-decoration: underline; font-weight: bold;'>機械学習 全国学生大会 2026 AI競馬予想マスターズ</a><br>
+<dl style="display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0; width: 100%; box-sizing: border-box;">
+<dt style="font-weight: bold; color: #111; white-space: nowrap;">2026.08-09</dt>
+<dd style="margin: 0; width: 100%;">
+<a href="https://yoso.sp.netkeiba.com/masters/ai2026_student/" target="_blank" style="color: #0066cc; text-decoration: underline; font-weight: bold;">機械学習 全国学生大会 2026 AI競馬予想マスターズ</a><br>
 大会総合ランキング 16位(的中率：39.18%)<br>
 </dd>
 </dl>
 </div>
 
-<!-- CONTACT (お問い合わせ) -->
-<div id='contact' style='margin-bottom: 120px; text-align: left;'>
-<div class='section-title-container'>
-<div class='bg-en-title'>CONTACT</div>
-<div class='fg-ja-title'>お問い合わせ</div>
+<div id="contact" style="margin-bottom: 120px; text-align: left;">
+<div class="section-title-container">
+<div class="bg-en-title">CONTACT</div>
+<div class="fg-ja-title">お問い合わせ</div>
 </div>
 
-<p style='font-size: 0.95rem; color: #444; line-height: 1.8; margin-bottom: 16px;'>
+<p style="font-size: 0.95rem; color: #444; line-height: 1.8; margin-bottom: 16px;">
 お問い合わせやご連絡は、以下のメールアドレスまでお願いいたします。
 </p>
 
-<div style='font-size: 1.05rem; font-weight: bold;'>
-<a href='mailto:mizuho.nattsu.0809@gmail.com' style='color: #0066cc; text-decoration: underline;'>mizuho.nattsu.0809@gmail.com</a>
+<div style="font-size: 1.05rem; font-weight: bold;">
+<a href="mailto:mizuho.nattsu.0809@gmail.com" style="color: #0066cc; text-decoration: underline;">mizuho.nattsu.0809@gmail.com</a>
 </div>
 </div>
 
