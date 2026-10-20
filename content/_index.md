@@ -1,6 +1,4 @@
----
 layout: "single"
----
 
 <style>
 /* ページ全体の基準 */
