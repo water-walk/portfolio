@@ -176,30 +176,6 @@ ul#menu li a {
 }
 </style>
 
-<!-- マウスに反応して波打つように揺れる立方体グリッドのインタラクティブ・ビジュアル -->
-<style>
-.interactive-hero-container {
-  width: 100%;
-  margin: 20px 0 60px 0;
-  border-radius: 8px;
-  overflow: hidden;
-  position: relative;
-  background: #111;
-  aspect-ratio: 16/9;
-  max-height: 70vh;
-}
-.interactive-hero-container canvas {
-  display: block;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-</style>
-
-<div class="interactive-hero-container">
-  <canvas id="cubeWaveCanvas"></canvas>
-</div>
-
 <!-- マウスの周りだけが波打つように上品に浮き上がる立方体グリッド -->
 <style>
 .interactive-hero-container {
