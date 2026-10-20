@@ -200,6 +200,30 @@ ul#menu li a {
   <canvas id="cubeWaveCanvas"></canvas>
 </div>
 
+<!-- マウスの周りだけが波打つように上品に浮き上がる立方体グリッド -->
+<style>
+.interactive-hero-container {
+  width: 100%;
+  margin: 20px 0 60px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  background: #111;
+  aspect-ratio: 16/9;
+  max-height: 70vh;
+}
+.interactive-hero-container canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+</style>
+
+<div class="interactive-hero-container">
+  <canvas id="cubeWaveCanvas"></canvas>
+</div>
+
 <script>
 (function() {
   const canvas = document.getElementById('cubeWaveCanvas');
@@ -207,8 +231,7 @@ ul#menu li a {
 
   let cols = 16;
   let rows = 10;
-  let spacing = 0;
-  let mouse = { x: -1000, y: -1000, radius: 150 };
+  let mouse = { x: -1000, y: -1000, radius: 140 };
 
   function resize() {
     canvas.width = canvas.parentElement.clientWidth;
@@ -236,48 +259,51 @@ ul#menu li a {
     const cellWidth = canvas.width / cols;
     const cellHeight = canvas.height / rows;
 
-    angle += 0.03;
+    angle += 0.04;
 
     for (let i = 0; i < cols; i++) {
       for (let j = 0; j < rows; j++) {
+        // 各マスの中心位置（絶対にブレない固定位置）
         let x = i * cellWidth + cellWidth / 2;
         let y = j * cellHeight + cellHeight / 2;
 
-        // マウスとの距離を計算
+        // マウスとの距離
         let dx = mouse.x - x;
         let dy = mouse.y - y;
         let dist = Math.sqrt(dx * dx + dy * dy);
 
-        let offset = 0;
+        let offsetY = 0;
         let scale = 1;
 
+        // マウスに近いブロックだけが上方向に浮き上がり、波打つように揺れる
         if (dist < mouse.radius) {
           let force = (1 - dist / mouse.radius);
-          offset = Math.sin(angle * 3 + dist * 0.05) * 15 * force;
-          scale = 1 + force * 0.4;
+          offsetY = -Math.sin(angle * 2.5 + dist * 0.08) * 12 * force; // 上下にふわふわ揺れる
+          scale = 1 + force * 0.15; // 控えめに拡大
         }
 
-        // 立方体（タイル）の描画
         ctx.save();
-        ctx.translate(x + dx * 0.05, y + dy * 0.05 + offset);
+        // 位置をずらすのは offsetY（上下の浮き上がり）のみにし、横方向への引きずりを完全になくす
+        ctx.translate(x, y + offsetY);
         ctx.scale(scale, scale);
 
-        let size = Math.min(cellWidth, cellHeight) * 0.75;
+        let size = Math.min(cellWidth, cellHeight) * 0.78;
         
-        // 四角形（立方体風の立体感）
-        ctx.fillStyle = '#e0e0e0';
+        // 四角形（本体）
+        ctx.fillStyle = '#dcdcdc';
         ctx.fillRect(-size/2, -size/2, size, size);
         
-        ctx.strokeStyle = '#333333';
+        ctx.strokeStyle = '#2b2b2b';
         ctx.lineWidth = 1.5;
         ctx.strokeRect(-size/2, -size/2, size, size);
 
-        // 立方体の上面・側面の影（アイソメトリック風の陰影）
-        ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
+        // 立方体風の上の面（ハイライト）
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.3)';
         ctx.beginPath();
         ctx.moveTo(-size/2, -size/2);
         ctx.lineTo(size/2, -size/2);
-        ctx.lineTo(0, -size/2 - 8);
+        ctx.lineTo(size/2 - 4, -size/2 - 6);
+        ctx.lineTo(-size/2 + 4, -size/2 - 6);
         ctx.closePath();
         ctx.fill();
 
