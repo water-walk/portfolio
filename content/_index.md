@@ -176,358 +176,91 @@ ul#menu li a {
 }
 </style>
 
-<div style="width: 100%; margin: 20px 0 60px 0; padding: 0; overflow: hidden; position: relative; z-index: 1;">
-<img src="./back.jpg" alt="Nattsu" style="width: 100%; height: auto; display: block; max-height: 75vh; object-fit: cover; border-radius: 8px;">
-</div>
-
-<div style="width: 100%; font-family: 'Helvetica Neue', Arial, sans-serif;">
-
-<div id="work" style="margin-bottom: 120px; text-align: left;">
-
-<div class="section-title-container">
-<div class="bg-en-title">WORKS</div>
-<div class="fg-ja-title">作品</div>
-</div>
-
-<div class="marquee-container">
-<div class="marquee-track">
-
-<a href="./works/work01/" class="work-simple-card">
-<div class="work-img-wrapper">
-<img src="./work01.jpg" alt="作品1" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-</div>
-<h3 class="work-simple-title">奇跡の軌跡</h3>
-</a>
-
-<a href="./works/work02/" class="work-simple-card">
-<div class="work-img-wrapper">
-<img src="./work02.jpg" alt="作品2" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-</div>
-<h3 class="work-simple-title">Echoes</h3>
-</a>
-
-<a href="./works/work03/" class="work-simple-card">
-<div class="work-img-wrapper">
-<img src="./work03.jpg" alt="作品3" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-</div>
-<h3 class="work-simple-title">Cam to Turn</h3>
-</a>
-
-<a href="./works/work04/" class="work-simple-card">
-<div class="work-img-wrapper">
-<img src="./work04.jpg" alt="作品4" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-</div>
-<h3 class="work-simple-title">りびんぐすくえあ</h3>
-</a>
-
-<a href="./works/work01/" class="work-simple-card">
-<div class="work-img-wrapper">
-<img src="./work01.jpg" alt="作品1" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-</div>
-<h3 class="work-simple-title">奇跡の軌跡</h3>
-</a>
-
-<a href="./works/work02/" class="work-simple-card">
-<div class="work-img-wrapper">
-<img src="./work02.jpg" alt="作品2" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-</div>
-<h3 class="work-simple-title">Echoes</h3>
-</a>
-
-<a href="./works/work03/" class="work-simple-card">
-<div class="work-img-wrapper">
-<img src="./work03.jpg" alt="作品3" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-</div>
-<h3 class="work-simple-title">Cam to Turn</h3>
-</a>
-
-<a href="./works/work04/" class="work-simple-card">
-<div class="work-img-wrapper">
-<img src="./work04.jpg" alt="作品4" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-</div>
-<h3 class="work-simple-title">りびんぐすくえあ</h3>
-</a>
-
-</div>
-</div>
-
-<div style="position: relative; margin: 55px 0 16px 0; border-bottom: 2px solid #222; padding-bottom: 6px; width: 100%;">
-<h3 style="font-size: 1.1rem; font-weight: bold; margin: 0; color: #111;">プロトタイプ集</h3>
-<a href="./works/" style="position: absolute; right: 0; top: -32px; font-size: 1rem; font-weight: bold; color: #0066cc; text-decoration: none;">View More →</a>
-</div>
-
-<dl style="display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0; width: 100%; box-sizing: border-box;">
-<dt style="font-weight: bold; color: #111; white-space: nowrap;">No.01</dt>
-<dd style="margin: 0;"><a href="./works/p01/" style="color: #0066cc; text-decoration: underline; font-weight: bold;">もわもわ</a></dd>
-
-<dt style="font-weight: bold; color: #111; white-space: nowrap;">No.02</dt>
-<dd style="margin: 0;"><a href="./works/p02/" style="color: #0066cc; text-decoration: underline; font-weight: bold;">感情共有デバイス</a></dd>
-
-<dt style="font-weight: bold; color: #111; white-space: nowrap;">No.03</dt>
-<dd style="margin: 0;"><a href="./works/p03/" style="color: #0066cc; text-decoration: underline; font-weight: bold;">視覚的モールス信号</a></dd>
-</dl>
-
-</div>
-
-<div id="profile" style="margin-bottom: 120px; text-align: left;">
-<div class="section-title-container">
-<div class="bg-en-title">PROFILE</div>
-<div class="fg-ja-title">自己紹介</div>
-</div>
-
-<div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
-<img src="./profile.jpg" alt="蓮田 瑞歩" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; flex-shrink: 0;">
-
-<div style="flex: 1; min-width: 280px;">
-<p style="font-size: 1.2rem; font-weight: bold; margin-bottom: 20px; color: #111;">蓮田 瑞歩 / Mizuho Hasuda</p>
-
-<dl style="display: grid; grid-template-columns: 120px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0;">
-<dt style="font-weight: bold; color: #111; white-space: nowrap;">所属</dt>
-<dd style="margin: 0;">明星大学 情報学部 情報学科 4年生</dd>
-
-<dt style="font-weight: bold; color: #111; white-space: nowrap;">研究室</dt>
-<dd style="margin: 0;">インタラクティブメディア 研究室</dd>
-
-<dt style="font-weight: bold; color: #111; white-space: nowrap;">連絡先</dt>
-<dd style="margin: 0;"><a href="mailto:mizuho.nattsu.0809@gmail.com" style="color: #333; text-decoration: underline;">mizuho.nattsu.0809@gmail.com</a></dd>
-
-<dt style="font-weight: bold; color: #111; white-space: nowrap;">趣味</dt>
-<dd style="margin: 0;">カメラ、馬、おもちゃ</dd>
-</dl>
-</div>
-</div>
-</div>
-
-<div id="achievements" style="margin-bottom: 120px; text-align: left;">
-<div class="section-title-container">
-<div class="bg-en-title">ACHIEVEMENTS</div>
-<div class="fg-ja-title">活動</div>
-</div>
-
-<h3 style="font-size: 1.1rem; font-weight: bold; margin: 30px 0 16px; padding-bottom: 6px; border-bottom: 2px solid #222; color: #111; width: 100%;">発表歴</h3>
-
-<dl style="display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0 0 40px 0; width: 100%; box-sizing: border-box;">
-<dt style="font-weight: bold; color: #111; white-space: nowrap;">2026.06</dt>
-<dd style="margin: 0; width: 100%;">
-Mizuho Hasuda, Kota Kikuchi, Toshitaka Amaoka<br>
-RibinguSukuea: Creating Lifelikeness through Perceptual Discrepancy and Interaction History<br>
-NICOGRAPH International 2026, poster
-</dd>
-
-<dt style="font-weight: bold; color: #111; white-space: nowrap;">2025.11</dt>
-<dd style="margin: 0;">
-2025 大根田花柊, 蓮田瑞歩, 平松守瑠, 菊池康太<br>
-Cam to Turn: オルゴールで奏でる人流データ<br>
-芸術科学会 NICOGRAPH2025, ポスター発表
-</dd>
-</dl>
-
-<h3 style="font-size: 1.1rem; font-weight: bold; margin: 30px 0 16px; padding-bottom: 6px; border-bottom: 2px solid #222; color: #111; width: 100%;">その他参加歴</h3>
-
-<dl style="display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0; width: 100%; box-sizing: border-box;">
-<dt style="font-weight: bold; color: #111; white-space: nowrap;">2026.08-09</dt>
-<dd style="margin: 0; width: 100%;">
-<a href="https://yoso.sp.netkeiba.com/masters/ai2026_student/" target="_blank" style="color: #0066cc; text-decoration: underline; font-weight: bold;">機械学習 全国学生大会 2026 AI競馬予想マスターズ</a><br>
-大会総合ランキング 16位(的中率：39.18%)<br>
-</dd>
-</dl>
-</div>
-
-<div id="contact" style="margin-bottom: 120px; text-align: left;">
-<div class="section-title-container">
-<div class="bg-en-title">CONTACT</div>
-<div class="fg-ja-title">お問い合わせ</div>
-</div>
-
-<p style="font-size: 0.95rem; color: #444; line-height: 1.8; margin-bottom: 16px;">
-お問い合わせやご連絡は、以下のメールアドレスまでお願いいたします。
-</p>
-
-<div style="font-size: 1.05rem; font-weight: bold;">
-<a href="mailto:mizuho.nattsu.0809@gmail.com" style="color: #0066cc; text-decoration: underline;">mizuho.nattsu.0809@gmail.com</a>
-</div>
-</div>
-
-</div>---
-layout: "single"
----
-
+<!-- マウスを乗せるとひとつひとつの四角がポコポコと揺れるメインビジュアル -->
 <style>
-body {
-  margin: 0 !important;
-  padding: 0 !important;
-  overflow-x: hidden;
+.cube-grid-hero {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr); /* 横に8列並べる（お好みで調整可能） */
+  gap: 2px;
+  width: 100%;
+  aspect-ratio: 16/9;
+  max-height: 70vh;
+  margin: 20px 0 60px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #222;
 }
 
-.container {
-  max-width: 100% !important;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-.main {
-  margin-top: 0 !important;
-  padding-top: 60px !important;
-  max-width: 100% !important;
-}
-
-.post-header, .post-meta {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-.post-content {
-  width: 80% !important;
-  max-width: 2000px !important;
-  min-width: 320px;
-  margin: 0 auto !important;
-  padding: 0 !important;
-  box-sizing: border-box;
-}
-
-header.header {
-  position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
-  width: 100% !important;
-  background: rgba(255, 255, 255, 0.85) !important; 
-  backdrop-filter: blur(12px) !important; 
-  -webkit-backdrop-filter: blur(12px) !important;
-  z-index: 999 !important; 
-  border: none !important;
-  padding: 0 !important; 
-  box-sizing: border-box;
-}
-
-header.header nav.nav {
-  width: 80% !important;
-  max-width: 2000px !important;
-  margin: 0 auto !important;
-  min-height: 48px !important;
-  height: 48px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  padding: 0 !important;
-  box-sizing: border-box;
-}
-
-.logo a {
-  line-height: 48px !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-ul#menu {
-  align-items: center !important;
-  margin: 0 !important;
-  padding-right: 0 !important;
-}
-
-ul#menu li a {
-  padding: 6px 12px !important;
-}
-
-.menu a, .logo a {
-  color: #111 !important;
-  font-weight: 500 !important;
-}
-
-.section-title-container {
+.cube-cell {
   position: relative;
-  margin-bottom: 30px;
-  height: 80px;
-  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.bg-en-title {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 4rem;
-  font-weight: 800;
-  color: rgba(60, 179, 113, 0.35);
-  line-height: 1;
-  letter-spacing: 4px;
+.cube-cell img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
   user-select: none;
+  pointer-events: none;
 }
 
-.fg-ja-title {
-  position: absolute;
-  bottom: 5px;
-  left: 0;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #111;
-  line-height: 1;
-  z-index: 2;
+/* マウスが触れた（ホバーした）ときのプルプル揺れるアニメーション */
+.cube-cell:hover {
+  z-index: 10;
+  animation: shakeCube 0.4s ease-in-out infinite alternate;
+  transform: scale(1.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
 }
 
-.marquee-container {
-  overflow: hidden;
-  width: 100%;
-  margin-bottom: 50px;
-  text-align: left;
-}
-
-.marquee-track {
-  display: flex;
-  gap: 20px;
-  width: max-content;
-  animation: marquee-scroll 25s linear infinite;
-}
-
-.marquee-container:hover .marquee-track {
-  animation-play-state: paused;
-}
-
-@keyframes marquee-scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-.work-simple-card {
-  width: 240px;
-  text-decoration: none;
-  color: inherit;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.2s ease, opacity 0.2s ease;
-  flex-shrink: 0;
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  padding: 0 !important;
-}
-
-.work-simple-card:hover {
-  transform: translateY(-4px);
-  opacity: 0.85;
-}
-
-.work-img-wrapper {
-  width: 100%;
-  aspect-ratio: 16/10;
-  background: transparent !important;
-  margin-bottom: 8px;
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-}
-
-.work-simple-title {
-  font-size: 0.95rem;
-  font-weight: bold;
-  margin: 0;
-  color: #222;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+@keyframes shakeCube {
+  0% { transform: scale(1.15) rotate(0deg) translateY(0); }
+  25% { transform: scale(1.18) rotate(-3deg) translateY(-2px); }
+  75% { transform: scale(1.18) rotate(3deg) translateY(2px); }
+  100% { transform: scale(1.15) rotate(0deg) translateY(0); }
 }
 </style>
 
-<div style="width: 100%; margin: 20px 0 60px 0; padding: 0; overflow: hidden; position: relative; z-index: 1;">
-<img src="./back.jpg" alt="Nattsu" style="width: 100%; height: auto; display: block; max-height: 75vh; object-fit: cover; border-radius: 8px;">
+<div class="cube-grid-hero">
+  <!-- 画像パーツをグリッド状に配置（触れた個所が単体で反応して揺れます） -->
+  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
+  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
+  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
+  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
+  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
+  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
+  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
+  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
+
+  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
+  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
+  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
+  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
+  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
+  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
+  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
+  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
+
+  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
+  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
+  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
+  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
+  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
+  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
+  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
+  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
+
+  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
+  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
+  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
+  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
+  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
+  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
+  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
+  <div class="cube-cell"><img src="./back.jpg" alt="cube"></div>
 </div>
 
 <div style="width: 100%; font-family: 'Helvetica Neue', Arial, sans-serif;">
