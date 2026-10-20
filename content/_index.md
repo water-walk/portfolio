@@ -37,7 +37,7 @@ body {
   box-sizing: border-box;
 }
 
-/* 2. 【重要】一番上のヘッダー（PaperMod標準）も完全に「幅80%」のラインに合わせる */
+/* 2. 一番上のヘッダーも完全に「幅80%」のラインに合わせる */
 header.header {
   position: fixed !important;
   top: 0 !important;
@@ -52,7 +52,6 @@ header.header {
   box-sizing: border-box;
 }
 
-/* ヘッダー内部のナビゲーションを .post-content と同じ 80% 幅にして左端をピタッと揃える */
 header.header nav.nav {
   width: 80% !important;
   max-width: 2000px !important;
@@ -110,7 +109,7 @@ ul#menu li a {
 .fg-ja-title {
   position: absolute;
   bottom: 5px;
-  left: 0; /* 左端をコンテナのラインに綺麗に合わせる */
+  left: 0;
   font-size: 1.5rem;
   font-weight: 700;
   color: #111;
@@ -183,59 +182,10 @@ ul#menu li a {
 }
 </style>
 
-<!-- p5.jsのライブラリ読み込み -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
-
-<!-- 波のようにうねるアニメーションを表示するコンテナ -->
-<div id='wave-hero' style='width: 100%; height: 75vh; margin: 20px 0 60px 0; border-radius: 8px; overflow: hidden; position: relative; z-index: 1; background: #f2f2f2;'></div>
-
-<script>
-function setup() {
-  let container = document.getElementById('wave-hero');
-  let canvas = createCanvas(container.offsetWidth, container.offsetHeight);
-  canvas.parent('wave-hero');
-}
-
-function draw() {
-  background(245);
-
-  let cols = 14; 
-  let rows = 9;  
-  let cellW = width / cols;
-  let cellH = height / rows;
-
-  let mX = mouseX > 0 && mouseX < width ? mouseX : width / 2;
-  let mY = mouseY > 0 && mouseY < height ? mouseY : height / 2;
-
-  for (let i = 0; i <= cols; i++) {
-    for (let j = 0; j <= rows; j++) {
-      let x = i * cellW;
-      let y = j * cellH;
-
-      let d = dist(x, y, mX, mY);
-      let angle = frameCount * 0.04 + d * 0.025;
-      let offset = sin(angle) * 12;
-
-      let proximity = constrain(map(d, 0, 350, 1.8, 0.4), 0.4, 1.8);
-      let dynamicOffset = offset * proximity;
-
-      push();
-      translate(x, y + dynamicOffset);
-
-      stroke(210);
-      fill(i % 2 === 0 ? 255 : 230);
-      rect(0, 0, cellW * 0.85, cellH * 0.85, 3);
-
-      pop();
-    }
-  }
-}
-
-function windowResized() {
-  let container = document.getElementById('wave-hero');
-  resizeCanvas(container.offsetWidth, container.offsetHeight);
-}
-</script>
+<!-- メインビジュアル（80%幅の安定したトップ画像表示） -->
+<div style='width: 100%; margin: 20px 0 60px 0; padding: 0; overflow: hidden; position: relative; z-index: 1;'>
+<img src='./back.jpg' alt='Nattsu' style='width: 100%; height: auto; display: block; max-height: 75vh; object-fit: cover; border-radius: 8px;'>
+</div>
 
 <!-- 各セクション（すべて80%幅の .post-content の中に統一） -->
 <div style='width: 100%; font-family: "Helvetica Neue", Arial, sans-serif;'>
@@ -243,13 +193,11 @@ function windowResized() {
 <!-- WORK (制作実績) -->
 <div id='work' style='margin-bottom: 120px; text-align: left;'>
 
-<!-- 1. WORKSのタイトル -->
 <div class='section-title-container'>
 <div class='bg-en-title'>WORKS</div>
 <div class='fg-ja-title'>作品</div>
 </div>
 
-<!-- 2. 作品の横スクロール（マーキー） -->
 <div class='marquee-container'>
 <div class='marquee-track'>
 <!-- ===== 1セット目 ===== -->
