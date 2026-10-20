@@ -184,9 +184,70 @@ ul#menu li a {
 </style>
 
 <!-- メインビジュアル（80%幅のコンテンツ内に収め、横幅を下のパーツと完全同期） -->
-<div style='width: 100%; margin: 20px 0 60px 0; padding: 0; overflow: hidden; position: relative; z-index: 1;'>
-<img src='./back.jpg' alt='Nattsu' style='width: 100%; height: auto; display: block; max-height: 75vh; object-fit: cover; border-radius: 8px;'>
-</div>
+<!-- p5.jsのライブラリ読み込み -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+
+<!-- 波のようにうねるアニメーションを表示するコンテナ -->
+<div id='wave-hero' style='width: 100%; height: 75vh; margin: 20px 0 60px 0; border-radius: 8px; overflow: hidden; position: relative; z-index: 1; background: #f2f2f2;'></div>
+
+<script>
+function setup() {
+  let container = document.getElementById('wave-hero');
+  let canvas = createCanvas(container.offsetWidth, container.offsetHeight);
+  canvas.parent('wave-hero');
+}
+
+function draw() {
+  background(240);
+
+  let cols = 12; // 横のグリッド数
+  let rows = 8;  // 縦のグリッド数
+  let cellW = width / cols;
+  let cellH = height / rows;
+
+  // マウスの位置を基準にする（マウスがないときは画面中央）
+  let mX = mouseX > 0 && mouseX < width ? mouseX : width / 2;
+  let mY = mouseY > 0 && mouseY < height ? mouseY : height / 2;
+
+  // グリッド状にキューブ（四角形のブロック）を描画して波のようにうねらせる
+  for (let i = 0; i <= cols; i++) {
+    for (let j = 0; j <= rows; j++) {
+      let x = i * cellW;
+      let y = j * cellH;
+
+      // マウスからの距離を計算
+      let d = dist(x, y, mX, mY);
+
+      // 時間経過（frameCount）と距離（d）を組み合わせて波のようなうねりを作る
+      let angle = frameCount * 0.05 + d * 0.03;
+      let offset = sin(angle) * 15; // うねりの高さ（振幅）
+
+      // マウスに近いほどうねりが大きくなる演出
+      let proximity = constrain(map(d, 0, 300, 1.8, 0.5), 0.5, 1.8);
+      let dynamicOffset = offset * proximity;
+
+      push();
+      translate(x, y + dynamicOffset);
+
+      // キューブのシンプルなワイヤーフレーム・面を描画して幾何学模様を表現
+      stroke(200);
+      fill(i % 2 === 0 ? 255 : 220);
+      rect(0, 0, cellW * 0.9, cellH * 0.9, 4);
+
+      // キューブの立体感を出すための側面
+      fill(180);
+      quad(0, cellH * 0.9, cellW * 0.9, cellH * 0.9, cellW * 0.9 + 5, cellH * 0.9 + 5, 5, cellH * 0.9 + 5);
+
+      pop();
+    }
+  }
+}
+
+function windowResized() {
+  let container = document.getElementById('wave-hero');
+  resizeCanvas(container.offsetWidth, container.offsetHeight);
+}
+</script>
 
 <!-- 各セクション（すべて80%幅の .post-content の中に統一） -->
 <div style='width: 100%; font-family: "Helvetica Neue", Arial, sans-serif;'>
