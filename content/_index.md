@@ -183,7 +183,6 @@ ul#menu li a {
 }
 </style>
 
-<!-- メインビジュアル（80%幅のコンテンツ内に収め、横幅を下のパーツと完全同期） -->
 <!-- p5.jsのライブラリ読み込み -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
 
@@ -198,45 +197,34 @@ function setup() {
 }
 
 function draw() {
-  background(240);
+  background(245);
 
-  let cols = 12; // 横のグリッド数
-  let rows = 8;  // 縦のグリッド数
+  let cols = 14; 
+  let rows = 9;  
   let cellW = width / cols;
   let cellH = height / rows;
 
-  // マウスの位置を基準にする（マウスがないときは画面中央）
   let mX = mouseX > 0 && mouseX < width ? mouseX : width / 2;
   let mY = mouseY > 0 && mouseY < height ? mouseY : height / 2;
 
-  // グリッド状にキューブ（四角形のブロック）を描画して波のようにうねらせる
   for (let i = 0; i <= cols; i++) {
     for (let j = 0; j <= rows; j++) {
       let x = i * cellW;
       let y = j * cellH;
 
-      // マウスからの距離を計算
       let d = dist(x, y, mX, mY);
+      let angle = frameCount * 0.04 + d * 0.025;
+      let offset = sin(angle) * 12;
 
-      // 時間経過（frameCount）と距離（d）を組み合わせて波のようなうねりを作る
-      let angle = frameCount * 0.05 + d * 0.03;
-      let offset = sin(angle) * 15; // うねりの高さ（振幅）
-
-      // マウスに近いほどうねりが大きくなる演出
-      let proximity = constrain(map(d, 0, 300, 1.8, 0.5), 0.5, 1.8);
+      let proximity = constrain(map(d, 0, 350, 1.8, 0.4), 0.4, 1.8);
       let dynamicOffset = offset * proximity;
 
       push();
       translate(x, y + dynamicOffset);
 
-      // キューブのシンプルなワイヤーフレーム・面を描画して幾何学模様を表現
-      stroke(200);
-      fill(i % 2 === 0 ? 255 : 220);
-      rect(0, 0, cellW * 0.9, cellH * 0.9, 4);
-
-      // キューブの立体感を出すための側面
-      fill(180);
-      quad(0, cellH * 0.9, cellW * 0.9, cellH * 0.9, cellW * 0.9 + 5, cellH * 0.9 + 5, 5, cellH * 0.9 + 5);
+      stroke(210);
+      fill(i % 2 === 0 ? 255 : 230);
+      rect(0, 0, cellW * 0.85, cellH * 0.85, 3);
 
       pop();
     }
@@ -255,7 +243,7 @@ function windowResized() {
 <!-- WORK (制作実績) -->
 <div id='work' style='margin-bottom: 120px; text-align: left;'>
 
-<!-- 1. WORKSのタイトル（元通りのレイアウトに戻して縦崩れを解消） -->
+<!-- 1. WORKSのタイトル -->
 <div class='section-title-container'>
 <div class='bg-en-title'>WORKS</div>
 <div class='fg-ja-title'>作品</div>
@@ -269,24 +257,28 @@ function windowResized() {
 <div class='work-img-wrapper'>
 <img src='./work01.jpg' alt='作品1' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
 </div>
+<h3 class='work-simple-title'>奇跡の軌跡</h3>
 </a>
 
 <a href='./works/work02/' class='work-simple-card'>
 <div class='work-img-wrapper'>
 <img src='./work02.jpg' alt='作品2' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
 </div>
+<h3 class='work-simple-title'>Echoes</h3>
 </a>
 
 <a href='./works/work03/' class='work-simple-card'>
 <div class='work-img-wrapper'>
 <img src='./work03.jpg' alt='作品3' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
 </div>
+<h3 class='work-simple-title'>Cam to Turn</h3>
 </a>
 
 <a href='./works/work04/' class='work-simple-card'>
 <div class='work-img-wrapper'>
 <img src='./work04.jpg' alt='作品4' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
 </div>
+<h3 class='work-simple-title'>りびんぐすくえあ</h3>
 </a>
 
 <!-- ===== 2セット目（ループ用複製） ===== -->
@@ -294,24 +286,28 @@ function windowResized() {
 <div class='work-img-wrapper'>
 <img src='./work01.jpg' alt='作品1' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
 </div>
+<h3 class='work-simple-title'>奇跡の軌跡</h3>
 </a>
 
 <a href='./works/work02/' class='work-simple-card'>
 <div class='work-img-wrapper'>
 <img src='./work02.jpg' alt='作品2' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
 </div>
+<h3 class='work-simple-title'>Echoes</h3>
 </a>
 
 <a href='./works/work03/' class='work-simple-card'>
 <div class='work-img-wrapper'>
 <img src='./work03.jpg' alt='作品3' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
 </div>
+<h3 class='work-simple-title'>Cam to Turn</h3>
 </a>
 
 <a href='./works/work04/' class='work-simple-card'>
 <div class='work-img-wrapper'>
 <img src='./work04.jpg' alt='作品4' style='width: 100%; height: 100%; object-fit: cover; display: block;'>
 </div>
+<h3 class='work-simple-title'>りびんぐすくえあ</h3>
 </a>
 
 </div>
