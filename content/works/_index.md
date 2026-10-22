@@ -29,7 +29,7 @@ hidemeta: true
 
 /* カードのデザイン（ホーム画面や詳細ページと完全統一） */
 .work-grid-card {
-  text-decoration: none;
+  text-decoration: none !important;
   color: inherit;
   display: flex;
   flex-direction: column;
@@ -53,15 +53,16 @@ hidemeta: true
   box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
 
+/* 作品タイトルの調整（サイズを小さく・下線削除） */
 .work-grid-title {
-  font-size: 1.0rem;
-  font-weight: bold;
+  font-size: 0.85rem;
+  font-weight: 600;
   margin: 0;
   color: #222;
+  text-decoration: none !important;
+  line-height: 1.4;
 }
 </style>
-
-<!-- ページヘッダー -->
 
 <!-- 横3列の作品カード一覧 -->
 <div class="works-grid-3col">
@@ -89,8 +90,5 @@ hidemeta: true
     </div>
     <h3 class="work-grid-title">りびんぐすくえあ</h3>
   </a>
-
-  <!-- 作品 4 -->
-
 
 </div>
