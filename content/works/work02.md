@@ -177,22 +177,22 @@ hidemeta: true
 <!-- 左カラム：画像ギャラリー（クリック切替機能付き） -->
 <div class='work-gallery-wrapper'>
 <div class='work-main-img-box'>
-<img id='mainDisplayImg' src='/portfolio/work03.jpg' alt='メイン画像'>
+<img id='mainDisplayImg' src='/portfolio/work02.jpg' alt='メイン画像'>
 </div>
 
 <!-- 下部のサムネイル一覧 -->
 <div class='work-thumb-scroll'>
-<div class='work-thumb-item active' onclick='switchWorkImg(this, "/portfolio/work03.jpg")'>
-<img src='/portfolio/work03.jpg' alt='サムネイル1'>
+<div class='work-thumb-item active' onclick='switchWorkImg(this, "/portfolio/work02.jpg")'>
+<img src='/portfolio/work02.jpg' alt='サムネイル1'>
 </div>
-<div class='work-thumb-item' onclick='switchWorkImg(this, "/portfolio/work03_2.jpg")'>
-<img src='/portfolio/work03_2.jpg' alt='サムネイル2'>
+<div class='work-thumb-item' onclick='switchWorkImg(this, "/portfolio/work02_2.jpg")'>
+<img src='/portfolio/work02_2.jpg' alt='サムネイル2'>
 </div>
-<div class='work-thumb-item' onclick='switchWorkImg(this, "/portfolio/work03_3.jpg")'>
-<img src='/portfolio/work03_3.jpg' alt='サムネイル3'>
+<div class='work-thumb-item' onclick='switchWorkImg(this, "/portfolio/work02_3.jpg")'>
+<img src='/portfolio/work02_3.jpg' alt='サムネイル3'>
 </div>
-<div class='work-thumb-item' onclick='switchWorkImg(this, "/portfolio/work03_4.jpg")'>
-<img src='/portfolio/work03_4.jpg' alt='サムネイル4'>
+<div class='work-thumb-item' onclick='switchWorkImg(this, "/portfolio/work02_4.jpg")'>
+<img src='/portfolio/work02_4.jpg' alt='サムネイル4'>
 </div>
 </div>
 </div>
