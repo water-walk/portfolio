@@ -401,20 +401,19 @@ ul#menu li a {
 <h3 style="font-size: 1.1rem; font-weight: bold; margin: 0; color: #111;">プロトタイプ集</h3>
 </div>
 
-<dl style="display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0; width: 100%; box-sizing: border-box;">
-<dt style="font-weight: bold; color: #111; white-space: nowrap;">No.01</dt>
+<dl style="display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; align-items: center; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0; width: 100%; box-sizing: border-box;">
+<dt style="font-weight: bold; color: #111; white-space: nowrap; margin: 0;">No.01</dt>
 <dd style="margin: 0;"><a href="./works/p01/" style="color: #0066cc; text-decoration: underline; font-weight: bold;">もわもわ</a></dd>
 
-<dt style="font-weight: bold; color: #111; white-space: nowrap;">No.02</dt>
+<dt style="font-weight: bold; color: #111; white-space: nowrap; margin: 0;">No.02</dt>
 <dd style="margin: 0;"><a href="./works/p02/" style="color: #0066cc; text-decoration: underline; font-weight: bold;">感情共有デバイス</a></dd>
 
-<dt style="font-weight: bold; color: #111; white-space: nowrap;">No.03</dt>
+<dt style="font-weight: bold; color: #111; white-space: nowrap; margin: 0;">No.03</dt>
 <dd style="margin: 0;"><a href="./works/p03/" style="color: #0066cc; text-decoration: underline; font-weight: bold;">視覚的モールス信号</a></dd>
 
-<dt style="font-weight: bold; color: #111; white-space: nowrap;">No.04</dt>
+<dt style="font-weight: bold; color: #111; white-space: nowrap; margin: 0;">No.04</dt>
 <dd style="margin: 0;"><a href="./works/p04/" style="color: #0066cc; text-decoration: underline; font-weight: bold;">5秒間の軌跡</a></dd>
 </dl>
-
 </div>
 
 <div id="profile" style="margin-bottom: 120px; text-align: left;">
