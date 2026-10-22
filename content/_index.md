@@ -440,6 +440,10 @@ ul#menu li a {
 
 <dt style="font-weight: bold; color: #111; white-space: nowrap;">趣味</dt>
 <dd style="margin: 0;">カメラ、馬、おもちゃ</dd>
+
+<dt style="font-weight: bold; color: #111; white-space: nowrap;">一口馬主</dt>
+<dd style="margin: 0;">スウィーティーガールの2025</dd>
+
 </dl>
 </div>
 </div>
