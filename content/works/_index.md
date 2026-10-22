@@ -30,6 +30,7 @@ hidemeta: true
 /* カードのデザイン（ホーム画面や詳細ページと完全統一） */
 .work-grid-card {
   text-decoration: none !important;
+  border-bottom: none !important;
   color: inherit;
   display: flex;
   flex-direction: column;
@@ -47,20 +48,23 @@ hidemeta: true
   width: 100%;
   aspect-ratio: 16/10;
   background: transparent !important;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   border-radius: 6px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
 
-/* 作品タイトルの調整（サイズを小さく・下線削除） */
+/* 作品タイトルの調整（小さく上品なキャプションサイズ） */
 .work-grid-title {
-  font-size: 0.85rem;
-  font-weight: 600;
-  margin: 0;
-  color: #222;
+  font-size: 0.75rem !important;
+  font-weight: 500 !important;
+  margin: 4px 0 0 0 !important;
+  color: #333 !important;
   text-decoration: none !important;
-  line-height: 1.4;
+  border-bottom: none !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 </style>
 
