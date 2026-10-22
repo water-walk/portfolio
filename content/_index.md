@@ -472,11 +472,19 @@ Cam to Turn: オルゴールで奏でる人流データ<br>
 <h3 style="font-size: 1.1rem; font-weight: bold; margin: 30px 0 16px; padding-bottom: 6px; border-bottom: 2px solid #222; color: #111; width: 100%;">その他参加歴</h3>
 
 <dl style="display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0; width: 100%; box-sizing: border-box;">
+
+<dt style="font-weight: bold; color: #111; white-space: nowrap;">2026.XX</dt>
+<dd style="margin: 0; width: 100%;">
+<a href="https://www.yurakuseika.co.jp/blackathon/?bt=%E3%82%B6%E3%82%AF%E3%82%B6%E3%82%AF%E3%82%B6%E3%82%AF%E2%9A%A1%F0%9F%8D%AB" target="_blank" style="color: #0066cc; text-decoration: underline; font-weight: bold;">ブラッカソン</a><br>
+ブラックサンダーが開催するハッカソン(有楽製菓)<br>
+</dd>
+
 <dt style="font-weight: bold; color: #111; white-space: nowrap;">2026.08-09</dt>
 <dd style="margin: 0; width: 100%;">
 <a href="https://yoso.sp.netkeiba.com/masters/ai2026_student/" target="_blank" style="color: #0066cc; text-decoration: underline; font-weight: bold;">機械学習 全国学生大会 2026 AI競馬予想マスターズ</a><br>
 大会総合ランキング 16位(的中率：39.18%)<br>
 </dd>
+
 </dl>
 </div>
 
