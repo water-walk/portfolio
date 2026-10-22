@@ -396,7 +396,7 @@ ul#menu li a {
   </a>
 </div>
 
-<!-- プロトタイプ集の見出し（右上のリンクを削除してスッキリさせました） -->
+<!-- プロトタイプ集の見出し -->
 <div style="margin: 30px 0 16px 0; border-bottom: 2px solid #222; padding-bottom: 6px; width: 100%;">
 <h3 style="font-size: 1.1rem; font-weight: bold; margin: 0; color: #111;">プロトタイプ集</h3>
 </div>
@@ -410,7 +410,6 @@ ul#menu li a {
 
 <dt style="font-weight: bold; color: #111; white-space: nowrap;">No.03</dt>
 <dd style="margin: 0;"><a href="./works/p03/" style="color: #0066cc; text-decoration: underline; font-weight: bold;">視覚的モールス信号</a></dd>
-</dl>
 
 <dt style="font-weight: bold; color: #111; white-space: nowrap;">No.04</dt>
 <dd style="margin: 0;"><a href="./works/p04/" style="color: #0066cc; text-decoration: underline; font-weight: bold;">5秒間の軌跡</a></dd>
