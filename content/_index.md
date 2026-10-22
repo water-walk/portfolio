@@ -412,8 +412,8 @@ ul#menu li a {
 <dd style="margin: 0;"><a href="./works/p03/" style="color: #0066cc; text-decoration: underline; font-weight: bold;">視覚的モールス信号</a></dd>
 </dl>
 
-<dt style="font-weight: bold; color: #111; white-space: nowrap;">No.03</dt>
-<dd style="margin: 0;"><a href="./works/p03/" style="color: #0066cc; text-decoration: underline; font-weight: bold;">5秒間の軌跡</a></dd>
+<dt style="font-weight: bold; color: #111; white-space: nowrap;">No.04</dt>
+<dd style="margin: 0;"><a href="./works/p04/" style="color: #0066cc; text-decoration: underline; font-weight: bold;">5秒間の軌跡</a></dd>
 </dl>
 
 </div>
