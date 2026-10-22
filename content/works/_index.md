@@ -54,7 +54,7 @@ hidemeta: true
 }
 
 .work-grid-title {
-  font-size: 1.05rem;
+  font-size: 1.0rem;
   font-weight: bold;
   margin: 0;
   color: #222;
