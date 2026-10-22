@@ -347,26 +347,19 @@ ul#menu li a {
 <div class="work-img-wrapper">
 <img src="./work01.jpg" alt="作品1" style="width: 100%; height: 100%; object-fit: cover; display: block;">
 </div>
-<h3 class="work-simple-title">奇跡の軌跡</h3>
+<h3 class="work-simple-title">Echoes</h3>
 </a>
 
 <a href="./works/work02/" class="work-simple-card">
 <div class="work-img-wrapper">
 <img src="./work02.jpg" alt="作品2" style="width: 100%; height: 100%; object-fit: cover; display: block;">
 </div>
-<h3 class="work-simple-title">Echoes</h3>
+<h3 class="work-simple-title">Cam to Turn</h3>
 </a>
 
 <a href="./works/work03/" class="work-simple-card">
 <div class="work-img-wrapper">
 <img src="./work03.jpg" alt="作品3" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-</div>
-<h3 class="work-simple-title">Cam to Turn</h3>
-</a>
-
-<a href="./works/work04/" class="work-simple-card">
-<div class="work-img-wrapper">
-<img src="./work04.jpg" alt="作品4" style="width: 100%; height: 100%; object-fit: cover; display: block;">
 </div>
 <h3 class="work-simple-title">りびんぐすくえあ</h3>
 </a>
@@ -375,29 +368,23 @@ ul#menu li a {
 <div class="work-img-wrapper">
 <img src="./work01.jpg" alt="作品1" style="width: 100%; height: 100%; object-fit: cover; display: block;">
 </div>
-<h3 class="work-simple-title">奇跡の軌跡</h3>
+<h3 class="work-simple-title">Echoes</h3>
 </a>
 
 <a href="./works/work02/" class="work-simple-card">
 <div class="work-img-wrapper">
 <img src="./work02.jpg" alt="作品2" style="width: 100%; height: 100%; object-fit: cover; display: block;">
 </div>
-<h3 class="work-simple-title">Echoes</h3>
+<h3 class="work-simple-title">Cam to Turn</h3>
 </a>
 
 <a href="./works/work03/" class="work-simple-card">
 <div class="work-img-wrapper">
 <img src="./work03.jpg" alt="作品3" style="width: 100%; height: 100%; object-fit: cover; display: block;">
 </div>
-<h3 class="work-simple-title">Cam to Turn</h3>
-</a>
-
-<a href="./works/work04/" class="work-simple-card">
-<div class="work-img-wrapper">
-<img src="./work04.jpg" alt="作品4" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-</div>
 <h3 class="work-simple-title">りびんぐすくえあ</h3>
 </a>
+
 
 </div>
 </div>
@@ -423,6 +410,10 @@ ul#menu li a {
 
 <dt style="font-weight: bold; color: #111; white-space: nowrap;">No.03</dt>
 <dd style="margin: 0;"><a href="./works/p03/" style="color: #0066cc; text-decoration: underline; font-weight: bold;">視覚的モールス信号</a></dd>
+</dl>
+
+<dt style="font-weight: bold; color: #111; white-space: nowrap;">No.04</dt>
+<dd style="margin: 0;"><a href="./works/p04/" style="color: #0066cc; text-decoration: underline; font-weight: bold;">5秒間の軌跡</a></dd>
 </dl>
 
 </div>

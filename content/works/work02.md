@@ -1,33 +1,38 @@
 ---
-title: "Echoes"
-date: 2025-11-20
-period: "2025.11"
+title: "Cam to Turn"
+date: 2025-11-30
+period: "2025年度"
 hidemeta: true
 ---
 
 <style>
+/* PaperModのメインコンテナ幅を広げてゆとりを持たせる */
 .main {
-max-width: 1100px !important;
+  max-width: 1100px !important;
 }
 .post-content {
-max-width: 100% !important;
+  max-width: 100% !important;
 }
+
+/* 個別作品ページのレイアウト */
 .work-detail-container {
-width: 100%;
-margin-top: 10px;
-font-family: "Helvetica Neue", Arial, sans-serif;
-color: #222;
+  width: 100%;
+  margin-top: 10px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #222;
 }
+
+/* 上部時期バッジ等の下線エリア */
 .work-header {
-border-bottom: 2px solid #111;
-padding-bottom: 12px;
-margin-bottom: 30px;
-width: 100%;
+  border-bottom: 2px solid #111;
+  padding-bottom: 12px;
+  margin-bottom: 30px;
+  width: 100%;
 }
 .work-period-badge {
-font-size: 1rem;
-color: #555;
-font-weight: 600;
+  font-size: 1rem;
+  color: #555;
+  font-weight: 600;
 }
 
 /* 左右2カラム構造（幅を広く確保） */
@@ -115,47 +120,150 @@ font-weight: 600;
 }
 
 
+/* 右側：情報テキスト群 */
 .work-info-section {
-display: flex;
-flex-direction: column;
-gap: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
 
 .work-info-block {
-display: flex;
-flex-direction: column;
-gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 .work-info-label {
-font-size: 0.85rem;
-font-weight: bold;
-color: #0066cc;
-text-transform: uppercase;
-letter-spacing: 1px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #0066cc;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 .work-info-text {
-font-size: 1rem;
-line-height: 1.9;
-color: #333;
-margin: 0;
-white-space: pre-wrap;
+  font-size: 1rem;
+  line-height: 1.9;
+  color: #333;
+  margin: 0;
+  white-space: pre-wrap;
 }
 
+/* 技術タグ */
 .tech-tags {
-display: flex;
-flex-wrap: wrap;
-gap: 8px;
-margin-top: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
 }
 .tech-tag {
-background: #f0f4f8;
-color: #334155;
-padding: 6px 14px;
-border-radius: 4px;
-font-size: 0.9rem;
-font-weight: 600;
+  background: #f0f4f8;
+  color: #334155;
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
 }
+</style>
 
+<div class='work-detail-container'>
+
+<!-- 制作時期のみ（タイトルはHugo標準に任せて二重化を防止） -->
+<div class='work-header'>
+<div class='work-period-badge'>制作時期：2025年度</div>
+</div>
+
+<!-- コンテンツエリア（左：画像 / 右：詳細説明） -->
+<div class='work-content-grid'>
+
+<!-- 左カラム：画像ギャラリー（クリック切替機能付き） -->
+<div class='work-gallery-wrapper'>
+<div class='work-main-img-box'>
+<img id='mainDisplayImg' src='/portfolio/work03.jpg' alt='メイン画像'>
+</div>
+
+<!-- 下部のサムネイル一覧 -->
+<div class='work-thumb-scroll'>
+<div class='work-thumb-item active' onclick='switchWorkImg(this, "/portfolio/work03.jpg")'>
+<img src='/portfolio/work03.jpg' alt='サムネイル1'>
+</div>
+<div class='work-thumb-item' onclick='switchWorkImg(this, "/portfolio/work03_2.jpg")'>
+<img src='/portfolio/work03_2.jpg' alt='サムネイル2'>
+</div>
+<div class='work-thumb-item' onclick='switchWorkImg(this, "/portfolio/work03_3.jpg")'>
+<img src='/portfolio/work03_3.jpg' alt='サムネイル3'>
+</div>
+<div class='work-thumb-item' onclick='switchWorkImg(this, "/portfolio/work03_4.jpg")'>
+<img src='/portfolio/work03_4.jpg' alt='サムネイル4'>
+</div>
+</div>
+</div>
+
+<!-- 右カラム：説明コンテンツ -->
+<div class='work-info-section'>
+
+<!-- 1. 制作時期・区分 -->
+<div class='work-info-block'>
+<div class='work-info-label'>PERIOD</div>
+<div class='work-info-text'>2025年度</div>
+</div>
+
+<!-- 2. 使用機材・技術 -->
+
+<div class='work-info-block'>
+<div class='work-info-label'>TECHNOLOGY / HARDWARE</div>
+<div class='tech-tags'>
+<span class='tech-tag'>Processing</span>
+<span class='tech-tag'>Arduino</span>
+<span class='tech-tag'>ロータリーエンコーダ</span>
+</div>
+</div>
+
+
+<!-- 3. 説明文章 -->
+<div class='work-info-block'>
+<div class='work-info-label'>CONCEPT & DESCRIPTION</div>
+<div class='work-info-text'>
+<p style='margin: 0 0 16px 0;'>明星大学のオープンキャンパス来場者動線調査プロジェクトにて、収集したデータを活用して2人チームで制作したインタラクティブ作品です。
+オープンキャンパスに訪れる高校生に、データや情報学の面白さをより身近に感じてもらうことを目的として制作しました。</p>
+
+<p style='margin: 0 0 16px 0;'>本作品では、来場者が学内のどの会場を訪れたかという動線データを、一つの楽曲として表現しています。オルゴールを模した装置のハンドルを回すと、画面上の楽譜が流れ、データに応じた音が奏でられます。受付や説明会にはドラム、文系学部にはピアノ、理系学部には鉄琴の音を割り当て、学内の人の動きを視覚と聴覚の両方で体験できるようにしました。数値やグラフを見るだけでなく、自分の手でデータを動かし、音として楽しむことで、情報学への興味を持つきっかけとなることを目指しました。2025年8月24日の明星大学オープンキャンパスにて展示しました。</p>
+
+<p style='margin: 0 0 16px 0;'>オープンキャンパス来場者動線調査プロジェクトで収集されたデータをCSV形式で読み込み、Processingを用いて映像と音を生成しました。オルゴール型の入力装置にはArduinoとロータリーエンコーダを使用し、ハンドルの回転方向や速度を検出しています。取得した情報をシリアル通信でProcessingに送信することで、ハンドルの操作と画面上の動きを連動させています。画面上では、来場者の動線データをボールとして表現し、ボールが楽器のグラフィックスに接触すると音が鳴る仕組みです。また、ハンドルを逆方向に回すことで、データを時系列の逆順に再生できるようにしました。これにより、来場者自身の操作を通じて、データの流れを視覚的・聴覚的に体験できる作品を実現しました。</p>
+</div>
+</div>
+
+<!-- 4. 動作動画 -->
+<p style="margin-top: 20px;">
+<a href="https://youtu.be/8H81Pnpr-js" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #FF0000; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 0.95rem;">
+▶ YouTubeで見る
+</a>
+</p>
+
+<!-- 関連リンク（RELATED LINKS）セクション -->
+<div class='work-info-block' style='margin-top: 50px; padding-top: 30px; border-top: 1px solid #eaeaea;'>
+<div class='work-info-label'>RELATED LINKS</div>
+<div class='related-links-container'>
+
+<!-- リンク 1（必要に応じて増やしたり減らしたりできます） -->
+<a href='https://www.is.meisei-u.ac.jp/news/2193/' target='_blank' class='related-link-card'>
+<div class='related-link-info'>
+<div class='related-link-title'>明星大学 情報学部情報学科 大幅性能アップ！オープンキャンパス来場者動線調査プロジェクト進行中です</div>
+<div class='related-link-url'>https://www.is.meisei-u.ac.jp/news/2193/</div>
+</div>
+<div class='related-link-icon'>→</div>
+</a>
+
+<a href='https://openlab.is.meisei-u.ac.jp/2025/08/30/1065/' target='_blank' class='related-link-card'>
+<div class='related-link-info'>
+<div class='related-link-title'>Open Lab公式サイト 2025年度オープンキャンパス動線調査データを用いた可視化作品の展示を行いました！</div>
+<div class='related-link-url'>https://openlab.is.meisei-u.ac.jp/2025/08/30/1065/</div>
+</div>
+<div class='related-link-icon'>→</div>
+</a>
+
+</div>
+</div>
+
+<style>
 /* 関連リンクのカードデザイン */
 .related-links-container {
 display: flex;
@@ -204,109 +312,23 @@ padding-left: 12px;
 }
 </style>
 
-<div class='work-detail-container'>
-
-<!-- 1. 全幅タイトル ＋ 制作時期 -->
-<div class='work-header'>
-<div class='work-period-badge'>制作時期：2025年11月</div>
-</div>
-
-<!-- 2. コンテンツエリア（左：画像ビューア / 右：詳細説明） -->
-<div class='work-content-grid'>
-
-<!-- 左カラム：画像ギャラリー（クリック切替機能付き） -->
-<div class='work-gallery-wrapper'>
-<div class='work-main-img-box'>
-<img id='mainDisplayImg' src='/portfolio/work02.jpg' alt='メイン画像'>
-</div>
-
-<!-- 下部のサムネイル一覧 -->
-<div class='work-thumb-scroll'>
-<div class='work-thumb-item active' onclick='switchWorkImg(this, "/portfolio/work02.jpg")'>
-<img src='/portfolio/work02.jpg' alt='サムネイル1'>
-</div>
-<div class='work-thumb-item' onclick='switchWorkImg(this, "/portfolio/work02_2.jpg")'>
-<img src='/portfolio/work02_2.jpg' alt='サムネイル2'>
-</div>
-<div class='work-thumb-item' onclick='switchWorkImg(this, "/portfolio/work02_3.jpg")'>
-<img src='/portfolio/work02_3.jpg' alt='サムネイル3'>
-</div>
-<div class='work-thumb-item' onclick='switchWorkImg(this, "/portfolio/work02_4.jpg")'>
-<img src='/portfolio/work02_4.jpg' alt='サムネイル4'>
-</div>
 </div>
 </div>
 
-<!-- 右カラム：説明コンテンツ -->
-<div class='work-info-section'>
-
-<!-- 1. 制作時期 / 区分 -->
-<div class='work-info-block'>
-<div class='work-info-label'>PERIOD</div>
-<div class='work-info-text'>2025年11月</div>
-</div>
-
-<!-- 2. 使用機材・技術 -->
-<div class='work-info-block'>
-<div class='work-info-label'>TECHNOLOGY / HARDWARE</div>
-<div class='tech-tags'>
-<span class='tech-tag'>Arduino</span>
-<span class='tech-tag'>Processing</span>
-<span class='tech-tag'>超音波距離センサー</span>
-<span class='tech-tag'>サーボモーター</span>
-</div>
-</div>
-
-<!-- 3. 説明文章 -->
-<div class='work-info-block'>
-<div class='work-info-label'>CONCEPT & DESCRIPTION</div>
-<div class='work-info-text'>
-<div class='work-info-text'>
-<p style='margin: 0 0 16px 0;'>グローバル・プロジェクト「MUROS week」にて、ドイツ・デュッセルドルフ応用科学大学の学生を含めた4人のチームで共同制作したインタラクティブ・インスタレーション作品です。Human Data Interactionを基盤とした「専門家でない人が気候変動データを感覚的に理解する」という課題に対し、気候変動が日本の桜に与える影響をテーマに制作しました。</p>
-
-<p style='margin: 0 0 16px 0;'>桜は日本の四季や春の訪れ、再生と希望を象徴する存在です。しかし、地球温暖化による気温の変化は、桜の開花や季節のリズムに影響を与えています。本作品では、気象データを桜の配置によって立体的に可視化するとともに、人の接近に反応して開閉する桜を制作しました。自然が持つ調和やリズムの変化を感覚的に伝え、自然との関わり方を考えるきっかけとなることを目指しました。作品名の「Echoes（響き）」には、弱まりながらも響き続ける自然の声に再び耳を傾け、自然の回復への希望を感じてほしいという思いを込めています。</p>
-
-<p style='margin: 0 0 0 0;'>日本の47都道府県の気温・日照時間・降水量のデータを使用し、ProcessingでそれぞれをX軸・Y軸・Z軸に割り当てて3次元座標に変換しました。その座標をもとに47個の桜を天井から吊るし、数値データを立体的な空間表現へと変換しました。中央に配置した大きな桜は、Arduinoと超音波センサー、サーボモーターを使用して開閉を制御しています。人が近づくと花びらが閉じ、一定の距離まで離れるとゆっくりと開く仕組みにすることで、人間の干渉によって自然のリズムが乱される様子を表現しました。また、和紙を用いた柔らかな光の表現には、自然の繊細さと再生への希望を込めています。</p>
-</div>
-</div>
-</div>
-
-<!-- 4. 関連リンク -->
-<div class='work-info-block' style='margin-top: 10px; padding-top: 20px; border-top: 1px solid #eaeaea;'>
-<div class='work-info-label'>RELATED LINKS</div>
-<div class='related-links-container'>
-<a href='https://www.is.meisei-u.ac.jp/news/2474/' target='_blank' class='related-link-card'>
-<div class='related-link-info'>
-<div class='related-link-title'>明星大学 情報学部情報学科 MUROS week 開催！ドイツ・デュッセルドルフ応用科学大学の学生とグローバル・プロジェクトを行いました</div>
-<div class='related-link-url'>https://www.is.meisei-u.ac.jp/news/2474/</div>
-</div>
-<div class='related-link-icon'>→</div>
-</a>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-
-<!-- 画像切り替え用JavaScript -->
 <script>
 function switchWorkImg(element, newSrc) {
-var mainImg = document.getElementById('mainDisplayImg');
-if (mainImg) {
-mainImg.style.opacity = '0.3';
-setTimeout(function() {
-mainImg.src = newSrc;
-mainImg.style.opacity = '1';
-}, 150);
-}
-var thumbs = document.querySelectorAll('.work-thumb-item');
-thumbs.forEach(function(thumb) {
-thumb.classList.remove('active');
-});
-element.classList.add('active');
+  var mainImg = document.getElementById('mainDisplayImg');
+  if (mainImg) {
+    mainImg.style.opacity = '0.3';
+    setTimeout(function() {
+      mainImg.src = newSrc;
+      mainImg.style.opacity = '1';
+    }, 150);
+  }
+  var thumbs = document.querySelectorAll('.work-thumb-item');
+  thumbs.forEach(function(thumb) {
+    thumb.classList.remove('active');
+  });
+  element.classList.add('active');
 }
 </script>

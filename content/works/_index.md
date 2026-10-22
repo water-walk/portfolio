@@ -69,33 +69,28 @@ hidemeta: true
   <!-- 作品 1 -->
   <a href="./work01/" class="work-grid-card">
     <div class="work-grid-img-wrapper">
-      <img src="../work01.jpg" alt="奇跡の軌跡" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+      <img src="../work01.jpg" alt="Echoes" style="width: 100%; height: 100%; object-fit: cover; display: block;">
     </div>
-    <h3 class="work-grid-title">奇跡の軌跡</h3>
+    <h3 class="work-grid-title">Echoes</h3>
   </a>
 
   <!-- 作品 2 -->
   <a href="./work02/" class="work-grid-card">
     <div class="work-grid-img-wrapper">
-      <img src="../work02.jpg" alt="Echoes" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+      <img src="../work02.jpg" alt="Cam to Turn" style="width: 100%; height: 100%; object-fit: cover; display: block;">
     </div>
-    <h3 class="work-grid-title">Echoes</h3>
+    <h3 class="work-grid-title">Cam to Turn</h3>
   </a>
 
   <!-- 作品 3 -->
   <a href="./work03/" class="work-grid-card">
     <div class="work-grid-img-wrapper">
-      <img src="../work03.jpg" alt="Cam to Turn" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-    </div>
-    <h3 class="work-grid-title">Cam to Turn</h3>
-  </a>
-
-  <!-- 作品 4 -->
-  <a href="./work04/" class="work-grid-card">
-    <div class="work-grid-img-wrapper">
-      <img src="../work04.jpg" alt="りびんぐすくえあ" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+      <img src="../work03.jpg" alt="りびんぐすくえあ" style="width: 100%; height: 100%; object-fit: cover; display: block;">
     </div>
     <h3 class="work-grid-title">りびんぐすくえあ</h3>
   </a>
+
+  <!-- 作品 4 -->
+
 
 </div>
