@@ -428,7 +428,6 @@ ul#menu li a {
 <div style="flex: 1; min-width: 280px;">
 <p style="font-size: 1.2rem; font-weight: bold; margin-bottom: 20px; color: #111;">蓮田 瑞歩 / Mizuho Hasuda</p>
 
-<!-- align-items: center; を追加して行ごとの上下位置をピタッと揃える -->
 <dl style="display: grid; grid-template-columns: 120px 1fr; gap: 16px 20px; align-items: center; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0;">
 <dt style="font-weight: bold; color: #111; white-space: nowrap; margin: 0;">所属</dt>
 <dd style="margin: 0;">明星大学 情報学部 情報学科 4年生</dd>
@@ -436,11 +435,15 @@ ul#menu li a {
 <dt style="font-weight: bold; color: #111; white-space: nowrap; margin: 0;">研究室</dt>
 <dd style="margin: 0;">インタラクティブメディア 研究室</dd>
 
-<dt style="font-weight: bold; color: #111; white-space: nowrap; margin: 0;">連絡先</dt>
-<dd style="margin: 0;"><a href="mailto:mizuho.nattsu.0809@gmail.com" style="color: #333; text-decoration: underline;">mizuho.nattsu.0809@gmail.com</a></dd>
+<dt style="font-weight: bold; color: #111; white-space: nowrap; margin: 0;">開発環境</dt>
+<dd style="margin: 0;">Python、Processing（Java）、Arduino（C/C++）、p5.js（JavaScript）、Google Apps Script、Google Colab</dd>
+
+<dt style="font-weight: bold; color: #111; white-space: nowrap; margin: 0;">使用ツール</dt>
+<dd style="margin: 0;">Autodesk Inventor、AutoCAD、Tinkercad、Figma</dd>
 
 <dt style="font-weight: bold; color: #111; white-space: nowrap; margin: 0;">趣味</dt>
 <dd style="margin: 0;">カメラ、馬、観劇</dd>
+
 </dl>
 </div>
 </div>
