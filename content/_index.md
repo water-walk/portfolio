@@ -440,7 +440,7 @@ ul#menu li a {
 <dd style="margin: 0;"><a href="mailto:mizuho.nattsu.0809@gmail.com" style="color: #333; text-decoration: underline;">mizuho.nattsu.0809@gmail.com</a></dd>
 
 <dt style="font-weight: bold; color: #111; white-space: nowrap; margin: 0;">趣味</dt>
-<dd style="margin: 0;">カメラ、馬、おもちゃ</dd>
+<dd style="margin: 0;">カメラ、馬、観劇</dd>
 </dl>
 </div>
 </div>
@@ -481,7 +481,6 @@ Cam to Turn: オルゴールで奏でる人流データ<br>
 <a href="https://www.meisei-u.ac.jp/2025/2025073102.html" target="_blank" style="color: #0066cc; text-decoration: underline; font-weight: bold;">2025年度　夏休み科学体験教室 「LEDホタルを作ろう」
 </a><br>
 2個のトランジスタを用いてLEDが蛍のように光る回路を作成する。<br>
-<br>
 小中学生向けの科学体験教室。<br>
 </dd>
 
