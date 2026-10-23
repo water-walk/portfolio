@@ -61,6 +61,6 @@ jobs:
 
 params:
   assets:
-    favicon: "/h.jpg"
-    favicon16x16: "/h.jpg"
-    favicon32x32: "/h.jpg"
+    favicon: "h.jpg"
+    favicon16x16: "h.jpg"
+    favicon32x32: "h.jpg"
