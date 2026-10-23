@@ -428,23 +428,24 @@ ul#menu li a {
 <div style="flex: 1; min-width: 280px;">
 <p style="font-size: 1.2rem; font-weight: bold; margin-bottom: 20px; color: #111;">蓮田 瑞歩 / Mizuho Hasuda</p>
 
-<dl style="display: grid; grid-template-columns: 120px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0;">
-<dt style="font-weight: bold; color: #111; white-space: nowrap;">所属</dt>
+<!-- align-items: center; を追加して行ごとの上下位置をピタッと揃える -->
+<dl style="display: grid; grid-template-columns: 120px 1fr; gap: 16px 20px; align-items: center; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0;">
+<dt style="font-weight: bold; color: #111; white-space: nowrap; margin: 0;">所属</dt>
 <dd style="margin: 0;">明星大学 情報学部 情報学科 4年生</dd>
 
-<dt style="font-weight: bold; color: #111; white-space: nowrap;">研究室</dt>
+<dt style="font-weight: bold; color: #111; white-space: nowrap; margin: 0;">研究室</dt>
 <dd style="margin: 0;">インタラクティブメディア 研究室</dd>
 
-<dt style="font-weight: bold; color: #111; white-space: nowrap;">連絡先</dt>
+<dt style="font-weight: bold; color: #111; white-space: nowrap; margin: 0;">連絡先</dt>
 <dd style="margin: 0;"><a href="mailto:mizuho.nattsu.0809@gmail.com" style="color: #333; text-decoration: underline;">mizuho.nattsu.0809@gmail.com</a></dd>
 
-<dt style="font-weight: bold; color: #111; white-space: nowrap;">趣味</dt>
+<dt style="font-weight: bold; color: #111; white-space: nowrap; margin: 0;">趣味</dt>
 <dd style="margin: 0;">カメラ、馬、おもちゃ</dd>
-
 </dl>
 </div>
 </div>
 </div>
+
 
 <div id="achievements" style="margin-bottom: 120px; text-align: left;">
 <div class="section-title-container">
@@ -454,33 +455,35 @@ ul#menu li a {
 
 <h3 style="font-size: 1.1rem; font-weight: bold; margin: 30px 0 16px; padding-bottom: 6px; border-bottom: 2px solid #222; color: #111; width: 100%;">発表歴</h3>
 
-<dl style="display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0 0 40px 0; width: 100%; box-sizing: border-box;">
-<dt style="font-weight: bold; color: #111; white-space: nowrap;">2026.06</dt>
+<!-- align-items: start; にして複数行のテキストと日付の頭をきれいに揃える -->
+<dl style="display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; align-items: start; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0 0 40px 0; width: 100%; box-sizing: border-box;">
+<dt style="font-weight: bold; color: #111; white-space: nowrap; margin: 0;">2026.06</dt>
 <dd style="margin: 0; width: 100%;">
 Mizuho Hasuda, Kota Kikuchi, Toshitaka Amaoka<br>
 RibinguSukuea: Creating Lifelikeness through Perceptual Discrepancy and Interaction History<br>
 NICOGRAPH International 2026, poster
 </dd>
 
-<dt style="font-weight: bold; color: #111; white-space: nowrap;">2025.11</dt>
-<dd style="margin: 0;">
-2025 大根田花柊, 蓮田瑞歩, 平松守瑠, 菊池康太<br>
+<dt style="font-weight: bold; color: #111; white-space: nowrap; margin: 0;">2025.11</dt>
+<dd style="margin: 0; width: 100%;">
+大根田花柊, 蓮田瑞歩, 平松守瑠, 菊池康太<br>
 Cam to Turn: オルゴールで奏でる人流データ<br>
 芸術科学会 NICOGRAPH2025, ポスター発表
 </dd>
 </dl>
 
+
 <h3 style="font-size: 1.1rem; font-weight: bold; margin: 30px 0 16px; padding-bottom: 6px; border-bottom: 2px solid #222; color: #111; width: 100%;">その他参加歴</h3>
 
-<dl style="display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0; width: 100%; box-sizing: border-box;">
-
+</dl>
 <dt style="font-weight: bold; color: #111; white-space: nowrap;">2026.06</dt>
 <dd style="margin: 0; width: 100%;">
 <a href="https://www.yurakuseika.co.jp/blackathon/?bt=%E3%82%B6%E3%82%AF%E3%82%B6%E3%82%AF%E3%82%B6%E3%82%AF%E2%9A%A1%F0%9F%8D%AB" target="_blank" style="color: #0066cc; text-decoration: underline; font-weight: bold;">ブラッカソン</a><br>
 ブラックサンダーが開催するハッカソン(有楽製菓)<br>
 </dd>
 
-<dt style="font-weight: bold; color: #111; white-space: nowrap;">2026.08-09</dt>
+<dl style="display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; align-items: start; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0; width: 100%; box-sizing: border-box;">
+<dt style="font-weight: bold; color: #111; white-space: nowrap; margin: 0;">2026.08-09</dt>
 <dd style="margin: 0; width: 100%;">
 <a href="https://yoso.sp.netkeiba.com/masters/ai2026_student/" target="_blank" style="color: #0066cc; text-decoration: underline; font-weight: bold;">機械学習 全国学生大会 2026 AI競馬予想マスターズ</a><br>
 大会総合ランキング 16位(的中率：39.18%)<br>
