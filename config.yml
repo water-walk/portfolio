@@ -13,6 +13,10 @@ params:
   author: "Mizuho Hasuda"
   defaultTheme: light
   disableThemeToggle: true
+  assets:
+    favicon: "h.jpg"
+    favicon16x16: "h.jpg"
+    favicon32x32: "h.jpg"
 
 languages:
   en:
@@ -37,9 +41,3 @@ markup:
   goldmark:
     renderer:
       unsafe: true
-
-params:
-  assets:
-    favicon: "h.jpg"
-    favicon16x16: "h.jpg"
-    favicon32x32: "h.jpg"
