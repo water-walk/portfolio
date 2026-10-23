@@ -476,6 +476,13 @@ Cam to Turn: オルゴールで奏でる人流データ<br>
 
 <dl style="display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; align-items: start; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0; width: 100%; box-sizing: border-box;">
 
+<dt style="font-weight: bold; color: #111; white-space: nowrap; margin: 0;">2025.07</dt>
+<dd style="margin: 0; width: 100%;">
+<a href="https://www.meisei-u.ac.jp/2025/2025073102.html" target="_blank" style="color: #0066cc; text-decoration: underline; font-weight: bold;">2025年度　夏休み科学体験教室 「LEDホタルを作ろう」(明星大学)
+</a><br>
+2個のトランジスタを用いてLEDが蛍のように光る回路を作成する．小中学生向けの科学体験教室。<br>
+</dd>
+
 <dt style="font-weight: bold; color: #111; white-space: nowrap; margin: 0;">2026.06</dt>
 <dd style="margin: 0; width: 100%;">
 <a href="https://www.yurakuseika.co.jp/blackathon/?bt=%E3%82%B6%E3%82%AF%E3%82%B6%E3%82%AF%E3%82%B6%E3%82%AF%E2%9A%A1%F0%9F%8D%AB" target="_blank" style="color: #0066cc; text-decoration: underline; font-weight: bold;">ブラッカソン</a><br>
