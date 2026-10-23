@@ -398,7 +398,7 @@ ul#menu li a {
 
 <!-- プロトタイプ集の見出し -->
 <div style="margin: 30px 0 16px 0; border-bottom: 2px solid #222; padding-bottom: 6px; width: 100%;">
-<h3 style="font-size: 1.1rem; font-weight: bold; margin: 0; color: #111;">プロトタイプ集</h3>
+<h3 style="font-size: 1.1rem; font-weight: bold; margin: 0; color: #68bbc5;">Playground</h3>
 </div>
 
 <dl style="display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; align-items: center; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0; width: 100%; box-sizing: border-box;">
