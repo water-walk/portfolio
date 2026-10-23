@@ -428,7 +428,8 @@ ul#menu li a {
 <div style="flex: 1; min-width: 280px;">
 <p style="font-size: 1.2rem; font-weight: bold; margin-bottom: 20px; color: #111;">蓮田 瑞歩 / Mizuho Hasuda</p>
 
-<dl style="display: grid; grid-template-columns: 120px 1fr; gap: 16px 20px; align-items: center; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0;">
+<!-- align-items: start; に変更して上揃えに統一 -->
+<dl style="display: grid; grid-template-columns: 120px 1fr; gap: 16px 20px; align-items: start; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0;">
 <dt style="font-weight: bold; color: #111; white-space: nowrap; margin: 0;">所属</dt>
 <dd style="margin: 0;">明星大学 情報学部 情報学科 4年生</dd>
 
@@ -448,7 +449,6 @@ ul#menu li a {
 </div>
 </div>
 </div>
-
 
 <div id="achievements" style="margin-bottom: 120px; text-align: left;">
 <div class="section-title-container">
