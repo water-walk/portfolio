@@ -480,7 +480,9 @@ Cam to Turn: オルゴールで奏でる人流データ<br>
 <dd style="margin: 0; width: 100%;">
 <a href="https://www.meisei-u.ac.jp/2025/2025073102.html" target="_blank" style="color: #0066cc; text-decoration: underline; font-weight: bold;">2025年度　夏休み科学体験教室 「LEDホタルを作ろう」(明星大学)
 </a><br>
-2個のトランジスタを用いてLEDが蛍のように光る回路を作成する．小中学生向けの科学体験教室。<br>
+2個のトランジスタを用いてLEDが蛍のように光る回路を作成する。<br>
+</a><br>
+小中学生向けの科学体験教室。<br>
 </dd>
 
 <dt style="font-weight: bold; color: #111; white-space: nowrap; margin: 0;">2026.06</dt>
