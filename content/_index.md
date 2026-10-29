@@ -460,12 +460,6 @@ ul#menu li a {
 
 <!-- align-items: start; にして複数行のテキストと日付の頭をきれいに揃える -->
 <dl style="display: grid; grid-template-columns: 100px 1fr; gap: 16px 20px; align-items: start; font-size: 0.95rem; line-height: 1.6; color: #333; margin: 0 0 40px 0; width: 100%; box-sizing: border-box;">
-<dt style="font-weight: bold; color: #111; white-space: nowrap; margin: 0;">2026.06</dt>
-<dd style="margin: 0; width: 100%;">
-Mizuho Hasuda, Kota Kikuchi, Toshitaka Amaoka<br>
-RibinguSukuea: Creating Lifelikeness through Perceptual Discrepancy and Interaction History<br>
-NICOGRAPH International 2026, poster
-</dd>
 
 <dt style="font-weight: bold; color: #111; white-space: nowrap; margin: 0;">2025.11</dt>
 <dd style="margin: 0; width: 100%;">
@@ -473,6 +467,14 @@ NICOGRAPH International 2026, poster
 Cam to Turn: オルゴールで奏でる人流データ<br>
 芸術科学会 NICOGRAPH2025, ポスター発表
 </dd>
+
+<dt style="font-weight: bold; color: #111; white-space: nowrap; margin: 0;">2026.06</dt>
+<dd style="margin: 0; width: 100%;">
+Mizuho Hasuda, Kota Kikuchi, Toshitaka Amaoka<br>
+RibinguSukuea: Creating Lifelikeness through Perceptual Discrepancy and Interaction History<br>
+NICOGRAPH International 2026, poster
+</dd>
+
 </dl>
 
 <h3 style="font-size: 1.1rem; font-weight: bold; margin: 30px 0 16px; padding-bottom: 6px; border-bottom: 2px solid #222; color: #111; width: 100%;">その他参加歴</h3>
