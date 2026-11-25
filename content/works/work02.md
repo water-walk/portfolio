@@ -146,6 +146,17 @@ hidemeta: true
   margin: 0;
   white-space: pre-wrap;
 }
+/* 学会名のリンク */
+.conference-link {
+  color: #0066cc;
+  text-decoration: none;
+  box-shadow: none !important;
+  transition: color 0.2s ease;
+}
+.conference-link:hover {
+  color: #004999;
+  text-decoration: underline;
+}
 
 /* 技術タグ */
 .tech-tags {
@@ -168,7 +179,7 @@ hidemeta: true
 
 <!-- 制作時期のみ（タイトルはHugo標準に任せて二重化を防止） -->
 <div class='work-header'>
-<div class='work-period-badge'>制作時期：2025年度　NICOGRAPH2025にてポスター発表</div>
+<div class='work-period-badge'>制作時期：2025年度</div>
 </div>
 
 <!-- コンテンツエリア（左：画像 / 右：詳細説明） -->
@@ -204,6 +215,14 @@ hidemeta: true
 <div class='work-info-block'>
 <div class='work-info-label'>PERIOD</div>
 <div class='work-info-text'>2025年度</div>
+</div>
+
+<!-- 学会発表 -->
+<div class='work-info-block'>
+<div class='work-info-label'>CONFERENCE PRESENTATION</div>
+<div class='work-info-text'>
+<a href='https://www.art-science.org/nicograph/nico2025/' target='_blank' rel='noopener noreferrer' class='conference-link'>NICOGRAPH 2025</a>
+</div>
 </div>
 
 <!-- 2. 使用機材・技術 -->

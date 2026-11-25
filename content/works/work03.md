@@ -168,7 +168,7 @@ hidemeta: true
 
 <!-- 制作時期のみ（タイトルはHugo標準に任せて二重化を防止） -->
 <div class='work-header'>
-<div class='work-period-badge'>制作時期：2025年度後期　NICOGRAPH International2026にてポスター発表</div>
+<div class='work-period-badge'>制作時期：2025年度後期</div>
 </div>
 
 <!-- コンテンツエリア（左：画像 / 右：詳細説明） -->
