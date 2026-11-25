@@ -374,7 +374,7 @@ ul#menu li a {
 
 <a href="./works/work05/" class="work-simple-card">
 <div class="work-img-wrapper">
-<img src="./work05.jpg" alt="作品4" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+<img src="./work05.jpg" alt="作品5" style="width: 100%; height: 100%; object-fit: cover; display: block;">
 </div>
 <h3 class="work-simple-title">ろばっとぱぼっく</h3>
 </a>
@@ -410,7 +410,7 @@ ul#menu li a {
 
 <a href="./works/work05/" class="work-simple-card">
 <div class="work-img-wrapper">
-<img src="./work05.jpg" alt="作品4" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+<img src="./work05.jpg" alt="作品5" style="width: 100%; height: 100%; object-fit: cover; display: block;">
 </div>
 <h3 class="work-simple-title">ろばっとぱぼっく</h3>
 </a>
