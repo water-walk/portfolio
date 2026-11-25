@@ -148,13 +148,14 @@ hidemeta: true
 }
 /* 学会名のリンク */
 .conference-link {
-  color: #0066cc;
+  color: #333 !important;
   text-decoration: none;
   box-shadow: none !important;
   transition: color 0.2s ease;
 }
+
 .conference-link:hover {
-  color: #004999;
+  color: #333 !important;
   text-decoration: underline;
 }
 
@@ -218,10 +219,13 @@ hidemeta: true
 </div>
 
 <!-- 学会発表 -->
+<!-- 学会発表 -->
 <div class='work-info-block'>
 <div class='work-info-label'>CONFERENCE PRESENTATION</div>
 <div class='work-info-text'>
-<a href='https://www.art-science.org/nicograph/nico2025/' target='_blank' rel='noopener noreferrer' class='conference-link'>NICOGRAPH 2025</a>
+<a href='https://www.art-science.org/nicograph/nico2025/' target='_blank' rel='noopener noreferrer' class='conference-link'>NICOGRAPH2025</a>
+<div class='conference-description'>ポスター発表</div>
+</div>
 </div>
 </div>
 
