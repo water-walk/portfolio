@@ -1,6 +1,6 @@
 ---
 title: "ろばっとぱぼっく"
-date: 2026-11-29
+date: 2026-11-25
 period: "2026年度"
 hidemeta: true
 ---
