@@ -219,13 +219,11 @@ hidemeta: true
 </div>
 
 <!-- 学会発表 -->
-<!-- 学会発表 -->
 <div class='work-info-block'>
 <div class='work-info-label'>CONFERENCE PRESENTATION</div>
 <div class='work-info-text'>
 <a href='https://www.art-science.org/nicograph/nico2025/' target='_blank' rel='noopener noreferrer' class='conference-link'>NICOGRAPH2025</a>
 <div class='conference-description'>ポスター発表</div>
-</div>
 </div>
 </div>
 

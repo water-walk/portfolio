@@ -206,6 +206,15 @@ hidemeta: true
 <div class='work-info-text'>2025年度後期</div>
 </div>
 
+<!-- 学会発表 -->
+<div class='work-info-block'>
+<div class='work-info-label'>CONFERENCE PRESENTATION</div>
+<div class='work-info-text'>
+<a href='https://www.art-science.org/nicograph/nicoint2026/' target='_blank' rel='noopener noreferrer' class='conference-link'>NICOGRAPH International 2026</a>
+<div class='conference-description'>ポスター発表</div>
+</div>
+</div>
+
 <!-- 2. 使用機材・技術 -->
 
 
