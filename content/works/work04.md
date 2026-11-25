@@ -1,7 +1,7 @@
 ---
-title: "りびんぐすくえあ RibinguSukuea"
-date: 2026-02-14
-period: "2025年度後期"
+title: "TWing mission : ざっくりロケット開発大作戦！"
+date: 2026-06-07
+period: "2026年度前期"
 hidemeta: true
 ---
 
@@ -168,7 +168,7 @@ hidemeta: true
 
 <!-- 制作時期のみ（タイトルはHugo標準に任せて二重化を防止） -->
 <div class='work-header'>
-<div class='work-period-badge'>制作時期：2025年度後期</div>
+<div class='work-period-badge'>制作時期：2026年6月</div>
 </div>
 
 <!-- コンテンツエリア（左：画像 / 右：詳細説明） -->
@@ -177,7 +177,7 @@ hidemeta: true
 <!-- 左カラム：画像ギャラリー（クリック切替機能付き） -->
 <div class='work-gallery-wrapper'>
 <div class='work-main-img-box'>
-<img id='mainDisplayImg' src='/portfolio/work03.jpg' alt='メイン画像'>
+<img id='mainDisplayImg' src='/portfolio/work04.jpg' alt='メイン画像'>
 </div>
 
 <!-- 下部のサムネイル一覧 -->
