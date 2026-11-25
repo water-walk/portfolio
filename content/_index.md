@@ -364,6 +364,14 @@ ul#menu li a {
 <h3 class="work-simple-title">りびんぐすくえあ</h3>
 </a>
 
+<a href="./works/work04/" class="work-simple-card">
+<div class="work-img-wrapper">
+<img src="./work04.jpg" alt="作品4" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+</div>
+<h3 class="work-simple-title">TWing mission : ざっくりロケット開発大作戦！</h3>
+</a>
+
+
 <a href="./works/work01/" class="work-simple-card">
 <div class="work-img-wrapper">
 <img src="./work01.jpg" alt="作品1" style="width: 100%; height: 100%; object-fit: cover; display: block;">
@@ -385,6 +393,12 @@ ul#menu li a {
 <h3 class="work-simple-title">りびんぐすくえあ</h3>
 </a>
 
+<a href="./works/work04/" class="work-simple-card">
+<div class="work-img-wrapper">
+<img src="./work04.jpg" alt="作品4" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+</div>
+<h3 class="work-simple-title">TWing mission : ざっくりロケット開発大作戦！</h3>
+</a>
 
 </div>
 </div>
