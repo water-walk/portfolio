@@ -372,6 +372,13 @@ ul#menu li a {
 <h3 class="work-simple-title">TWing mission : ざっくりロケット開発大作戦！</h3>
 </a>
 
+<a href="./works/work05/" class="work-simple-card">
+<div class="work-img-wrapper">
+<img src="./work05.jpg" alt="作品4" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+</div>
+<h3 class="work-simple-title">ろばっとぱぼっく</h3>
+</a>
+
 
 <a href="./works/work01/" class="work-simple-card">
 <div class="work-img-wrapper">
@@ -399,6 +406,13 @@ ul#menu li a {
 <img src="./work04.jpg" alt="作品4" style="width: 100%; height: 100%; object-fit: cover; display: block;">
 </div>
 <h3 class="work-simple-title">TWing mission : ざっくりロケット開発大作戦！</h3>
+</a>
+
+<a href="./works/work05/" class="work-simple-card">
+<div class="work-img-wrapper">
+<img src="./work05.jpg" alt="作品4" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+</div>
+<h3 class="work-simple-title">ろばっとぱぼっく</h3>
 </a>
 
 </div>

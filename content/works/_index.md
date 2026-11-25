@@ -115,4 +115,12 @@ hidemeta: true
     <h3 class="work-grid-title">TWing mission : ざっくりロケット開発大作戦！</h3>
   </a>
 
+  <!-- 作品 5 -->
+  <a href="./work05/" class="work-grid-card">
+    <div class="work-grid-img-wrapper">
+      <img src="../work05.jpg" alt="ろばっとぱぼっく">
+    </div>
+    <h3 class="work-grid-title">ろばっとぱぼっく</h3>
+  </a>
+
 </div>
