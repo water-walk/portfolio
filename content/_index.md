@@ -116,7 +116,7 @@ ul#menu li a {
 .marquee-container {
   overflow: hidden;
   width: 100%;
-  margin-bottom: 20px; /* カプセルボタンとの間隔を調整するため少し詰めています */
+  margin-bottom: 20px;
   text-align: left;
 }
 
@@ -136,10 +136,9 @@ ul#menu li a {
   100% { transform: translateX(-50%); }
 }
 
-/* カプセル型 VIEW MORE ボタンのスタイル */
 .view-more-btn-wrapper {
   display: flex;
-  justify-content: flex-end; /* 右寄せ（中央にしたい場合は center に変更） */
+  justify-content: flex-end;
   margin: 0 0 50px 0;
   width: 100%;
 }
@@ -191,6 +190,7 @@ ul#menu li a {
   border: none !important;
   box-shadow: none !important;
   padding: 0 !important;
+  align-items: flex-start; /* カード内の要素を上揃えにする */
 }
 
 .work-simple-card:hover {
@@ -213,9 +213,10 @@ ul#menu li a {
   font-weight: bold;
   margin: 0;
   color: #222;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  line-height: 1.4;
 }
 </style>
 

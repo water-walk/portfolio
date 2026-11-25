@@ -200,7 +200,7 @@ hidemeta: true
 <!-- 1. 制作時期・区分 -->
 <div class='work-info-block'>
 <div class='work-info-label'>PERIOD</div>
-<div class='work-info-text'>2025年度後期</div>
+<div class='work-info-text'>2026年6月</div>
 </div>
 
 <!-- 2. 使用機材・技術 -->
