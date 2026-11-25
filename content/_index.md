@@ -490,6 +490,13 @@ RibinguSukuea: Creating Lifelikeness through Perceptual Discrepancy and Interact
 NICOGRAPH International 2026, poster
 </dd>
 
+<dt style="font-weight: bold; color: #111; white-space: nowrap; margin: 0;">2026.11</dt>
+<dd style="margin: 0; width: 100%;">
+蓮田瑞歩，尼岡利崇<br>
+ろばっとぱぼっく：異種群ロボットへの自発的な介入を促すインタラクションの提案<br>
+芸術科学会 NICOGRAPH2026, ポスター発表予定
+</dd>
+
 </dl>
 
 <h3 style="font-size: 1.1rem; font-weight: bold; margin: 30px 0 16px; padding-bottom: 6px; border-bottom: 2px solid #222; color: #111; width: 100%;">その他参加歴</h3>
