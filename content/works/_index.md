@@ -37,6 +37,9 @@ hidemeta: true
   transition: transform 0.2s ease, opacity 0.2s ease;
   background: transparent !important;
   border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  align-items: flex-start !important;
 }
 
 .work-grid-card:hover {
@@ -45,26 +48,35 @@ hidemeta: true
 }
 
 .work-grid-img-wrapper {
-  width: 100%;
-  aspect-ratio: 16/10;
+  width: 100% !important;
+  aspect-ratio: 16/10 !important;
   background: transparent !important;
-  margin-bottom: 8px;
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  margin-bottom: 8px !important;
+  border-radius: 6px !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06) !important;
 }
 
-/* 作品タイトルの調整（小さく上品なキャプションサイズ） */
+.work-grid-img-wrapper img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  margin: 0 !important;
+}
+
+/* 作品タイトルの調整（途切れないように折り返しを設定） */
 .work-grid-title {
-  font-size: 0.75rem !important;
-  font-weight: 500 !important;
-  margin: 4px 0 0 0 !important;
-  color: #333 !important;
+  font-size: 0.95rem !important;
+  font-weight: bold !important;
+  margin: 0 !important;
+  color: #222 !important;
   text-decoration: none !important;
   border-bottom: none !important;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  line-height: 1.4 !important;
 }
 </style>
 
@@ -74,7 +86,7 @@ hidemeta: true
   <!-- 作品 1 -->
   <a href="./work01/" class="work-grid-card">
     <div class="work-grid-img-wrapper">
-      <img src="../work01.jpg" alt="Echoes" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+      <img src="../work01.jpg" alt="Echoes">
     </div>
     <h3 class="work-grid-title">Echoes</h3>
   </a>
@@ -82,7 +94,7 @@ hidemeta: true
   <!-- 作品 2 -->
   <a href="./work02/" class="work-grid-card">
     <div class="work-grid-img-wrapper">
-      <img src="../work02.jpg" alt="Cam to Turn" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+      <img src="../work02.jpg" alt="Cam to Turn">
     </div>
     <h3 class="work-grid-title">Cam to Turn</h3>
   </a>
@@ -90,7 +102,7 @@ hidemeta: true
   <!-- 作品 3 -->
   <a href="./work03/" class="work-grid-card">
     <div class="work-grid-img-wrapper">
-      <img src="../work03.jpg" alt="りびんぐすくえあ" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+      <img src="../work03.jpg" alt="りびんぐすくえあ">
     </div>
     <h3 class="work-grid-title">りびんぐすくえあ</h3>
   </a>
@@ -98,7 +110,7 @@ hidemeta: true
   <!-- 作品 4 -->
   <a href="./work04/" class="work-grid-card">
     <div class="work-grid-img-wrapper">
-      <img src="../work04.jpg" alt="TWing mission : ざっくりロケット開発大作戦！" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+      <img src="../work04.jpg" alt="TWing mission : ざっくりロケット開発大作戦！">
     </div>
     <h3 class="work-grid-title">TWing mission : ざっくりロケット開発大作戦！</h3>
   </a>
