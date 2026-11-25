@@ -1,7 +1,7 @@
 ---
 title: "TWing mission : ざっくりロケット開発大作戦！"
 date: 2026-06-07
-period: "2026年度前期"
+period: "2026年6月"
 hidemeta: true
 ---
 
@@ -185,11 +185,11 @@ hidemeta: true
 <div class='work-thumb-item active' onclick='switchWorkImg(this, "/portfolio/work04.jpg")'>
 <img src='/portfolio/work04.jpg' alt='サムネイル1'>
 </div>
-<div class='work-thumb-item' onclick='switchWorkImg(this, "/portfolio/work04_2.jpg")'>
-<img src='/portfolio/work04_2.jpg' alt='サムネイル2'>
+<div class='work-thumb-item' onclick='switchWorkImg(this, "/portfolio/work04_02.jpg")'>
+<img src='/portfolio/work04_02.jpg' alt='サムネイル2'>
 </div>
-<div class='work-thumb-item' onclick='switchWorkImg(this, "/portfolio/work04_3.jpg")'>
-<img src='/portfolio/work04_3.jpg' alt='サムネイル3'>
+<div class='work-thumb-item' onclick='switchWorkImg(this, "/portfolio/work04_03.jpg")'>
+<img src='/portfolio/work04_03.jpg' alt='サムネイル3'>
 </div>
 </div>
 </div>
